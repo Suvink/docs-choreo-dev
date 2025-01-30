@@ -2,50 +2,48 @@
 
 {% include "create-an-application.md" %}
 
-## Grant types
+## Grant Types
 
-Choreo authentication is based on OAuth 2.0. In OAuth 2.0, grant types are methods that allow client applications to obtain an access token depending on the type of the resource owner, the type of the application, and the trust relationship between the authorization server and the resource owner. 
+Choreo uses OAuth 2.0 for authentication. In OAuth 2.0, grant types are methods that allow client applications to obtain an access token. The type of grant used depends on the resource owner, the application type, and the trust relationship between the authorization server and the resource owner.
 
-### Authorization code grant
+### Authorization Code Grant
 
-The Authorization code flow provides a secure way for a client application to obtain an access token without exposing the user's credentials to the client application. The user only authenticates with the authorization server, which then issues an authorization code that can be exchanged for an access token.
+The Authorization Code flow is a secure way for a client application to obtain an access token without exposing the user's credentials. The user authenticates with the authorization server, which issues an authorization code. This code is then exchanged for an access token.
 
-This helps to protect user credentials and prevents credentials from being compromised by malicious client applications.
+This method protects user credentials and prevents them from being compromised by malicious client applications.
 
-### Refresh token grant
+### Refresh Token Grant
 
-A refresh token is a token that you can use to get a new access token when your current access token is expired or when you need a new access token. You can use the refresh token grant type for this purpose. Issuing a refresh token is optional for the authorization server. If the authorization server issues a refresh token, it includes it in the response with the access token. You can use this refresh token and send it to the authorization server to obtain a new access token. Choreo's default authorization server, Asgardeo, issues refresh tokens for all grant types other than the **client credentials** grant type, as recommended by the OAuth 2.0 specification.
+A refresh token allows you to obtain a new access token when the current one expires or when a new token is needed. The refresh token grant type is used for this purpose. Refresh tokens are optional and, if issued, are included in the response along with the access token. You can use the refresh token to request a new access token from the authorization server. Choreo's default authorization server, Asgardeo, issues refresh tokens for all grant types except the **Client Credentials** grant type, as recommended by the OAuth 2.0 specification.
 
 !!! note
-    
-    - Keep your refresh token private, similar to the access token. 
-    - The process to get a new access token using the Refresh Token grant type requires no user interaction.
+    - Treat refresh tokens as securely as access tokens.
+    - No user interaction is required to obtain a new access token using the Refresh Token grant type.
 
-### Client credentials grant
+### Client Credentials Grant
 
-The client credentials flow provides a secure way for client applications to obtain an access token without user authentication. This is useful in scenarios where the client application needs to access its own resources, such as data storage or APIs, but does not require access to user data. However, it is important to ensure that the client credentials are kept secure because any party who has these credentials can obtain access tokens and access the client's resources.
+The Client Credentials flow allows client applications to obtain an access token without user authentication. This is useful when the client application needs to access its own resources, such as data storage or APIs, but does not require access to user data. Ensure that client credentials are kept secure, as anyone with these credentials can obtain access tokens and access the client's resources.
 
-### Implicit grant
+### Implicit Grant
 
-The implicit grant flow is an OAuth 2.0 grant type that enables a client application to obtain an access token directly from the authorization server without an intermediate authorization code exchange. This flow is commonly used in browser-based applications where the client application runs in a web browser.
+The Implicit Grant flow allows a client application to obtain an access token directly from the authorization server without an intermediate authorization code exchange. This flow is commonly used in browser-based applications.
 
-However, it is important to note that the access token is exposed in the browser's URL fragment, which can make it vulnerable to certain types of attacks, such as cross-site scripting (XSS). As a result, this flow is typically not recommended for applications that require high security.
+However, the access token is exposed in the browser's URL fragment, making it vulnerable to attacks like cross-site scripting (XSS). As a result, this flow is not recommended for applications requiring high security.
 
-### Password grant
+### Password Grant
 
-The password grant flow is an OAuth 2.0 grant type that enables a client application to obtain an access token by presenting the user's username and password directly to the authorization server. This flow is generally considered less secure than other grant types, as it requires the client application to handle and transmit the user's credentials.
+The Password Grant flow allows a client application to obtain an access token by directly providing the user's username and password to the authorization server. This method is less secure than other grant types because the client application handles and transmits the user's credentials.
 
-The password grant is primarily used in scenarios where the client application is highly trusted, and the user experience is prioritized over security concerns. It is generally not recommended for use in public-facing applications or scenarios where sensitive data is accessed.
+This grant type is typically used in highly trusted client applications where user experience is prioritized over security. It is not recommended for public-facing applications or scenarios involving sensitive data.
 
+## Revoke Access Tokens
 
-## Revoke access tokens
+Revoking JWT access tokens can be challenging because they are self-validating. Once issued, a token contains all the information needed to validate its authenticity without requiring server-side lookups.
 
-Revoking JWT access tokens can be challenging due to their self-validating nature. Once a token is issued, it contains all the necessary information within itself to validate its authenticity, without requiring additional server-side lookups or interactions.
+It is recommended to set an expiry time of no more than 900 seconds.
 
-It is recommended to use an expiry time that is not more than 900 seconds.
+In traditional session-based authentication, the server can revoke a session by invalidating its session ID. However, JWTs do not rely on a central authority to track valid or invalid tokens. Revoking a JWT requires techniques like denylists or allowlists, which can complicate the authentication process and may not always be foolproof.
 
-In traditional session-based authentication, the server can easily revoke a session by invalidating its associated session ID. However, in the case of JWTs, there is no central authority that maintains a list of valid or invalid tokens. As a result, revoking a JWT token requires the use of denylist or allowlist techniques, which can add additional complexity to the authentication flow and may not always be foolproof.
+To address these challenges, use short-lived JWT access tokens and refresh them regularly. This reduces the risk of unauthorized access if a token is stolen or leaked. Additionally, implementing strong encryption and secure token storage can further enhance JWT-based authentication security.
 
-To mitigate these challenges, it is recommended to use short-lived JWT access tokens and regularly refresh them. This reduces the risk of unauthorized access if a token is stolen or leaked, as the token will expire after a short period of time. Additionally, implementing other security measures such as strong encryption and secure token storage can further enhance the security of JWT-based authentication.
-
-The Choreo Developer Portal keeps the lifespan of a token to 15 minutes (900 seconds) by default. Application Developers can increase the time if necessary, but as mentioned above, it is recommended to keep it to the minimal possible value.
+By default, the Choreo Developer Portal sets the token lifespan to 15 minutes (900 seconds). Application developers can increase this time if necessary, but it is recommended to keep it as short as possible.
