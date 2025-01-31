@@ -30,7 +30,6 @@ Let's review the key files in the sample application:
 
 !!! note 
     The file paths are relative to `<choreo-sample-book-list-service>/`.
-
 | Filepath               | Description                                                                   |
 |------------------------|-------------------------------------------------------------------------------|
 | `app.mjs`              | The Node.js (JavaScript) service code.                                        |
