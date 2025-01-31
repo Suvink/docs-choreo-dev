@@ -24,6 +24,8 @@ Choreo auto-generates build pipelines that may slightly differ depending on the 
 - Pushes the container image to a container registry. In the cloud data plane, Choreo pushes the image to a Choreo-managed registry. If it is a private data plane organization, Choreo pushes the image to a registry that you own.
 - Updates service endpoints and API specifications from the provided repository if applicable.
 
+In addition to these steps, some buildpacks support unit testing in the build pipeline. Refer to [Unit Testing in Choreo Build Pipeline](../testing/unit-testing-in-build-pipeline.md) for more details.
+
 ### Repeatable builds
 
 Choreo can replicate builds from an identical code version (Git commit). This means that multiple builds initiated from the same Git commit will generate Docker images with the same behavior.

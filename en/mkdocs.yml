@@ -179,6 +179,7 @@ nav:
       - Test APIs with cURL: testing/test-apis-with-curl.md
       - Test APIs with Choreo API Chat: testing/test-apis-with-choreo-apichat.md
       - Test Components with Test Runner: testing/test-components-with-test-runner.md
+      - Unit Testing in Build Pipeline: testing/unit-testing-in-build-pipeline.md
   - Consuming Services:
       - Consume a Service: consuming-services/consuming-a-sevice.md
       - Manage Application: consuming-services/manage-application.md
