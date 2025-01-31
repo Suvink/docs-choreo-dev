@@ -1,4 +1,4 @@
-# Deploy Your First Static Web Application
+# Deploy your first static web application
 
 Choreo is an internal developer platform as a service that simplifies building, deploying, monitoring, and managing cloud-native applications. It allows developers to focus on innovation and implementation by handling platform complexities.
 
@@ -27,7 +27,7 @@ Before you begin:
 
     This creates the organization and opens the organization home page.
 
-## Step 1: Create a Project
+## Step 1: Create a project
 
 1. Go to [https://console.choreo.dev/](https://console.choreo.dev/) and sign in. This opens the organization home page.
 2. On the organization home page, click **+ Create Project**.
@@ -44,7 +44,7 @@ Before you begin:
 
 4. Click **Create**. This creates the project and opens the project home page.
 
-## Step 2: Create a Web Application Component
+## Step 2: Create a web application component
 
 1. On the project home page, click **Web Application** under **Create a Component**.
 2. Enter a unique name and description for the web application.
@@ -81,7 +81,7 @@ Before you begin:
 
 Now let's build and deploy the web application.
 
-## Step 3: Build Your Web Application
+## Step 3: Build your web application
 
 1. In the left navigation menu, click **Build**.
 2. In the **Builds** pane, click **Build Latest**.
@@ -91,7 +91,7 @@ Now let's build and deploy the web application.
 
 Now you can proceed to deploy your web application.
 
-## Step 4: Deploy and Access Your Web Application
+## Step 4: Deploy and access your web application
 
 1. In the left navigation menu, click **Deploy**.
 2. In the **Set Up** card, click **Configure and Deploy**. This opens the **Configure & Deploy** pane. In this guide, you do not need to add a file mount.

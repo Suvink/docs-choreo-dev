@@ -1,4 +1,4 @@
-# Develop an Event Handler
+# Develop an event handler
 
 An Event Handler executes predefined actions in response to specific events. Choreo simplifies the process of creating and deploying such integrations.
 
@@ -24,7 +24,7 @@ Before you begin:
 
 3. **Fork the Repository**: Fork the [Choreo samples repository](https://github.com/wso2/choreo-samples), which contains the sample integration for this guide.
 
-## Step 1: Create an Event Handler Component
+## Step 1: Create an event handler component
 
 1. Go to [https://console.choreo.dev/](https://console.choreo.dev/) and sign in. This opens the project home page.
 2. If you already have one or more components in your project, click **+ Create**. Otherwise, proceed to the next step.
@@ -64,7 +64,7 @@ Before you begin:
 
 8. Click **Create**.
 
-## Step 2: Deploy the Integration
+## Step 2: Deploy the integration
 
 1. In the left navigation menu, click **Deploy**.
 2. In the **Build Area** card, click **Configure & Deploy**.
@@ -82,7 +82,7 @@ Before you begin:
 
 4. Click **Deploy**. This deploys the event handler to the development environment and indicates the **Deployment Status** as **Active** in the **Development** card.
 
-## Step 3: Test the Integration
+## Step 3: Test the integration
 
 1. Send a sales order message to the **SalesOrderQueue** on the RabbitMQ server. You can send a sample sales order message similar to the following:
 

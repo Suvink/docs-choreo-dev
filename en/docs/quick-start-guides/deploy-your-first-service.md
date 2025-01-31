@@ -1,4 +1,4 @@
-# Deploy Your First Service
+# Deploy your first service
 
 Choreo is an Internal Developer Platform (IDevP) that makes it easy to deploy, monitor, and manage your cloud-native services. This allows you to focus on innovation and implementation.
 
@@ -24,7 +24,7 @@ For a video tutorial, check out [Deploy Your First Service with Choreo](https://
 
     This creates the organization and opens the organization home page.
 
-### Repository File Structure
+### Repository file structure
 
 Let's review the key files in the sample application:
 
@@ -39,7 +39,7 @@ Let's review the key files in the sample application:
 
 Let's get started!
 
-## Step 1: Create a Project
+## Step 1: Create a project
 
 1. Go to [https://console.choreo.dev/](https://console.choreo.dev/) and sign in. This opens the organization home page.
 2. On the organization home page, click **+ Create Project**.
@@ -56,7 +56,7 @@ Let's get started!
 
 4. Click **Create**. This creates the project and takes you to the project home page.
 
-## Step 2: Create a Service Component
+## Step 2: Create a service component
 
 1. On the project home page, click **Service** under **Create a Component**.
 2. Enter the following details:
@@ -98,7 +98,7 @@ Let's get started!
 
 You have successfully created a Service component using the NodeJS buildpack. Now, let's build and deploy the service.
 
-## Step 3: Build and Deploy
+## Step 3: Build and deploy
 
 ### Step 3.1: Build
 
@@ -120,7 +120,7 @@ You have successfully created a Service component using the NodeJS buildpack. No
     !!! note
         Deployment may take some time. Once complete, the status changes to **Active** on the **Development** environment card.
 
-## Step 4: Test the Service
+## Step 4: Test the service
 
 1. In the Choreo Console left navigation menu, click **Test** and then click **Console**.
 2. In the OpenAPI Console, select **Development** from the environment drop-down.

@@ -1,4 +1,4 @@
-# Develop Web Applications Locally with Choreo’s Managed Authentication
+# Develop web applications locally with Choreo’s managed authentication
 
 Choreo’s managed authentication capability provides a set of backend for frontend (BFF) endpoints to facilitate authentication and authorization for web applications. These endpoints are readily available for single-page web applications deployed on Choreo.
 
@@ -6,7 +6,7 @@ As a web application developer, you may need to run the application on your loca
 
 This guide explains how to configure and use Choreo’s local development capability to streamline your workflow.
 
-## How Local Development Works in Choreo
+## How local development works in Choreo
 
 Local development uses a proxy that sits in front of the locally running web application. This proxy intercepts all incoming requests:
 - Requests to `/choreo-apis/*` and `/auth/*` are forwarded to Choreo.
@@ -14,7 +14,7 @@ Local development uses a proxy that sits in front of the locally running web app
 
 The proxy runs on HTTPS using a self-signed certificate, which is essential for secure, HTTP-only cookie-based managed authentication. Once the proxy is running, you can access the web application using the proxy's URL and start developing locally. The behavior of the web application, in terms of managed authentication, will mirror its behavior when deployed to Choreo.
 
-## Configure Local Development
+## Configure local development
 
 ### Prerequisites
 
@@ -25,7 +25,7 @@ The proxy runs on HTTPS using a self-signed certificate, which is essential for 
         - The locally running web application will use the same managed authentication configuration as the environment where local development is configured.
         - Local development is only allowed in non-critical environments.
 
-### Apply Configurations
+### Apply configurations
 
 1. **Sign in to the Choreo Console**.
 2. In the **Component Listing** pane, click on the component you created and deployed.
@@ -37,14 +37,14 @@ The proxy runs on HTTPS using a self-signed certificate, which is essential for 
 
 You have now configured local development. The next section explains how to access your web application for local development.
 
-## Access Your Web Application Locally
+## Access your web application locally
 
 ### Prerequisites
 
 - Ensure local development is enabled in the desired environment.
 - Ensure your web application is running locally on `http://localhost` on a specific port.
 
-### Access Your Web Application Locally
+### Access your web application locally
 
 You can use either the Choreo built-in identity provider or an external identity provider to access your web application locally.
 

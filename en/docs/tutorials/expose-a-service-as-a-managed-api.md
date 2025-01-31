@@ -1,4 +1,4 @@
-# Expose a Service as a Managed API
+# Expose a service as a managed API
 
 Choreo simplifies securely exposing existing services as managed APIs. It also allows you to manage all aspects of an API's lifecycle, security, throttling, and governance, so you can focus on service development.
 
@@ -16,7 +16,7 @@ Before you begin:
 
     This creates the organization and opens the **Project Home** page of the default project created for you.
 
-## Step 1: Create an API Proxy
+## Step 1: Create an API proxy
 
 To create an API proxy, you can either upload an OpenAPI specification or provide an OpenAPI specification URL. In this tutorial, you will use a sample OpenAPI specification URL.
 
@@ -43,7 +43,7 @@ To create an API proxy, you can either upload an OpenAPI specification or provid
 
 To see the resources of the API proxy, go to the left navigation menu, click **Develop**, and then click **Resources**.
 
-## Step 2: Deploy the API Proxy
+## Step 2: Deploy the API proxy
 
 1. In the left navigation menu, click **Deploy**.
 2. In the **Build Area** card, click **Configure & Deploy**. This opens the **Configure & Deploy** pane.
@@ -53,7 +53,7 @@ To see the resources of the API proxy, go to the left navigation menu, click **D
 
 Now you are ready to test the API proxy.
 
-## Step 3: Test the API Proxy
+## Step 3: Test the API proxy
 
 You can test the API proxy in the development environment before promoting it to production. Choreo provides the following options to test your API proxy:
 - OpenAPI Console
@@ -74,7 +74,7 @@ In this guide, you will use the OpenAPI Console.
 
     This indicates that your API proxy is working as expected.
 
-## Step 4: Promote the API Proxy to Production
+## Step 4: Promote the API proxy to production
 
 Once you verify that the API proxy is working as expected in the development environment, you can promote it to production.
 
@@ -91,7 +91,7 @@ Once you verify that the API proxy is working as expected in the development env
 
 Now that your API is deployed in both development and production environments and can be invoked, the next step is to publish it so that consumers can discover and subscribe to it.
 
-## Step 5: Publish the API Proxy
+## Step 5: Publish the API proxy
 
 1. In the left navigation menu, click **Manage** and then click **Lifecycle**. This opens the **Lifecycle** page, where you can see the different lifecycle stages of the API. The current lifecycle stage is **Created**.
 2. Click **Publish**.

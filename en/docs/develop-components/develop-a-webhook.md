@@ -1,4 +1,4 @@
-# Develop a Webhook
+# Develop a webhook
 
 Choreo allows developers to design high-quality webhooks. To explore this capability, let's consider a scenario where a team of software engineers in an organization should be notified via email whenever someone creates a GitHub issue with the `bug` label in a specific repository.
 
@@ -24,7 +24,7 @@ Before you begin:
 
 2. **Fork the Repository**: Fork the [Choreo samples repository](https://github.com/wso2/choreo-samples), which contains the sample integration for this guide.
 
-## Step 1: Create a Webhook Component
+## Step 1: Create a webhook component
 
 To create a Webhook component, follow these steps:
 
@@ -81,7 +81,7 @@ Once Choreo completes the deployment, the **Development** card indicates the **D
 !!! note
     In the deployment card, you can click the icon corresponding to configurables to open the **Configurations** pane and edit configurations.
 
-## Step 3: Connect the Webhook to the GitHub Repository
+## Step 3: Connect the webhook to the GitHub repository
 
 To allow the webhook to read the labels of issues in a specific GitHub repository, connect the webhook to the GitHub repository:
 

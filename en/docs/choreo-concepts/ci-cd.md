@@ -24,20 +24,20 @@ Choreo auto-generates build pipelines that may slightly differ depending on the 
 - Pushes the container image to a container registry. In the cloud data plane, Choreo pushes the image to a Choreo-managed registry. If it is a private data plane organization, Choreo pushes the image to a registry that you own.
 - Updates service endpoints and API specifications from the provided repository if applicable.
 
-### Repeatable Builds
+### Repeatable builds
 
 Choreo can replicate builds from an identical code version (Git commit). This means that multiple builds initiated from the same Git commit will generate Docker images with the same behavior.
 
 !!! note
     In the event of multiple builds from the same code version, Choreo preserves only the most recent version of the Docker image created from the particular code version.
 
-### Trigger a Build
+### Trigger a build
 
 On the **Build** page, click **Build Latest**. If necessary, you have the option to select a particular commit and build an image.
 
 If you want to automatically trigger a build with each commit, you can enable **Auto Build on Commit**.
 
-### Build Logs
+### Build logs
 
 You can view build logs for specific builds on the **Build** page.
 
@@ -58,15 +58,15 @@ Once you build an image in Choreo, you can deploy it via the **Deploy** page. To
     - Choreo automatically checks the configurable defined in your source code against the configurable values applied in an environment. Choreo requests the configurable values on deployment and promotion. If you have changed the configurables in your Ballerina component, auto-build pipelines can fail as a precaution to avoid a component crash at runtime due to missing configurables.
     - The configurable verifying capability is only available for Ballerina components. For Dockerfile-based components, ensure to manage and update the configurations and secrets in environments ahead of time. You must also ensure backward compatibility between at least one release if you change the configurations.
 
-### Set Up Area and Initial Deployment
+### Set up area and initial deployment
 
 In the deploy phase, Choreo uses a setup area to merge the Docker image with its environment-independent configurations. Choreo then deploys this composite to the environment. This is known as the initial deployment.
 
-### Immutable Deployments
+### Immutable deployments
 
 Once Choreo deploys a component with configurations, the configurations become immutable. Any subsequent change results in a new deployment.
 
-### Promote a Component to a Higher Environment
+### Promote a component to a higher environment
 
 Choreo builds a container once per GitHub commit and then promotes it to subsequent higher environments.
 
@@ -76,13 +76,13 @@ You can go to the **Deploy** page of a component and promote it manually across 
 
 Choreo allows you to define both environment-independent configurations and environment-specific configurations.
 
-### Environment-Independent Configurations
+### Environment-independent configurations
 
 These configurations apply to all environments.
 
 To change environment-independent configurations, go to the **Deploy** page of the component, make the necessary configuration changes via the **Set Up** card, and then trigger a new deployment to the initial environment. From there, you can proceed to promote the component to higher environments.
 
-### Environment-Specific Configurations
+### Environment-specific configurations
 
 These configurations apply to a particular environment.
 
@@ -90,7 +90,7 @@ To change environment-specific configurations, go to the **Deploy** page of the 
 
 To learn more about managing these configurations, see [Configuration Management](https://wso2.com/choreo/docs/choreo-concepts/configuration-management/).
 
-## Task Execution
+## Task execution
 
 The information on the **Execute** page is only applicable to scheduled and manual task components.
 
@@ -98,7 +98,7 @@ To track and monitor executions associated with a deployed scheduled task or man
 
 You can view current and historic execution details along with a quick snapshot of recent activity via the total count of executions within the last 30 days. For each execution, you can view vital details such as the unique execution ID, the time it was triggered, and relevant revision information. Furthermore, you can dive deeper into the details by clicking on a specific execution to access its associated logs. This information enhances transparency, troubleshooting capabilities, and overall execution management, allowing you to easily monitor and analyze workflows.
 
-## Zero-Downtime Deployments
+## Zero-downtime deployments
 
 Choreo performs rolling updates to ensure zero downtime between deployments and promotions.
 

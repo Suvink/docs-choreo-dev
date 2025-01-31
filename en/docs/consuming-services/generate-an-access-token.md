@@ -1,4 +1,4 @@
-# Generate an Access Token
+# Generate an access token
 
 Using access tokens for request authorization enhances security by preventing certain types of denial-of-service (DoS) attacks on published APIs. API consumers generate access tokens to access APIs, including them as string values in HTTP header requests.
 
@@ -14,23 +14,23 @@ Before proceeding, ensure you have the following:
 2. [Generate keys for the application](https://wso2.com/choreo/docs/consuming-services/create-an-application/#step-2-generate-keys).
 3. [Subscribe APIs to the application](https://wso2.com/choreo/docs/consuming-services/create-a-subscription/#manage-subscriptions).
 
-## Generate an Access Token via cURL
+## Generate an access token via curl
 
 Follow these steps to generate an access token for your application using cURL:
 
 1. **Go to Applications**  
    In the [Choreo Developer Portal](https://devportal.choreo.dev) header, click **Applications**.
 
-2. **Select the Application**  
+2. **Select the application**  
    On the **My Applications** page, click on the application for which you want to generate the token.
 
 3. **Navigate to Credentials**  
    In the left navigation menu, click the desired environment under **Credentials**. This opens the **Application Keys** pane for that environment.
 
-4. **Copy Required Values**  
-   Copy the **Consumer Key**, **Consumer Secret**, and **Token Endpoint** values.
+4. **Copy required values**  
+   Copy the **Consumer key**, **Consumer secret**, and **Token endpoint** values.
 
-5. **Compile the cURL Command**  
+5. **Compile the curl command**  
    Use the following template and replace the placeholders with the values you copied:
 
     === "Format"
@@ -38,17 +38,17 @@ Follow these steps to generate an access token for your application using cURL:
     curl -k -X POST <token_endpoint> -d "grant_type=client_credentials" -H "Authorization: Basic <base64encode(consumer-key:consumer-secret)>"
     ```
 
-6. **Execute the cURL Command**  
-   Run the cURL command to generate an access token.
+6. **Execute the curl command**  
+   Run the curl command to generate an access token.
 
-## Generate an Access Token via the Choreo Console (for Testing)
+## Generate an access token via the Choreo Console (for testing)
 
 To generate an access token for **testing purposes**, follow these steps:
 
 1. **Go to Applications**  
    In the [Choreo Developer Portal](https://devportal.choreo.dev) header, click **Applications**.
 
-2. **Select the Application**  
+2. **Select the application**  
    On the **My Applications** page, click on the application for which you want to generate keys and tokens.
 
 3. **Navigate to Credentials**  

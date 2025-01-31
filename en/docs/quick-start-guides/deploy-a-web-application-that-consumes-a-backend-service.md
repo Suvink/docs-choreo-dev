@@ -1,4 +1,4 @@
-# Deploy a Web Application that Consumes a Backend Service
+# Deploy a web application that consumes a backend service
 
 Choreo is an Internal Developer Platform (IDevP) that simplifies building, deploying, monitoring, and managing cloud-native applications.
 
@@ -36,7 +36,7 @@ Before you begin:
 
     This creates the organization and opens the organization home page.
 
-## Step 1: Create a Project
+## Step 1: Create a project
 
 1. Go to [https://console.choreo.dev/](https://console.choreo.dev/) and sign in. This opens the organization home page.
 2. On the organization home page, click **+ Create Project**.
@@ -53,7 +53,7 @@ Before you begin:
 
 4. Click **Create**. This creates the project and opens the project home page.
 
-## Step 2: Connect Your Sample Repository and Configure the Service
+## Step 2: Connect your sample repository and configure the service
 
 1. On the project home page, click **Start** under **Create Multiple Components**.
 2. Go to the **GitHub** tab.
@@ -93,7 +93,7 @@ Before you begin:
 
     You can see the `Reading List Service` component listed under **Component Listing** on the project home page.
 
-## Step 3: Build the Service
+## Step 3: Build the service
 
 1. On the project home page, click the `Reading List Service` component under **Component Listing**. This takes you to the component overview page.
 2. In the left navigation menu, click **Build**.
@@ -102,7 +102,7 @@ Before you begin:
    !!! note
         The build process may take some time. You can track progress in the **Build Details** pane. Once complete, the build status changes to **Success**.
 
-## Step 4: Deploy the Service
+## Step 4: Deploy the service
 
 1. In the left navigation menu, click **Deploy**.
 2. In the **Set Up** card, click **Configure & Deploy**.
@@ -111,7 +111,7 @@ Before you begin:
 5. In the **Endpoint Details** pane, verify that **Network Visibility** is set to **Public**. This securely exposes the endpoint for consumption.
 6. Click **Deploy**. This deploys the service to the development environment and lists it in the [Choreo Marketplace](../choreo-concepts/choreo-marketplace.md).
 
-## Step 5: Test the Service
+## Step 5: Test the service
 
 1. In the Choreo Console left navigation menu, click **Test** and then click **Console**.
 2. In the OpenAPI Console, select **Development** from the environment drop-down.
@@ -143,11 +143,11 @@ Before you begin:
 
 You can also try out the **GET** and **DELETE** methods.
 
-## Step 6: Consume the Service
+## Step 6: Consume the service
 
 Now that the `Reading List Service` is deployed and available in the Choreo Marketplace, you can discover and consume it. In this section, you will deploy a front-end application to interact with the service.
 
-### Step 6.1: Create a Web Application to Consume the Service
+### Step 6.1: Create a web application to consume the service
 
 1. In the Choreo Console header, click the **Project** list and select the project you created in Step 1.
 2. On the project home page, click **+ Create** under **Component Listing**.
@@ -195,7 +195,7 @@ Now that the `Reading List Service` is deployed and available in the Choreo Mark
 
 10. Click **Create**. This initializes the component with the implementation from your GitHub repository and takes you to the **Overview** page of the component.
 
-### Step 6.2: Create a Connection Between the Web Application and the Deployed Service
+### Step 6.2: Create a connection between the web application and the deployed service
 
 A connection allows you to integrate the service with other services or external resources. For more information, refer to the [Connection](../choreo-concepts/connections.md) documentation.
 
@@ -211,7 +211,7 @@ A connection allows you to integrate the service with other services or external
 
 5. Click **Create**. This creates the connection and displays the service URL for the Development environment. Copy the service URL for later use.
 
-### Step 6.3: Build the Web Application Component
+### Step 6.3: Build the web application component
 
 1. In the left navigation menu, click **Build**.
 2. In the **Builds** pane, click **Build Latest**.
@@ -219,7 +219,7 @@ A connection allows you to integrate the service with other services or external
    !!! note
         The build process may take some time. You can track progress in the **Build Details** pane. Once complete, the build status changes to **Success**.
 
-### Step 6.4: Configure and Deploy the Web Application
+### Step 6.4: Configure and deploy the web application
 
 1. In the left navigation menu, click **Deploy**.
 2. In the **Set Up** card, click **Configure and Deploy**.
@@ -258,7 +258,7 @@ A connection allows you to integrate the service with other services or external
 10. Once deployed, copy the **Web App URL** from the development environment card.
 11. Navigate to the web app URL to verify that the web application is hosted successfully.
 
-## Step 7: Test the Front-End Application
+## Step 7: Test the front-end application
 
 1. Access the front-end application via its web URL.
 2. Click **Login** and sign in with the credentials you created.

@@ -1,4 +1,4 @@
-# Explore the Demo Organization
+# Explore the demo organization
 
 The demo organization in Choreo provides a hands-on view of a fully deployed system in read-only mode. This organization, maintained by Choreo, demonstrates a real-world use case to help you understand how Choreo simplifies developing, deploying, and managing cloud-native applications.
 
@@ -10,7 +10,7 @@ The demo organization in Choreo provides a hands-on view of a fully deployed sys
     3. Read and accept the privacy policy and terms of use. 
     4. Click **Create**. This creates the organization and opens the organization home page.
 
-## Join the Demo Organization
+## Join the demo organization
 
 1. Sign in to the [Choreo Console](https://console.choreo.dev/).
 2. In the Choreo Console header, click the **Organization** list to view available organizations.  

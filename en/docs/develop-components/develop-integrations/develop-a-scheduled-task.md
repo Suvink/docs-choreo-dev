@@ -1,4 +1,4 @@
-# Develop a Scheduled Task
+# Develop a scheduled task
 
 Choreo is a versatile integration platform that allows you to create various types of integrations depending on your requirements. If you need to automatically run a specific integration at regular intervals, you can use Choreo to develop a scheduled task. This type of integration can automate the synchronization of data between different systems at specified intervals, reducing errors and improving productivity by eliminating the need for manual intervention.
 
@@ -37,7 +37,7 @@ Before you begin:
 
 3. **Obtain an OpenWeatherMap API Key**: Go to [OpenWeatherMap](https://openweathermap.org/) and sign up to obtain an API key. For details, see the [OpenWeatherMap documentation](https://openweathermap.org/appid#signup).
 
-## Step 1: Create a Scheduled Task Component
+## Step 1: Create a scheduled task component
 
 1. Go to [https://console.choreo.dev/](https://console.choreo.dev/) and sign in. This opens the project home page.
 2. If you already have one or more components in your project, click **+ Create**. Otherwise, proceed to the next step.
@@ -79,7 +79,7 @@ Before you begin:
 
 Now you can proceed to build and deploy the scheduled task.
 
-## Step 2: Build the Scheduled Task
+## Step 2: Build the scheduled task
 
 1. In the left navigation menu, click **Build**.
 2. In the **Builds** pane, click **Build**. This opens the **Commits** pane, where you can see all the commits related to the component.
@@ -88,7 +88,7 @@ Now you can proceed to build and deploy the scheduled task.
     !!! info
         The build process may take some time. Once complete, the build status will be listed in the **Builds** pane. Here, you will see the build status as **Success**.
 
-## Step 3: Deploy the Scheduled Task
+## Step 3: Deploy the scheduled task
 
 1. In the left navigation menu, click **Deploy**.
 2. In the **Set Up** card, click **Configure & Deploy**.
@@ -126,7 +126,7 @@ Now you can proceed to build and deploy the scheduled task.
 
 You can test the scheduled task when it runs at the configured time.
 
-## Step 4: Test the Scheduled Task
+## Step 4: Test the scheduled task
 
 When the scheduled task runs at the configured time, an email with the subject `[WSO2 Choreo Demo] Next 24H Weather Forecast` is sent from `choreo.demo@gmail.com` to the email address specified as the **email** configurable variable value in [Step 3](#step-3-deploy-the-scheduled-task).
 
@@ -134,7 +134,7 @@ If the scheduled task ran successfully, you should receive an email similar to t
 
 ![Received email](../../assets/img/develop-components/develop-a-scheduled-integration/Received-email.png)
 
-## Step 5: Observe the Scheduled Task
+## Step 5: Observe the scheduled task
 
 The observability view in Choreo displays graphs that depict details such as throughput, latency, diagnostic data, and logs to identify and troubleshoot anomalies in components you deploy.
 
@@ -147,7 +147,7 @@ The observability view in Choreo displays graphs that depict details such as thr
 
 To learn more about the observability details you can view via Choreo observability, see [Observability Overview](../../monitoring-and-insights/observability-overview.md).
 
-## Step 6: Monitor Executions
+## Step 6: Monitor executions
 
 To track and monitor executions associated with the deployed scheduled task, go to the left navigation menu and click **Execute**.
 

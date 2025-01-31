@@ -1,18 +1,18 @@
-# Manage Applications
+# Manage applications
 
 {% include "create-an-application.md" %}
 
-## Grant Types
+## Grant types
 
 Choreo uses OAuth 2.0 for authentication. In OAuth 2.0, grant types are methods that allow client applications to obtain an access token. The type of grant used depends on the resource owner, the application type, and the trust relationship between the authorization server and the resource owner.
 
-### Authorization Code Grant
+### Authorization code grant
 
 The Authorization Code flow is a secure way for a client application to obtain an access token without exposing the user's credentials. The user authenticates with the authorization server, which issues an authorization code. This code is then exchanged for an access token.
 
 This method protects user credentials and prevents them from being compromised by malicious client applications.
 
-### Refresh Token Grant
+### Refresh token grant
 
 A refresh token allows you to obtain a new access token when the current one expires or when a new token is needed. The refresh token grant type is used for this purpose. Refresh tokens are optional and, if issued, are included in the response along with the access token. You can use the refresh token to request a new access token from the authorization server. Choreo's default authorization server, Asgardeo, issues refresh tokens for all grant types except the **Client Credentials** grant type, as recommended by the OAuth 2.0 specification.
 
@@ -20,23 +20,23 @@ A refresh token allows you to obtain a new access token when the current one exp
     - Treat refresh tokens as securely as access tokens.
     - No user interaction is required to obtain a new access token using the Refresh Token grant type.
 
-### Client Credentials Grant
+### Client credentials grant
 
 The Client Credentials flow allows client applications to obtain an access token without user authentication. This is useful when the client application needs to access its own resources, such as data storage or APIs, but does not require access to user data. Ensure that client credentials are kept secure, as anyone with these credentials can obtain access tokens and access the client's resources.
 
-### Implicit Grant
+### Implicit grant
 
 The Implicit Grant flow allows a client application to obtain an access token directly from the authorization server without an intermediate authorization code exchange. This flow is commonly used in browser-based applications.
 
 However, the access token is exposed in the browser's URL fragment, making it vulnerable to attacks like cross-site scripting (XSS). As a result, this flow is not recommended for applications requiring high security.
 
-### Password Grant
+### Password grant
 
 The Password Grant flow allows a client application to obtain an access token by directly providing the user's username and password to the authorization server. This method is less secure than other grant types because the client application handles and transmits the user's credentials.
 
 This grant type is typically used in highly trusted client applications where user experience is prioritized over security. It is not recommended for public-facing applications or scenarios involving sensitive data.
 
-## Revoke Access Tokens
+## Revoke access tokens
 
 Revoking JWT access tokens can be challenging because they are self-validating. Once issued, a token contains all the information needed to validate its authenticity without requiring server-side lookups.
 

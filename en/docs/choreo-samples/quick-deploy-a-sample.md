@@ -1,4 +1,4 @@
-# Quick Deploy a Sample
+# Quick deploy a sample
 
 Choreo provides a **Quick Deploy** option for samples, allowing you to deploy a sample with a single click. This feature enables you to quickly explore and experiment with the sample.
 
@@ -16,7 +16,7 @@ Before you start using the samples, complete the following steps:
       6. Enter a display name, unique name, and description for the project.
       7. Click **Create**. This creates the project and takes you to its **Overview** page.
 
-## Try Out Quick Deploy
+## Try out quick deploy
 
 To quickly deploy a sample, follow these steps:
 
@@ -26,7 +26,7 @@ To quickly deploy a sample, follow these steps:
 4. To view the complete collection of samples, click **View All Samples**.
 5. Hover over a sample of your choice and click **Quick Deploy**. This creates the component and deploys it automatically.
 
-## Post-Deployment Actions
+## Post-deployment actions
 
 Once you quick deploy a sample, follow one of the post-deployment actions below based on the component type:
 

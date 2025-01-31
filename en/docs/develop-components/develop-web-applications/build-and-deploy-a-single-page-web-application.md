@@ -1,4 +1,4 @@
-# Build and Deploy a Single-Page Web Application
+# Build and deploy a single-page web application
 
 A web application is an application program hosted on a server and serves ingress traffic through a browser. In Choreo, you can deploy a web application by creating a Web Application component and connecting it to a Git repository that contains the implementation of the web application. Web applications can fall into one of the following categories:
 
@@ -10,11 +10,11 @@ A web application is an application program hosted on a server and serves ingres
 
 - To deploy a Web Application component, you must have a GitHub account with a repository containing the web application's implementation. For this guide, fork the [Choreo samples repository](https://github.com/wso2/choreo-samples), which contains the sample web application implementation.
 
-## Create a Web Application
+## Create a web application
 
 You can create a web application in Choreo as follows:
 
-### Build and Deploy a SPA from Source Code
+### Build and deploy a SPA from source code
 
 1. **Create a Web Application Component** by connecting a repository that includes the web application source code.
 2. **Select the Relevant Buildpack**: Default buildpacks include **React**, **Angular**, and **Vue.js**. If you are using a different SPA framework, you can try one of these buildpacks because the configurations can be overridden to support most JavaScript-based SPAs.
@@ -24,19 +24,19 @@ You can create a web application in Choreo as follows:
 
 Once you create the Web Application component, Choreo automatically generates a build pipeline for your single-page application and deploys it.
 
-### Bring Your Dockerfile
+### Bring your Dockerfile
 
 1. **Create a Web Application Component** by connecting a repository that contains the Dockerfile for your containerized web application.
 2. **Commit a Dockerfile** to your connected Git repository to have full control over your build process.
 
 This approach is recommended if you are deploying a web server and not just a single-page application (or a single-page application with a complex build process).
 
-### Host Static Websites
+### Host static websites
 
 1. **Create a Web Application Component** and connect it to the GitHub repository that contains the required static assets.
 2. **Select the Static Websites Buildpack**: This buildpack does not trigger a build process. It only fetches the files from the path specified in the repository and serves them as-is.
 
-## Build and Deploy a SPA from Source Code
+## Build and deploy a SPA from source code
 
 Follow the steps below to create a sample Web Application component and deploy it in Choreo:
 
@@ -81,7 +81,7 @@ Follow the steps below to create a sample Web Application component and deploy i
 
 You have successfully created a Web Application component from the source code. Now let's build and deploy the web application.
 
-## Build Your Web Application
+## Build your web application
 
 1. In the left navigation menu, click **Build**.
 2. In the **Builds** pane, click **Build**. This opens the **Commits** pane, where you can see all the commits related to the component.
@@ -98,7 +98,7 @@ You have successfully created a Web Application component from the source code. 
     !!! note
         The build process may take some time. Once complete, the build status will be listed in the **Builds** pane. Here, you will see the build status as **Success**.
 
-## Deploy and Access Your Web Application
+## Deploy and access your web application
 
 1. In the left navigation menu, click **Deploy**.
 2. In the **Set Up** card, click **Configure and Deploy**. This opens the **Configure & Deploy** pane. In this guide, you do not need to add a file mount.
@@ -110,7 +110,7 @@ You have successfully created a Web Application component from the source code. 
 
 5. To verify that the web application is hosted successfully, click the **Web App URL** in the **Development** card. This takes you to the web application.
 
-## Create a Short URL for Your Web Application in Production
+## Create a short URL for your web application in production
 
 !!! info
     This feature is only available on the Choreo cloud data plane.
@@ -124,7 +124,7 @@ When you promote your component to the Production environment, you can create a 
     !!! note
         Short URL names/prefixes are subject to availability, provided on a first-come-first-serve basis.
 
-## Manage Runtime Configurations for Web Applications
+## Manage runtime configurations for web applications
 
 For web applications with a backend server, Choreo allows you to mount runtime configurations and secrets as environment variables and/or file mounts for a specific environment. Alternatively, you can also inject them into the client application during server-side rendering or when serving static content.
 
@@ -188,7 +188,7 @@ The following limitations are specific to the Choreo cloud data plane:
 - **Response Body Size Limit**: 20MB.
 - **Open Ports**: Only one open port is permitted per web application. While you can have multiple ports open for project-level communication within a data plane, incoming traffic from the internet can only be directed to one port. This differs from Service-type components, which support multiple endpoints.
 
-## Troubleshoot a Web Application
+## Troubleshoot a web application
 
 - **Blank Page or 502 Error After Deployment**:
     If you encounter a blank page or a 502 error after deploying your web application, it typically indicates that the wrong directory is being served. To resolve this issue:

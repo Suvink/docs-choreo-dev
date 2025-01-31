@@ -1,4 +1,4 @@
-# Develop a Ballerina Service
+# Develop a Ballerina service
 
 Choreo allows you to develop and deploy applications using your preferred programming language. This guide demonstrates how to deploy a service component that exposes a REST API using the [Ballerina language](https://ballerina.io/). No prior knowledge of Ballerina is required to follow this guide.
 
@@ -22,7 +22,7 @@ Before starting, complete the following:
 2. **Fork the Choreo Samples Repository**:
     - Fork the [Choreo samples repository](https://github.com/wso2/choreo-samples/), which contains the [sample greetings service](https://github.com/wso2/choreo-samples/tree/main/greeting-service) implementation in Ballerina.
 
-### Learn the Repository File Structure
+### Learn the repository file structure
 
 It’s important to understand the purpose of key files in the sample service. The table below provides an overview of each file in the greeter service:
 
@@ -37,7 +37,7 @@ It’s important to understand the purpose of key files in the sample service. T
 
 Let’s get started!
 
-## Step 1: Create a Service Component
+## Step 1: Create a service component
 
 To create a Ballerina service component, follow these steps:
 
@@ -89,7 +89,7 @@ To create a Ballerina service component, follow these steps:
 
 You have successfully created a service that exposes a REST API written in Ballerina. Next, let’s build and deploy the service.
 
-## Step 2: Build and Deploy
+## Step 2: Build and deploy
 
 Now that you’ve connected the source repository and configured the endpoint details, it’s time to build and deploy the service.
 
@@ -124,6 +124,6 @@ For detailed instructions, see the following sections:
 - [Step 3: Test](../../testing/test-rest-endpoints-via-the-openapi-console.md)
 - [Step 4: Manage](../../api-management/lifecycle-management.md)
 
-## Manage the Deployment
+## Manage the deployment
 
 To view Kubernetes-level insights for detailed diagnosis of this Ballerina REST API, see Choreo’s [DevOps capabilities](../../devops-and-ci-cd/view-runtime-details.md).

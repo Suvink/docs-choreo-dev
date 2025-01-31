@@ -1,4 +1,4 @@
-# Develop a Manual Task
+# Develop a manual task
 
 This guide walks you through the steps to develop, deploy, test, and observe a manual task using Choreo.
 
@@ -35,7 +35,7 @@ Before you begin:
 
 3. **Obtain an OpenWeatherMap API Key**: Go to [OpenWeatherMap](https://openweathermap.org/) and sign up to obtain an API key. For details, see the [OpenWeatherMap documentation](https://openweathermap.org/appid#signup).
 
-## Step 1: Create a Manual Task Component
+## Step 1: Create a manual task component
 
 1. Go to [https://console.choreo.dev/](https://console.choreo.dev/) and sign in. This opens the project home page.
 2. If you already have one or more components in your project, click **+ Create**. Otherwise, proceed to the next step.
@@ -75,7 +75,7 @@ Before you begin:
 
 8. Click **Create**. Choreo initializes the component with the sample implementation and opens the **Overview** page of the component.
 
-## Step 2: Build the Manual Task
+## Step 2: Build the manual task
 
 1. In the left navigation menu, click **Build**.
 2. In the **Builds** pane, click **Build**. This opens the **Commits** pane, where you can see all the commits related to the component.
@@ -84,7 +84,7 @@ Before you begin:
     !!! info
         The build process may take some time. Once complete, the build status will be listed in the **Builds** pane. Here, you will see the build status as **Success**.
 
-## Step 3: Deploy the Manual Task
+## Step 3: Deploy the manual task
 
 1. In the left navigation menu, click **Deploy**.
 2. In the **Set Up** card, click **Configure & Deploy**.
@@ -107,7 +107,7 @@ Before you begin:
 
 4. Click **Deploy**.
 
-## Step 4: Execute the Manual Task
+## Step 4: Execute the manual task
 
 1. In the left navigation menu, click **Execute**.
 2. Click **Run Now**. This triggers the task.
@@ -158,7 +158,7 @@ Before you begin:
             !!! info
                 If you want to pass arguments to Ballerina main functions, use the **Run with Arguments** capability. For details on the arguments you can pass, see the [Ballerina documentation](https://ballerina.io/learn/by-example/main-function/). You can also override configurable values in the same manner. For more information, see [Provide values to configurable variables](https://ballerina.io/learn/provide-values-to-configurable-variables/#provide-via-command-line-arguments).
 
-## Step 5: Test the Manual Task
+## Step 5: Test the manual task
 
 Once the task is triggered, an email with the subject `[WSO2 Choreo Demo] Next 24H Weather Forecast` is sent from `choreo.demo@gmail.com` to the email address specified as the **email** configurable variable value in [Step 3](#step-3-deploy-the-manual-task).
 
@@ -166,7 +166,7 @@ If the manual task ran successfully, you should receive an email similar to the 
 
 ![Received email](../../assets/img/develop-components/develop-a-scheduled-integration/Received-email.png)
 
-## Step 6: Observe the Manual Task
+## Step 6: Observe the manual task
 
 The observability view in Choreo displays graphs that depict details such as throughput, latency, diagnostic data, and logs to identify and troubleshoot anomalies in components you deploy.
 
@@ -179,7 +179,7 @@ The observability view in Choreo displays graphs that depict details such as thr
 
 To learn more about the observability details you can view via Choreo observability, see [Observability Overview](../../monitoring-and-insights/observability-overview.md).
 
-## Step 7: Monitor Executions
+## Step 7: Monitor executions
 
 To track and monitor executions associated with the deployed manual task, go to the left navigation menu and click **Execute**.
 

@@ -1,4 +1,4 @@
-# Secure an API with Role-Based Access Control
+# Secure an API with role-based access control
 
 Role-based access control (RBAC) is a flexible and scalable approach to manage access to API resources. In this approach, each user or group is assigned a specific role that determines the permissions granted to perform operations on an API resource.
 
@@ -18,7 +18,7 @@ There are two types of users in the organization:
 - **Human Resource Manager (HR Manager)**: Can perform all operations (list users, list a user, create users, and delete a user).
 - **Human Resource Officer (HR Officer)**: Can only list existing users and list a specific user.
 
-## Implement Role-Based Access Control with Choreo and Asgardeo
+## Implement role-based access control with Choreo and Asgardeo
 
 Let’s take a look at the steps to implement the scenario described above using Choreo and Asgardeo.
 
@@ -50,7 +50,7 @@ Before you begin:
         - New grant types (e.g., **Password**, **Authorization Code**, **PKCE**, and **Implicit**) will become available.
         - The capability to add an external IdP will be disabled. However, you can use [Asgardeo's federation capabilities](https://wso2.com/asgardeo/docs/get-started/asgardeo-use-cases/#identity-federation) for similar functionality.
 
-### Step 1: Create an API Proxy Component and Deploy It
+### Step 1: Create an API proxy component and deploy it
 
 1. Go to [https://console.choreo.dev/](https://console.choreo.dev/cloud-native-app-developer) and sign in. This opens the project home page.
 2. To create an API proxy component, follow the instructions in [Develop an API Proxy: Step 1](../develop-components/develop-an-api-proxy.md#step-1-create-an-api-proxy). This opens the **Resources** pane, where you can define resources for the API proxy.
@@ -69,7 +69,7 @@ Before you begin:
 8. In the **Configure API Access Mode** pane, select **External** to make the API publicly accessible.
 9. Click **Deploy**.
 
-### Step 2: Apply Permissions to Resources and Publish the API
+### Step 2: Apply permissions to resources and publish the API
 
 1. On the **Deploy** page, go to the **Build Area** card and click **Security Settings**.
 2. In the **Security Settings** pane, go to the **Permissions List** section and click **+ Add Permission(Scope)**.
@@ -101,7 +101,7 @@ Before you begin:
 
 Now, application developers can discover the API, subscribe to it, and invoke it.
 
-### Step 3: Subscribe to the Published API
+### Step 3: Subscribe to the published API
 
 1. Go to the [API Developer Portal](https://devportal.choreo.dev/) and click **Applications** on the top menu.
 2. Click **+Create**.
@@ -116,7 +116,7 @@ Now, application developers can discover the API, subscribe to it, and invoke it
     2. In the **Subscription Management** pane, click **Add APIs**.
     3. In the **Add APIs** list, go to the API you created and click **Add**.
 
-### Step 4: Define Roles and Assign Them to Groups
+### Step 4: Define roles and assign them to groups
 
 1. In the Developer Portal left navigation menu, click **Production** under **Credentials**.
 2. In the **Permissions** section, click **Manage Permissions**. This takes you to the **Roles** tab of the `User Management App` application in Asgardeo.
@@ -127,12 +127,12 @@ Now, application developers can discover the API, subscribe to it, and invoke it
     - **HR-Manager**: Assign the **admin** role.
     - **HR-Officer**: Assign the **user** role.
 
-### Step 5: Define Users and Assign Them to Groups
+### Step 5: Define users and assign them to groups
 
 1. Define two users: `Cameron` and `Alex`. For instructions, see [Manage Users](https://wso2.com/asgardeo/docs/guides/users/manage-customers/#onboard-a-user) in the Asgardeo documentation.
 2. Assign `Cameron` to the **HR-Manager** group and `Alex` to the **HR-Officer** group. For instructions, see [Assign Groups](https://wso2.com/asgardeo/docs/guides/users/manage-customers/#assign-groups).
 
-### Step 6: Obtain an Access Token and Try Out the API
+### Step 6: Obtain an access token and try out the API
 
 1. Construct the authorization URL as follows:
 

@@ -1,4 +1,4 @@
-# Develop an Integration with Integration Studio
+# Develop an integration with Integration Studio
 
 Choreo simplifies the process of building, deploying, and managing integration components, making it easy to expose integrations as APIs. This guide walks you through the steps to expose an integration created in WSO2 Integration Studio as an API in Choreo.
 
@@ -24,7 +24,7 @@ Before starting, complete the following:
 2. **Fork the Choreo Samples Repository**:
     - Fork the [Choreo samples repository](https://github.com/wso2/choreo-samples), which contains the sample integration for this guide.
 
-## Step 1: Create the Integration Component
+## Step 1: Create the integration component
 
 1. **Sign in to Choreo Console**:
    Go to [https://console.choreo.dev/](https://console.choreo.dev/) and sign in. This opens the **Project Home** page.
@@ -66,7 +66,7 @@ Before starting, complete the following:
 6. **Create the Component**:
    Click **Create**. Choreo initializes the component with the sample integration.
 
-## Step 2: Deploy the Integration Component
+## Step 2: Deploy the integration component
 
 1. **Navigate to Deploy**:
    In the Choreo Console left navigation menu, click **Deploy**.
@@ -83,7 +83,7 @@ Before starting, complete the following:
 3. **Verify Deployment**:
    The **Development** card shows the **Deployment Status** as **Active** when the integration is successfully deployed.
 
-## Step 3: Test the Integration
+## Step 3: Test the integration
 
 1. **Open the OpenAPI Console**:
    - In the Choreo Console left navigation menu, click **Test** and then click **Console**.
@@ -99,7 +99,7 @@ Before starting, complete the following:
      {"Hello" : "Integration"}
      ```
 
-## Step 4: Observe the Integration
+## Step 4: Observe the integration
 
 1. **Navigate to Observability**:
    Click **Observability** in the left navigation menu to monitor the performance of the integration component.
@@ -111,7 +111,7 @@ Before starting, complete the following:
 
    For more details, see [Observability Overview](../../monitoring-and-insights/observability-overview.md).
 
-## Step 5: Publish the Integration Component
+## Step 5: Publish the integration component
 
 1. **Navigate to Lifecycle Management**:
    - In the Choreo Console left navigation menu, click **Manage** and then click **Lifecycle**.

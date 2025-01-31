@@ -1,4 +1,4 @@
-# Consume a Service
+# Consume a service
 
 Choreo is a platform that allows you to create, deploy, and consume services seamlessly. The Choreo Developer Portal simplifies the process of discovering and using APIs for developers. 
 
@@ -34,7 +34,7 @@ The API overview page displays subscribed versions of the API along with subscri
 !!! tip
     To use an API, it’s recommended to use the latest version. Copy the **Endpoint(s)** value from the API overview page and use it in your client application. This ensures your application always invokes the latest API version.
 
-## Create an Application
+## Create an application
 
 {% include "create-an-application.md" %}
 
@@ -42,7 +42,7 @@ The API overview page displays subscribed versions of the API along with subscri
 
 {% include "create-a-subscription.md" %}
 
-## Consume the API via Your Web Application
+## Consume the API via your web application
 
 To securely invoke the API/service, you need to use your Identity Provider (IdP). Follow these steps:
 
@@ -55,7 +55,7 @@ For this guide, we’ll use:
 - **WSO2 Asgardeo** as the IdP.
 - **[choreo-samples/reading-list-app/reading-list-front-end](https://github.com/wso2/choreo-samples/tree/main/reading-list-app/reading-list-front-end)** as the web application. This is a React SPA that uses Axios to invoke the service. It is configured to work with the **[choreo-samples/reading-list-app/reading-list-service](https://github.com/wso2/choreo-samples/tree/main/reading-list-app/reading-list-service)**. You can modify this web application to work with your service or deploy the sample service in Choreo.
 
-### Step 1: Create a Web Application Component
+### Step 1: Create a web application component
 
 !!! info
     You can use your own web application instead of the sample. For this guide, we’ll use the [choreo-samples/reading-list-app/reading-list-front-end](https://github.com/wso2/choreo-samples/tree/main/reading-list-app/reading-list-front-end).
@@ -89,7 +89,7 @@ To host the front-end application in Choreo, create a web application component:
 
 8. Click **Create**. This initializes the service with the GitHub repository and takes you to the **Overview** page.
 
-### Step 2: Create an OAuth Application in the IdP
+### Step 2: Create an OAuth application in the IdP
 
 To invoke the API/service, you need an access token. Create an OAuth application in the IdP (e.g., Asgardeo) with the following settings:
 
@@ -113,7 +113,7 @@ Choreo uses Asgardeo as the default IdP. When you create an application in the C
     5. Under **Access Token**, select **JWT** as the token type.
     6. Click **Update**.
 
-### Step 3: Configure the Web Application to Connect to the IdP and Invoke the Service
+### Step 3: Configure the web application to connect to the IdP and invoke the service
 
 Update the web app configurations to invoke the **Reading List Service** REST API. These configurations are environment-specific. For this guide, we’ll configure the development environment.
 
@@ -158,7 +158,7 @@ To configure the front-end application:
 
 6. Click **Create**.
 
-### Step 4: Deploy the Web Application
+### Step 4: Deploy the web application
 
 To deploy the web application:
 

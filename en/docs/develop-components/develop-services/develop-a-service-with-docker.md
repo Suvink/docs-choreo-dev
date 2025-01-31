@@ -1,4 +1,4 @@
-# Develop a Service with Docker
+# Develop a service with Docker
 
 Choreo allows you to create and deploy applications in any language. This guide demonstrates how to develop and deploy a containerized service component using a Dockerfile.
 
@@ -22,7 +22,7 @@ Before starting, complete the following:
 2. **Fork the Choreo Samples Repository**:
     - Fork the [Choreo samples repository](https://github.com/wso2/choreo-samples/), which contains the [sample greetings service](https://github.com/wso2/choreo-samples/tree/main/greeting-service-go) implementation with the Dockerfile.
 
-### Learn the Repository File Structure
+### Learn the repository file structure
 
 It’s important to understand the purpose of key files in the sample service. The table below provides an overview of each file in the greeter service:
 
@@ -36,13 +36,13 @@ It’s important to understand the purpose of key files in the sample service. T
 | `.choreo/component.yaml`   | Choreo-specific configuration that provides information about how Choreo exposes the service. |
 | `openapi.yaml`             | The OpenAPI contract of the greeter service. This is required to publish the service as a managed API. This file is referenced by the `.choreo/component.yaml` file. |
 
-### Configure the Service Port with Endpoints
+### Configure the service port with endpoints
 
 In Choreo, you can expose your services via endpoints. The greeter service runs on port 9090. To securely expose the service through Choreo, you must provide the port and other required information in the `component.yaml` file. For detailed information on each attribute of an endpoint, see [Configure Endpoints](../configure-endpoints.md).
 
 In the greeter sample, the `component.yaml` file is located in the `greeting-service-go/.choreo/` directory.
 
-## Step 1: Create a Service Component from a Dockerfile
+## Step 1: Create a service component from a Dockerfile
 
 To create a containerized service component, follow these steps:
 
@@ -106,7 +106,7 @@ To create a containerized service component, follow these steps:
 
 You have successfully created a service from a Dockerfile. Next, you can build and deploy the service.
 
-## Step 2: Build and Deploy
+## Step 2: Build and deploy
 
 Now that you’ve connected the source repository and configured the endpoint details, it’s time to build the service and create an image. Then, you can deploy the image and test the greeter service.
 
