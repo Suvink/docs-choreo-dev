@@ -1,4 +1,3 @@
-# Create an application in Choreo
 
 An application in Choreo is a logical representation of a physical application, such as a mobile app, web app, or device. To consume an API in Choreo, you need to create an application that maps to your physical application and subscribe to the required API under a usage policy plan. This plan provides a usage quota. A single application can have multiple API subscriptions. Using the consumer key and consumer secret, you can generate an access token to invoke all APIs subscribed to the same application.
 
@@ -8,17 +7,13 @@ This guide walks you through the steps to create an application in Choreo.
 
 To create an application in the Choreo Developer Portal, follow these steps:
 
-1. **Sign in to the Choreo Developer Portal**  
-   Go to the [Choreo Developer Portal](https://devportal.choreo.dev) and log in.
+1. Go to the [Choreo Developer Portal](https://devportal.choreo.dev) and sign in.
 
-2. **Navigate to Applications**  
-   Click **Applications** in the header, then click **+Create**.
+2. In the Developer Portal header, click **Applications** and then click **+Create**.
 
-3. **Enter Application Details**  
-   Provide a name and description for your application.
+3. Enter application details. Provide a name and description for your application.
 
-4. **Create the Application**  
-   Click **Create**.
+4. Click **Create**.
 
 This creates the application and opens the **Application Overview** page. Here, you can view details such as the token type, workflow status, and the application owner.
 
@@ -35,17 +30,13 @@ You can generate keys and tokens to invoke production and non-production endpoin
 !!! info "Note"
     Access to production endpoints depends on your role. If you have the necessary permissions, you can generate keys and tokens for production endpoints.
 
-1. **Go to Applications**  
-   In the [Choreo Developer Portal](https://devportal.choreo.dev) header, click **Applications**.
+1. In the [Choreo Developer Portal](https://devportal.choreo.dev) header, click **Applications**.
 
-2. **Select the Application**  
-   On the **My Applications** page, click on the application for which you want to generate keys and tokens.
+2. On the **My Applications** page, click on the application for which you want to generate keys and tokens.
 
-3. **Navigate to Credentials**  
-   In the left navigation menu, click the desired environment under **Credentials**. This opens the **Application Keys** pane for that environment.
+3. In the left navigation menu, click the desired environment under **Credentials**. This opens the **Application Keys** pane for that environment.
 
-4. **Configure advanced settings**  
-   Expand **Advanced configurations** and review the following options:
+4. Expand **Advanced configurations** and review the following options:
     - **Grant types**: Select the grant types to use when generating the access token.
     - **Public client**: Enable **Allow authentication without the client secret** if your application is a public client (e.g., a browser or mobile app).
     - **PKCE for enhanced security**: Set to **Mandatory** if you want the application to send a code challenge in the authorization request and a code verifier in the token request. Asgardeo supports SHA-256 and plain.
@@ -53,8 +44,7 @@ You can generate keys and tokens to invoke production and non-production endpoin
     - **Refresh token expiry time**: Set the refresh token expiry time in seconds.
     - **ID token expiry time**: Set the ID token expiry time in seconds.
 
-5. **Generate credentials**  
-   Click **Generate Credentials**. The **Application Keys** pane will display the consumer key and consumer secret.
+5. Click **Generate Credentials**. The **Application Keys** pane will display the consumer key and consumer secret.
 
 You can use the consumer key and consumer secret to generate an API access token by invoking the token endpoint. You can also revoke the access token by invoking the revoke endpoint.
 
