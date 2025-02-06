@@ -1,4 +1,5 @@
-# Resource hierarchy
+# Resource Hierarchy
+
 
 The following diagram depicts the high-level resources and their relationships in Choreo.
 
