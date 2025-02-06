@@ -18,41 +18,31 @@ Before proceeding, ensure you have the following:
 
 Follow these steps to generate an access token for your application using cURL:
 
-1. **Go to Applications**  
-   In the [Choreo Developer Portal](https://devportal.choreo.dev) header, click **Applications**.
+1. In the [Choreo Developer Portal](https://devportal.choreo.dev) header, click **Applications**.
 
-2. **Select the application**  
-   On the **My Applications** page, click on the application for which you want to generate the token.
+2. On the **My Applications** page, click on the application for which you want to generate the token.
 
-3. **Navigate to Credentials**  
-   In the left navigation menu, click the desired environment under **Credentials**. This opens the **Application Keys** pane for that environment.
+3. In the left navigation menu, click the desired environment under **Credentials**. This opens the **Application Keys** pane for that environment.
 
-4. **Copy required values**  
-   Copy the **Consumer key**, **Consumer secret**, and **Token endpoint** values.
+4. Copy the **Consumer key**, **Consumer secret**, and **Token endpoint** values.
 
-5. **Compile the curl command**  
-   Use the following template and replace the placeholders with the values you copied:
+5. Use the following template and replace the placeholders with the values you copied:
 
     === "Format"
     ```bash
     curl -k -X POST <token_endpoint> -d "grant_type=client_credentials" -H "Authorization: Basic <base64encode(consumer-key:consumer-secret)>"
     ```
 
-6. **Execute the curl command**  
-   Run the curl command to generate an access token.
+6. Run the curl command to generate an access token.
 
 ## Generate an access token via the Choreo Console (for testing)
 
 To generate an access token for **testing purposes**, follow these steps:
 
-1. **Go to Applications**  
-   In the [Choreo Developer Portal](https://devportal.choreo.dev) header, click **Applications**.
+1. In the [Choreo Developer Portal](https://devportal.choreo.dev) header, click **Applications**.
 
-2. **Select the application**  
-   On the **My Applications** page, click on the application for which you want to generate keys and tokens.
+2. On the **My Applications** page, click on the application for which you want to generate keys and tokens.
 
-3. **Navigate to Credentials**  
-   In the left navigation menu, click the desired environment under **Credentials**. This opens the **Application Keys** pane for that environment.
+3. In the left navigation menu, click the desired environment under **Credentials**. This opens the **Application Keys** pane for that environment.
 
-4. **Generate Token**  
-   Click **Generate Token** to create a test access token.
+4. Click **Generate Token** to create a test access token.
