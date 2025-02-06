@@ -1,4 +1,4 @@
-# Manage applications
+# Manage Applications
 
 {% include "create-an-application.md" %}
 
