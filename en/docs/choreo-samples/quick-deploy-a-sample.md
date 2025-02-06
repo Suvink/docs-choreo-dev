@@ -9,7 +9,7 @@ Before you start using the samples, complete the following steps:
 1. **Sign in to Choreo** and go to your project **Overview** page.
    - If you're signing in for the first time, follow these steps to create an organization and project:
       1. Go to [https://console.choreo.dev/](https://console.choreo.dev/) and sign in using your preferred method.
-      2. Enter a unique organization name (e.g., `Stark Industries`).
+      2. Enter a unique organization name. For example, `Stark Industries`.
       3. Read and accept the privacy policy and terms of use.
       4. Click **Create**. This creates the organization and takes you to its **Overview** page.
       5. On the organization home page, click **+ Create Project**.
@@ -30,8 +30,8 @@ To quickly deploy a sample, follow these steps:
 
 Once you quick deploy a sample, follow one of the post-deployment actions below based on the component type:
 
-- **For Services**: Go to the **Test Console** to test the deployed service.
-- **For Web Applications**: Open the deployed web application using the provided URL.
-- **For Manual Tasks and Scheduled Tasks**: Go to the **Execute** page and run the task. For scheduled tasks, you can also find the cron schedule on the **Overview** page.
+- **For services**: Go to the **Test Console** to test the deployed service.
+- **For web applications**: Open the deployed web application using the provided URL.
+- **For manual tasks and scheduled tasks**: Go to the **Execute** page and run the task. For scheduled tasks, you can also find the cron schedule on the **Overview** page.
 
 This feature allows you to quickly explore and understand how Choreo works with minimal setup.
