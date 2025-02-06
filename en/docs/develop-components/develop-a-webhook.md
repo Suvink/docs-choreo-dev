@@ -14,7 +14,7 @@ In this tutorial, you will address the requirement by doing the following:
 
 Before you begin:
 
-1. **Create a Choreo Organization**:
+1. Create a Choreo organization:
     1. Go to [https://console.choreo.dev/](https://console.choreo.dev/) and sign in using your preferred method.
     2. Enter a unique organization name (e.g., `Stark Industries`).
     3. Read and accept the privacy policy and terms of use.
@@ -22,7 +22,7 @@ Before you begin:
 
     This creates the organization and opens the **Project Home** page of the default project created for you.
 
-2. **Fork the Repository**: Fork the [Choreo samples repository](https://github.com/wso2/choreo-samples), which contains the sample integration for this guide.
+2. Fork the [Choreo samples repository](https://github.com/wso2/choreo-samples), which contains the sample integration for this guide.
 
 ## Step 1: Create a webhook component
 
@@ -30,7 +30,7 @@ To create a Webhook component, follow these steps:
 
 1. Go to [https://console.choreo.dev/](https://console.choreo.dev/) and sign in using your preferred method.
 2. If you already have one or more components in your project, click **+ Create**. Otherwise, proceed to the next step.
-3. Click the **Webhook** card and then click **Create**.
+3. Click the **Webhook** card.
 4. In the **Create a Webhook** pane, specify a name and description for the component.
 5. Go to the **GitHub** tab.
 6. Click **Authorize with GitHub** to connect Choreo to your GitHub account. If you haven't connected your GitHub repository to Choreo, enter your credentials and select the repository you forked earlier to install the [Choreo GitHub App](https://github.com/marketplace/choreo-apps).
