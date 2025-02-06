@@ -1,4 +1,4 @@
-# Share applications
+# Share Applications
 
 Choreo's application-sharing feature allows you to share your applications with members within your organization. This promotes collaboration when multiple members need to work on the same application.
 
