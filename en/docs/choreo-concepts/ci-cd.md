@@ -47,8 +47,8 @@ To view details of a specific build, click **View Details** corresponding to the
 
 Once you build an image in Choreo, you can deploy it via the **Deploy** page. To deploy an image, you can follow one of the approaches given below:
 
-- **Manually Deploy**: In the **Deploy** page, go to the **Set Up** card and click **Deploy**.
-- **Automatically Deploy on Build**: In the **Deploy** page, go to the **Set Up** card and enable **Auto Deploy on Build**. This automatically initiates deployment upon the completion of an automatic build.
+- **Manually deploy**: In the **Deploy** page, go to the **Set Up** card and click **Deploy**.
+- **Automatically deploy on build**: In the **Deploy** page, go to the **Set Up** card and enable **Auto Deploy on Build**. This automatically initiates deployment upon the completion of an automatic build.
 
 !!! info
     To enable **Auto Deploy on Build**, you must enable **Auto Build on Commit**. This is because automatic deployment is not necessary or useful in scenarios where automatic build is not enabled.
