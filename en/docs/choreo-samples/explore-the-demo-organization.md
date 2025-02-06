@@ -1,4 +1,4 @@
-# Explore the demo organization
+# Explore the Demo Organization
 
 The demo organization in Choreo provides a hands-on view of a fully deployed system in read-only mode. This organization, maintained by Choreo, demonstrates a real-world use case to help you understand how Choreo simplifies developing, deploying, and managing cloud-native applications.
 
