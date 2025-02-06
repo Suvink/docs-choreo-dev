@@ -6,7 +6,7 @@ The demo organization in Choreo provides a hands-on view of a fully deployed sys
 
 - If you are signing in to the Choreo Console for the first time, create an organization as follows:  
     1. Go to the [Choreo Console](https://console.choreo.dev/) and sign in using Google, GitHub, or Microsoft.  
-    2. Enter a unique organization name (e.g., `Stark Industries`).  
+    2. Enter a unique organization name. For example, `Stark Industries`.  
     3. Read and accept the privacy policy and terms of use. 
     4. Click **Create**. This creates the organization and opens the organization home page.
 
@@ -17,15 +17,15 @@ The demo organization in Choreo provides a hands-on view of a fully deployed sys
 3. Under **Invited Organizations**, you will see the **Demo Organization**.  
 4. To gain access to the **Demo Organization**, click **Join** next to it.
 
-## Demo Organization Overview
+## Demo organization overview
 
 When you join the demo organization, you gain access to a comprehensive, read-only sample application for managing customer rewards. This application illustrates a complete use case, showcasing the capabilities of Choreo.
 
 Key aspects you can explore include:
 
-- **Projects and Components**: View the sample projects and their respective components, where each component serves a distinct function within the customer rewards management system.
-- **Component Details and Architecture**: Understand the architecture by exploring how each component is configured, including environment variables, API keys, and other dependencies that enable the required functionality.
-- **Build and Deployment Pipelines**: Inspect the build configurations and deployment history for each component.
-- **Delivery Insights, Usage Insights, and Observability Metrics**: Analyze metrics and insights for each component.
+- **Projects and components**: View the sample projects and their respective components, where each component serves a distinct function within the customer rewards management system.
+- **Component details and architecture**: Understand the architecture by exploring how each component is configured, including environment variables, API keys, and other dependencies that enable the required functionality.
+- **Build and deployment pipelines**: Inspect the build configurations and deployment history for each component.
+- **Delivery insights, usage insights, and observability metrics**: Analyze metrics and insights for each component.
 
 For more details on the architecture and source code, see the [Customer Reward Management System Sample](https://github.com/wso2/choreo-samples/tree/main/customer-reward-management#readme) on GitHub. This repository provides comprehensive documentation on the project setup and its code structure, enabling you to replicate or modify it as needed.
