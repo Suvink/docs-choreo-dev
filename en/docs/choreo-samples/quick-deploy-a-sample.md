@@ -1,4 +1,4 @@
-# Quick deploy a sample
+# Quick Deploy a Sample
 
 Choreo provides a **Quick Deploy** option for samples, allowing you to deploy a sample with a single click. This feature enables you to quickly explore and experiment with the sample.
 
