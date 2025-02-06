@@ -51,14 +51,14 @@ To securely invoke the API/service, you need to use your Identity Provider (IdP)
 3. Configure the web application to authenticate API/service invocations using the IdP.
 4. Deploy the web application.
 
-For this guide, we’ll use:
+For this guide, you’ll use:
 - **WSO2 Asgardeo** as the IdP.
 - **[choreo-samples/reading-list-app/reading-list-front-end](https://github.com/wso2/choreo-samples/tree/main/reading-list-app/reading-list-front-end)** as the web application. This is a React SPA that uses Axios to invoke the service. It is configured to work with the **[choreo-samples/reading-list-app/reading-list-service](https://github.com/wso2/choreo-samples/tree/main/reading-list-app/reading-list-service)**. You can modify this web application to work with your service or deploy the sample service in Choreo.
 
 ### Step 1: Create a web application component
 
 !!! info
-    You can use your own web application instead of the sample. For this guide, we’ll use the [choreo-samples/reading-list-app/reading-list-front-end](https://github.com/wso2/choreo-samples/tree/main/reading-list-app/reading-list-front-end).
+    You can use your own web application instead of the sample. For this guide, you’ll use the [choreo-samples/reading-list-app/reading-list-front-end](https://github.com/wso2/choreo-samples/tree/main/reading-list-app/reading-list-front-end).
 
 To host the front-end application in Choreo, create a web application component:
 
@@ -91,7 +91,7 @@ To host the front-end application in Choreo, create a web application component:
 
 ### Step 2: Create an OAuth application in the IdP
 
-To invoke the API/service, you need an access token. Create an OAuth application in the IdP (e.g., Asgardeo) with the following settings:
+To invoke the API/service, you need an access token. Create an OAuth application in the IdP (for example, Asgardeo) with the following settings:
 
 - **Allowed grant types**: Code
 - **Public client**: Enable this option.
@@ -107,7 +107,7 @@ Choreo uses Asgardeo as the default IdP. When you create an application in the C
 4. Click the edit icon to edit the application.
 5. Go to the **Protocol** tab and make the following changes:
     1. Under **Allowed grant types**, select **Code**.
-    2. Enable the **Public client** checkbox.
+    2. Select the **Public client** checkbox.
     3. In **Authorized redirect URLs**, enter the web app URL and click **+** to add it.
     4. In **Allowed origins**, add the same URLs.
     5. Under **Access Token**, select **JWT** as the token type.
