@@ -16,7 +16,7 @@ Before you begin:
 
 1. Create a Choreo Organization:
     1. Go to [https://console.choreo.dev/](https://console.choreo.dev/) and sign in using your preferred method.
-    2. Enter a unique organization name (e.g., `Stark Industries`).
+    2. Enter a unique organization name. For example, `Stark Industries`.
     3. Read and accept the privacy policy and terms of use.
     4. Click **Create**.
 
