@@ -1,4 +1,4 @@
-# Develop a scheduled task
+# Develop a Scheduled Task
 
 Choreo is a versatile integration platform that allows you to create various types of integrations depending on your requirements. If you need to automatically run a specific integration at regular intervals, you can use Choreo to develop a scheduled task. This type of integration can automate the synchronization of data between different systems at specified intervals, reducing errors and improving productivity by eliminating the need for manual intervention.
 
@@ -14,7 +14,7 @@ In this guide, you will:
 
 Before you begin:
 
-1. **Create a Choreo Organization**:
+1. Create a Choreo Organization:
     1. Go to [https://console.choreo.dev/](https://console.choreo.dev/) and sign in using your preferred method.
     2. Enter a unique organization name (e.g., `Stark Industries`).
     3. Read and accept the privacy policy and terms of use.
@@ -22,7 +22,7 @@ Before you begin:
 
     This creates the organization and opens the **Project Home** page of the default project created for you.
 
-2. **Fork the Repository**: Fork the [Choreo samples repository](https://github.com/wso2/choreo-samples), which contains the sample integration for this guide.
+2. Fork the [Choreo samples repository](https://github.com/wso2/choreo-samples), which contains the sample integration for this guide.
 
     !!! info "Repository File Structure"
         The sample code for this guide is in the `<sample-repository-dir>/weather-to-email-scheduled-task` directory. The following table describes the key files in the repository:
@@ -35,7 +35,7 @@ Before you begin:
         | **types.bal**         | Contains custom data types used in the project                       |
         | **utils.bal**         | Contains utility functions and helper functions used in the project  |
 
-3. **Obtain an OpenWeatherMap API Key**: Go to [OpenWeatherMap](https://openweathermap.org/) and sign up to obtain an API key. For details, see the [OpenWeatherMap documentation](https://openweathermap.org/appid#signup).
+3. Go to [OpenWeatherMap](https://openweathermap.org/) and sign up to obtain an API key. For details, see the [OpenWeatherMap documentation](https://openweathermap.org/appid#signup).
 
 ## Step 1: Create a scheduled task component
 
@@ -46,8 +46,8 @@ Before you begin:
 
     | **Field**          | **Value**                        |
     | ------------------ | -------------------------------- |
-    | **Component Name** | WeatherToEmail                   |
-    | **Description**    | My first scheduled task          |
+    | **Component Name** | `WeatherToEmail`                 |
+    | **Description**    | `My first scheduled task`        |
 
 5. Go to the **GitHub** tab.
 6. Click **Authorize with GitHub** to connect Choreo to your GitHub account. If you haven't connected your GitHub repository to Choreo, enter your credentials and select the repository you forked earlier to install the [Choreo GitHub App](https://github.com/marketplace/choreo-apps).
@@ -66,10 +66,10 @@ Before you begin:
     | **Field**             | **Description**                                |
     | --------------------- | ---------------------------------------------- |
     | **Organization**      | Your GitHub account                            |
-    | **Repository**        | choreo-samples                                |
-    | **Branch**            | main                                          |
-    | **Buildpack**         | Ballerina                                     |
-    | **Project Directory** | weather-to-email-scheduled-task               |
+    | **Repository**        | `choreo-samples`                               |
+    | **Branch**            | `main`                                         |
+    | **Buildpack**         | **Ballerina**                                  |
+    | **Project Directory** | `weather-to-email-scheduled-task`              |
 
     !!! tip
         - **Buildpack** specifies the type of build to run depending on the implementation of the component. It converts the integration code into a Docker image that can run on Choreo cloud. If an integration is developed using [WSO2 Integration Studio](https://wso2.com/integration/integration-studio/), select **Micro Integrator** as the buildpack. If an integration is developed using the [Ballerina language](https://ballerina.io), select **Ballerina** as the buildpack.
@@ -115,9 +115,9 @@ Now you can proceed to build and deploy the scheduled task.
     | **Field**            | **Value**                                             |
     | -------------------- | ----------------------------------------------------- |
     | **Select Time Zone** | Select a time zone to schedule the task               |
-    | **Select Range**     | Day                                                   |
-    | **Every**            | 1                                                     |
-    | **At**               | 08:00                                                 |
+    | **Select Range**     | **Day**                                               |
+    | **Every**            | `1`                                                   |
+    | **At**               | `08:00`                                               |
 
     !!! tip
         To test and verify the task immediately, you can schedule the deployment to run in just a few minutes after you create it. However, to avoid unnecessary expenses, reschedule or stop the deployment once you test and verify.
@@ -156,15 +156,15 @@ To track and monitor executions associated with the deployed scheduled task, go 
 
 You can view the following information:
 
-- **Total Executions**: The total number of executions within the past 30 days.
+- **Total executions**: The total number of executions within the past 30 days.
 
     ![Total Execution](../../assets/img/develop-components/develop-a-scheduled-integration/total_executions.png)
 
-- **Execution History**: The currently active executions and those that are already complete. You can view information such as the execution ID, the revision of the execution, and the time it was triggered.
+- **Execution history**: The currently active executions and those that are already complete. You can view information such as the execution ID, the revision of the execution, and the time it was triggered.
 
     ![Execution History](../../assets/img/develop-components/develop-a-scheduled-integration/execution_history.png)
 
-- **Detailed Execution Logs**: Click on an execution to view detailed logs related to it.
+- **Detailed execution logs**: Click on an execution to view detailed logs related to it.
 
     !!! info
         It may take a few minutes for the logs to appear. You may need to manually refresh to view the latest logs.
