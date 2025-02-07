@@ -14,9 +14,9 @@ In this guide, you will:
 
 Before you begin:
 
-1. **Create a Choreo Organization**:
+ - Create a Choreo Organization:
     1. Go to [https://console.choreo.dev/](https://console.choreo.dev/) and sign in using your preferred method.
-    2. Enter a unique organization name (e.g., `Stark Industries`).
+    2. Enter a unique organization name. For example, `Stark Industries`.
     3. Read and accept the privacy policy and terms of use.
     4. Click **Create**.
 
@@ -37,12 +37,12 @@ To create an API proxy, you can either upload an OpenAPI specification or provid
 
     | **Field**       | **Value**                                  |
     |-----------------|--------------------------------------------|
-    | **Display Name**| HR API                                     |
-    | **Name**        | hr-api                                     |
-    | **Context**     | abc-hr                                     |
-    | **Version**     | 1.0                                        |
-    | **Target**      | https://samples.choreoapps.dev/company/hr  |
-    | **Access Mode** | External                                   |
+    | **Display Name**| `HR API`                                   |
+    | **Name**        | `hr-api`                                   |
+    | **Context**     | `abc-hr`                                   |
+    | **Version**     | `1.0`                                      |
+    | **Target**      | `https://samples.choreoapps.dev/company/hr`|
+    | **Access Mode** | **External**                               |
 
 6. Click **Create**. This creates the API proxy component and takes you to the **Overview** page.
 
@@ -57,8 +57,8 @@ To add a new resource that retrieves a department by the department ID, follow t
 
     | **Field**        | **Value**                            |
     |------------------|--------------------------------------|
-    | **Operation ID** | findDepartment                       |
-    | **Description**  | Find a department by department ID   |
+    | **Operation ID** | `findDepartment`                     |
+    | **Description**  | `Find a department by department ID` |
 
 5. Remove the five default resources that start with `/*` by clicking the delete icon corresponding to each resource.
 6. Click **Save**.
