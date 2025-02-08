@@ -1,4 +1,4 @@
-# Develop an integration with Integration Studio
+# Develop an Integration with Integration Studio
 
 Choreo simplifies the process of building, deploying, and managing integration components, making it easy to expose integrations as APIs. This guide walks you through the steps to expose an integration created in WSO2 Integration Studio as an API in Choreo.
 
@@ -15,33 +15,29 @@ In this guide, you will:
 
 Before starting, complete the following:
 
-1. **Create an Organization** (if you're new to Choreo):
+1. If you're new to Choreo, create an organization:
     - Go to [https://console.choreo.dev/](https://console.choreo.dev/) and sign in.
-    - Enter a unique organization name (e.g., `Stark Industries`).
+    - Enter a unique organization name. For example, `Stark Industries`.
     - Read and accept the privacy policy and terms of use.
     - Click **Create**. This creates the organization and opens the **Project Home** page.
 
-2. **Fork the Choreo Samples Repository**:
-    - Fork the [Choreo samples repository](https://github.com/wso2/choreo-samples), which contains the sample integration for this guide.
+2. Fork the [Choreo samples repository](https://github.com/wso2/choreo-samples), which contains the sample integration for this guide.
 
 ## Step 1: Create the integration component
 
-1. **Sign in to Choreo Console**:
-   Go to [https://console.choreo.dev/](https://console.choreo.dev/) and sign in. This opens the **Project Home** page.
+1. Go to [https://console.choreo.dev/](https://console.choreo.dev/) and sign in. This opens the **Project Home** page.
 
-2. **Create a New Component**:
-   - If you already have components in your project, click **+ Create**.
-   - Click the **Service** card.
+2. If you already have one or more components in your project, click **+ Create**. Otherwise, proceed to the next step.
+3. Click the **Service** card.
 
-3. **Enter Component Details**:
-   Provide a unique name and description for the component:
+4. Provide a unique name and description for the component:
 
     | **Field**          | **Value**              |
     |--------------------|------------------------|
     | **Component Name** | `Hello World`          |
     | **Description**    | `Hello World REST API` |
 
-4. **Connect to GitHub**:
+5. Connect to GitHub:
    - Go to the **GitHub** tab.
    - Click **Authorize with GitHub** to connect your GitHub account. If you haven't connected your GitHub repository to Choreo, enter your GitHub credentials and select the repository you forked in the prerequisites section to install the [Choreo GitHub App](https://github.com/marketplace/choreo-apps).
 
@@ -52,8 +48,7 @@ Before starting, complete the following:
         
         You can [revoke access](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-authorized-integrations#reviewing-your-authorized-github-apps) if needed. Write access is only used for sending pull requests; Choreo will not push changes directly to your repository.
 
-5. **Provide Repository Details**:
-   Enter the following information:
+6. Enter the following repository details:
 
     | **Field**             | **Description**              |
     |-----------------------|----------------------------- |
@@ -63,15 +58,13 @@ Before starting, complete the following:
     | **Buildpack**         | **WSO2 MI** (since you're creating the REST API from a [WSO2 Integration Studio](https://wso2.com/micro-integrator/) project) |
     | **Project Directory** | `hello-world-mi`             |
 
-6. **Create the Component**:
-   Click **Create**. Choreo initializes the component with the sample integration.
+6. Click **Create**. Choreo initializes the component with the sample integration.
 
 ## Step 2: Deploy the integration component
 
-1. **Navigate to Deploy**:
-   In the Choreo Console left navigation menu, click **Deploy**.
+1. In the Choreo Console left navigation menu, click **Deploy**.
 
-2. **Configure and Deploy**:
+2. Configure and deploy:
    - In the **Build Area** card, click **Configure & Deploy**.
    - In the **Configurations** pane, click **Next**. This displays the endpoint details ready for deployment.
    - Click **Deploy**. This deploys the integration component to the development environment.
@@ -80,31 +73,26 @@ Before starting, complete the following:
         - Choreo uses [endpoints](../../choreo-concepts/endpoint.md) to expose **Service** components to the network. Learn more about configuring endpoints in [Configure Endpoints](../configure-endpoints.md).
         - Automatic deployment is enabled by default, so only the first deployment needs to be done manually.
 
-3. **Verify Deployment**:
    The **Development** card shows the **Deployment Status** as **Active** when the integration is successfully deployed.
 
 ## Step 3: Test the integration
 
-1. **Open the OpenAPI Console**:
-   - In the Choreo Console left navigation menu, click **Test** and then click **Console**.
-   - In the OpenAPI Console, select **Development** from the environment drop-down list.
-
-2. **Test the Endpoint**:
-   - Expand the **GET /integration** operation.
-   - Click **Try it out**, then click **Execute**. This sends a request to your deployed integration.
-
-3. **Check the Response**:
-   - In the **Response body** section, observe the response. If the integration works as expected, you should see:
+1. In the Choreo Console left navigation menu, click **Test** and then click **Console**.
+2. In the OpenAPI Console, select **Development** from the environment drop-down list.
+3. Expand the **GET /integration** operation.
+4. Click **Try it out**, then click **Execute**. This sends a request to your deployed integration.
+5. Check the response:
+    - In the **Response body** section, observe the response. If the integration works as expected, you should see:
+     
      ```json
      {"Hello" : "Integration"}
      ```
 
 ## Step 4: Observe the integration
 
-1. **Navigate to Observability**:
-   Click **Observability** in the left navigation menu to monitor the performance of the integration component.
+1. Click **Observability** in the left navigation menu to monitor the performance of the integration component.
 
-2. **View Metrics**:
+2. View metrics:
    - Observe throughput and latencies of requests over time.
    - View logs generated during a specific period.
    - Analyze the flame graph (Diagnostics View) for performance insights.
@@ -113,12 +101,9 @@ Before starting, complete the following:
 
 ## Step 5: Publish the integration component
 
-1. **Navigate to Lifecycle Management**:
-   - In the Choreo Console left navigation menu, click **Manage** and then click **Lifecycle**.
-   - The **Lifecycle Management** pane shows the current lifecycle stage as **Created**.
-
-2. **Publish the API**:
-   - Click **Publish**. This changes the lifecycle stage to **Published** and exposes the integration as an API in the Choreo Developer Portal.
+1. In the Choreo Console left navigation menu, click **Manage** and then click **Lifecycle**.
+2. The **Lifecycle Management** pane shows the current lifecycle stage as **Created**.
+3. Click **Publish**. This changes the lifecycle stage to **Published** and exposes the integration as an API in the Choreo Developer Portal.
    - To view the published API, click **Go to Devportal**. In the Developer Portal, you can manage subscriptions and generate access tokens for testing.
 
 Now you have successfully exposed an integration designed in WSO2 Integration Studio as a REST API in Choreo!
