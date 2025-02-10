@@ -1,4 +1,4 @@
-# Develop web applications locally with Choreo’s managed authentication
+# Develop Web Applications Locally with Choreo’s Managed Authentication
 
 Choreo’s managed authentication capability provides a set of backend for frontend (BFF) endpoints to facilitate authentication and authorization for web applications. These endpoints are readily available for single-page web applications deployed on Choreo.
 
@@ -27,7 +27,7 @@ The proxy runs on HTTPS using a self-signed certificate, which is essential for 
 
 ### Apply configurations
 
-1. **Sign in to the Choreo Console**.
+1. Sign in to the Choreo Console.
 2. In the **Component Listing** pane, click on the component you created and deployed.
 3. In the left navigation menu, click **Deploy**.
 4. Go to the respective environment card and click **Local Development**.
@@ -48,9 +48,9 @@ You have now configured local development. The next section explains how to acce
 
 You can use either the Choreo built-in identity provider or an external identity provider to access your web application locally.
 
-=== "Use the Choreo Built-in Identity Provider"
+=== "Use the Choreo built-in identity provider"
 
-    1. **Sign in to the Choreo Console**.
+    1. Sign in to the Choreo Console.
     2. In the **Component Listing** pane, click on the component you created and deployed.
     3. In the left navigation menu, click **Deploy**.
     4. Go to the respective environment card and click **Local Development**.
@@ -61,9 +61,9 @@ You can use either the Choreo built-in identity provider or an external identity
         !!! note
             The local development proxy runs on HTTPS using a self-signed certificate. Your browser may warn that the certificate is not valid. Accept the risk and proceed.
 
-=== "Use an External Identity Provider"
+=== "Use an external identity provider"
 
-    1. **Sign in to the Choreo Console**.
+    1. Sign in to the Choreo Console.
     2. In the **Component Listing** pane, click on the component you created and deployed.
     3. In the left navigation menu, click **Deploy**.
     4. Go to the respective environment card and click **Local Development**.
