@@ -1,4 +1,4 @@
-# Deploy your first static web application
+# Deploy Your First Static Web Application
 
 Choreo is an internal developer platform as a service that simplifies building, deploying, monitoring, and managing cloud-native applications. It allows developers to focus on innovation and implementation by handling platform complexities.
 
@@ -15,13 +15,11 @@ For a video tutorial, see [Deploy a Static Web App on Choreo](https://www.youtub
 
 ## Prerequisites
 
-Before you begin:
+1. GitHub account: Fork the [choreo-sample-todo-list-app repository](https://github.com/wso2/choreo-sample-todo-list-app), which contains the sample for this guide.
 
-1. **Fork the Repository**: Fork the [choreo-sample-todo-list-app repository](https://github.com/wso2/choreo-sample-todo-list-app), which contains the sample for this guide.
-
-2. **Create a Choreo Organization**:
+2. If you're signing in to the Choreo Console for the first time, create an organization:
     1. Go to [https://console.choreo.dev/](https://console.choreo.dev/) and sign in using your Google, GitHub, or Microsoft account.
-    2. Enter a unique organization name (e.g., `Stark Industries`).
+    2. Enter a unique organization name. For example, `Stark Industries`.
     3. Read and accept the privacy policy and terms of use.
     4. Click **Create**.
 
