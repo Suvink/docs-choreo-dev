@@ -1,4 +1,4 @@
-# Test Websocket Endpoints Using the Websocket Console
+# Test Websocket Endpoints via the Websocket Console
 
 Choreo provides an integrated WebSocket Console to test publicly exposed WebSocket endpoints of Service components you create and deploy. The WebSocket Console allows you to connect to your service and interactively exchange messages. By default, Choreo secures WebSocket APIs with OAuth 2.0, and the console automatically generates test keys for authenticated API testing.
 
