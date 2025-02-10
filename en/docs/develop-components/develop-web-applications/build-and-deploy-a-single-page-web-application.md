@@ -1,14 +1,14 @@
-# Build and deploy a single-page web application
+# Build and Deploy a Single-Page Web Application
 
 A web application is an application program hosted on a server and serves ingress traffic through a browser. In Choreo, you can deploy a web application by creating a Web Application component and connecting it to a Git repository that contains the implementation of the web application. Web applications can fall into one of the following categories:
 
-- **Single Page Applications (SPAs)**: Examples include React, Angular, Vue, Svelte, etc.
-- **Web Servers**: These serve static content or provide server-side rendering/static site generation (SSR/SSG).
-- **Static Content**: Examples include websites and other static resources that do not require a backend, usually comprising static HTML/JS/CSS files.
+- **Single page applications (SPAs)**: Examples include React, Angular, Vue, Svelte, etc.
+- **Web servers**: These serve static content or provide server-side rendering/static site generation (SSR/SSG).
+- **Static content**: Examples include websites and other static resources that do not require a backend, usually comprising static HTML/JS/CSS files.
 
 ## Prerequisites
 
-- To deploy a Web Application component, you must have a GitHub account with a repository containing the web application's implementation. For this guide, fork the [Choreo samples repository](https://github.com/wso2/choreo-samples), which contains the sample web application implementation.
+- To deploy a web application component, you must have a GitHub account with a repository containing the web application's implementation. For this guide, fork the [Choreo samples repository](https://github.com/wso2/choreo-samples), which contains the sample web application implementation.
 
 ## Create a web application
 
@@ -16,25 +16,25 @@ You can create a web application in Choreo as follows:
 
 ### Build and deploy a SPA from source code
 
-1. **Create a Web Application Component** by connecting a repository that includes the web application source code.
-2. **Select the Relevant Buildpack**: Default buildpacks include **React**, **Angular**, and **Vue.js**. If you are using a different SPA framework, you can try one of these buildpacks because the configurations can be overridden to support most JavaScript-based SPAs.
-3. **Enter the Build Command**: Based on your package manager (NPM, yarn, or pnpm). The relevant package manager is run based on the dependency lock file in your repository (defaults to NPM if no lock file is present).
-4. **Specify the Build Output Directory**.
-5. **Specify the NodeJS Version**: Choreo does not pick the Node.js version from the `package.json` engine property. The required Node version must be explicitly set in the build configuration.
+1. To create a web application component, connect a repository that includes the web application source code.
+2. Select the relevant buildpack: Default buildpacks include **React**, **Angular**, and **Vue.js**. If you are using a different SPA framework, you can try one of these buildpacks because the configurations can be overridden to support most JavaScript-based SPAs.
+3. Enter the build command: Based on your package manager (NPM, yarn, or pnpm). The relevant package manager is run based on the dependency lock file in your repository (defaults to NPM if no lock file is present).
+4. Specify the build output directory.
+5. Specify the NodeJS version: Choreo does not pick the Node.js version from the `package.json` engine property. The required Node version must be explicitly set in the build configuration.
 
 Once you create the Web Application component, Choreo automatically generates a build pipeline for your single-page application and deploys it.
 
 ### Bring your Dockerfile
 
-1. **Create a Web Application Component** by connecting a repository that contains the Dockerfile for your containerized web application.
-2. **Commit a Dockerfile** to your connected Git repository to have full control over your build process.
+1. To create a web application component, connect a repository that contains the Dockerfile for your containerized web application.
+2. Commit a Dockerfile to your connected Git repository to have full control over your build process.
 
 This approach is recommended if you are deploying a web server and not just a single-page application (or a single-page application with a complex build process).
 
 ### Host static websites
 
-1. **Create a Web Application Component** and connect it to the GitHub repository that contains the required static assets.
-2. **Select the Static Websites Buildpack**: This buildpack does not trigger a build process. It only fetches the files from the path specified in the repository and serves them as-is.
+1. Create a web application component and connect it to the GitHub repository that contains the required static assets.
+2. Select the **Static Websites** buildpack: This buildpack does not trigger a build process. It only fetches the files from the path specified in the repository and serves them as-is.
 
 ## Build and deploy a SPA from source code
 
@@ -184,13 +184,13 @@ For SPAs that run completely on the browser, Choreo does not support *baking-in*
 
 The following limitations are specific to the Choreo cloud data plane:
 
-- **Request Size Limit**: 256KB (including headers, cookies, and payloads).
-- **Response Body Size Limit**: 20MB.
-- **Open Ports**: Only one open port is permitted per web application. While you can have multiple ports open for project-level communication within a data plane, incoming traffic from the internet can only be directed to one port. This differs from Service-type components, which support multiple endpoints.
+- **Request size limit**: 256KB (including headers, cookies, and payloads).
+- **Response body size limit**: 20MB.
+- **Open ports**: Only one open port is permitted per web application. While you can have multiple ports open for project-level communication within a data plane, incoming traffic from the internet can only be directed to one port. This differs from Service-type components, which support multiple endpoints.
 
 ## Troubleshoot a web application
 
-- **Blank Page or 502 Error After Deployment**:
+- **Blank page or 502 error after deployment**:
     If you encounter a blank page or a 502 error after deploying your web application, it typically indicates that the wrong directory is being served. To resolve this issue:
     1. Double-check the build output directory, especially if you are using a Dockerfile-less buildpack.
     2. Ensure that the specified output directory matches the actual output directory generated during the build process. For example, if you have erroneously entered `public/` as the output directory when it should have been `build/`.
