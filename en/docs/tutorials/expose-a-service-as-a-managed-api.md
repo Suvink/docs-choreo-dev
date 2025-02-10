@@ -1,4 +1,4 @@
-# Expose a service as a managed API
+# Expose a Service as a Managed API
 
 Choreo simplifies securely exposing existing services as managed APIs. It also allows you to manage all aspects of an API's lifecycle, security, throttling, and governance, so you can focus on service development.
 
@@ -8,9 +8,9 @@ In this tutorial, you will use Choreo to expose a service as an API proxy and pu
 
 Before you begin:
 
-- **Create a Choreo Organization**:
+- If you're new to Choreo, create an organization:
     1. Go to [https://console.choreo.dev/](https://console.choreo.dev/) and sign in using your preferred method.
-    2. Enter a unique organization name (e.g., `Stark Industries`).
+    2. Enter a unique organization name. For example, `Stark Industries`.
     3. Read and accept the privacy policy and terms of use.
     4. Click **Create**.
 
@@ -32,12 +32,12 @@ To create an API proxy, you can either upload an OpenAPI specification or provid
 
     | **Field**       | **Value**                                   |
     |-----------------|---------------------------------------------|
-    | **Display Name**| Swagger Petstore                            |
-    | **Name**        | swagger-petstore                            |
-    | **Context**     | api/v3                                      |
-    | **Version**     | 1.0                                         |
-    | **Target**      | https://petstore3.swagger.io/api/v3         |
-    | **Access Mode** | External: API is publicly accessible        |
+    | **Display Name**| `Swagger Petstore`                          |
+    | **Name**        | `swagger-petstore`                          |
+    | **Context**     | `api/v3`                                    |
+    | **Version**     | `1.0`                                       |
+    | **Target**      | `https://petstore3.swagger.io/api/v3`       |
+    | **Access Mode** | **External**: API is publicly accessible    |
 
 7. Click **Create**. This creates the component and takes you to the **Overview** page of the component.
 
@@ -101,15 +101,13 @@ You can observe that the API lifecycle stage has changed to **Published**. Now t
 
 ## Step 6: Invoke the API
 
-To generate credentials for the published API and invoke it via the Developer Portal:
+To generate credentials for the published API and invoke it via the Developer Portal, follow these steps:
 
 1. In the **Lifecycle Management** pane, click **Go to DevPortal**. This takes you to the Petstore API published to the Choreo Developer Portal.
-
-2. **Generate Credentials**:
+2. Generate credentials:
     1. In the Developer Portal left navigation menu, click **Production** under **Credentials**.
     2. Click **Generate Credentials**. Choreo generates new tokens and populates the **Consumer Key** and **Consumer Secret** fields.
-
-3. **Invoke the API**:
+3. Invoke the API:
     1. In the Developer Portal left navigation menu, click **Try Out**.
     2. In the **Endpoint** list, select **Development** as the environment to try out the API.
     3. Click **Get Test Key**. This generates an access token.
