@@ -8,52 +8,53 @@ A web application is an application program hosted on a server and serves ingres
 
 ## Prerequisites
 
-- To deploy a Web Application component, you must have a GitHub account with a repository containing the web application's implementation. For this guide, fork the [https://github.com/wso2/choreo-samples](https://github.com/wso2/choreo-samples) repository, which contains the sample web application implementation.
+- To deploy a web application component, you must have a GitHub account with a repository containing the web application's implementation. For this guide, fork the [Choreo samples repository](https://github.com/wso2/choreo-samples), which contains the sample web application implementation.
 
-## Create a web application  
+## Create a web application
 
 You can create a web application in Choreo as follows:
 
-- Build and deploy a SPA from the source code.
-    - Create a Web Application component by connecting a repository that includes the web application source code.
-    - Select the relevant buildpack. Default buildpacks include **React**, **Angular**, and **Vue.js**. If you are using a different SPA framework, you can try one of these buildpacks because the configurations can be overridden to support most Javascript-based SPAs.
-    - Enter the build command based on your package manager. 
-      NPM, yarn, and pnpm are supported and the relevant package manager is run based on the dependency lock file in your repository (defaults to NPM if no lock file is present).
-    - Specify the build output directory.
-    - Specify the NodeJS version. Choreo does not pick the Nodejs version from the `package.json` engine property. The required Node version must be explicitly set in the build configuration.
+### Build and deploy a SPA from source code
 
-    Once you create the Web Application component, Choreo automatically generates a build pipeline for your single-page application and deploys it.
+1. To create a web application component, connect a repository that includes the web application source code.
+2. Select the relevant buildpack: Default buildpacks include **React**, **Angular**, and **Vue.js**. If you are using a different SPA framework, you can try one of these buildpacks because the configurations can be overridden to support most JavaScript-based SPAs.
+3. Enter the build command: Based on your package manager (NPM, yarn, or pnpm). The relevant package manager is run based on the dependency lock file in your repository (defaults to NPM if no lock file is present).
+4. Specify the build output directory.
+5. Specify the NodeJS version: Choreo does not pick the Node.js version from the `package.json` engine property. The required Node version must be explicitly set in the build configuration.
 
-- Bring your Dockerfile.
-    - Create a Web Application component by connecting a repository that contains the Dockerfile for your containerized web application.
-    - Commit a Dockerfile to your connected git repository to have full control over your build process.
-    
-     This approach is recommended if you are deploying a web server and not just a single-page application (or a single-page application with a complex build process). 
+Once you create the Web Application component, Choreo automatically generates a build pipeline for your single-page application and deploys it.
 
-- Host static websites.
-    - To host static web content, you can create a Web Application component and connect it to the GitHub repository that contains the required static assets. 
-    - Select the **Static Websites** buildpack. This buildpack does not trigger a build process. It only fetches the files from the path specified in the repository and serves as it is.
+### Bring your Dockerfile
 
-Now let's take a look at how you can build and deploy a SPA from source code:
+1. To create a web application component, connect a repository that contains the Dockerfile for your containerized web application.
+2. Commit a Dockerfile to your connected Git repository to have full control over your build process.
+
+This approach is recommended if you are deploying a web server and not just a single-page application (or a single-page application with a complex build process).
+
+### Host static websites
+
+1. Create a web application component and connect it to the GitHub repository that contains the required static assets.
+2. Select the **Static Websites** buildpack: This buildpack does not trigger a build process. It only fetches the files from the path specified in the repository and serves them as-is.
+
+## Build and deploy a SPA from source code
 
 Follow the steps below to create a sample Web Application component and deploy it in Choreo:
 
 1. Sign in to the Choreo Console at [https://console.choreo.dev/login/](https://console.choreo.dev/login/). This opens the **Project Home** page.
 2. If you already have one or more components in your project, click **+ Create**. Otherwise, proceed to the next step.
 3. Click the **Web Application** card.
-4. This opens the **Create a Web Application** pane, where you can specify a name and description for the component. Enter a unique name and description.
+4. In the **Create a Web Application** pane, specify a name and description for the component. Enter a unique name and description.
 5. Go to the **GitHub** tab.
-6. To allow Choreo to connect to your GitHub account, click **Authorize with GitHub**. If you have not already connected your GitHub repository to Choreo, enter your GitHub credentials and select the repository you created in the prerequisites section to install the [Choreo GitHub App](https://github.com/marketplace/choreo-apps).
+6. Click **Authorize with GitHub** to connect Choreo to your GitHub account. If you haven't connected your GitHub repository to Choreo, enter your credentials and select the repository you forked earlier to install the [Choreo GitHub App](https://github.com/marketplace/choreo-apps).
 
-    Alternatively, you can paste the [Choreo samples repository](https://github.com/wso2/choreo-samples) URL in the **Provide Repository URL** field to connect to it without requiring authorization from the [Choreo Apps](https://github.com/marketplace/choreo-apps) GitHub application. However, authorizing the repository with the [Choreo GitHub App](https://github.com/marketplace/choreo-apps) is necessary if you want to enable [**Auto Deploy**](https://wso2.com/choreo/docs/choreo-concepts/ci-cd/#deploy) for the component.
+    Alternatively, paste the [Choreo samples repository](https://github.com/wso2/choreo-samples) URL in the **Provide Repository URL** field. However, enabling [**Auto Deploy**](https://wso2.com/choreo/docs/choreo-concepts/ci-cd/#deploy) requires authorizing the repository with the [Choreo GitHub App](https://github.com/marketplace/choreo-apps).
 
     !!! note
-           The **Choreo GitHub App** requires the following permissions:
+        The **Choreo GitHub App** requires:
+        - Read and write access to code and pull requests.
+        - Read access to issues and metadata.
 
-           - Read and write access to code and pull requests.
-           - Read access to issues and metadata.
-             
-           You can [revoke access](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-authorized-integrations#reviewing-your-authorized-github-apps) if you do not want Choreo to have access to your GitHub account. However, write access is exclusively utilized for sending pull requests to a user repository. Choreo will not directly push any changes to a repository.
+        You can [revoke access](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-authorized-integrations#reviewing-your-authorized-github-apps) at any time. Write access is only used for sending pull requests; Choreo will not push changes directly to your repository.
 
 7. Enter the following information:
 
@@ -61,7 +62,7 @@ Follow the steps below to create a sample Web Application component and deploy i
     |---------------------------|------------------------|
     | **GitHub Account**        | Your account           |
     | **GitHub Repository**     | choreo-samples         |
-    | **Branch**                | **main**               |
+    | **Branch**                | main                   |
 
 8. Select **React** as the **Buildpack**.
 9. Enter the following information:
@@ -74,94 +75,82 @@ Follow the steps below to create a sample Web Application component and deploy i
     | **Node Version**          | `18`                   |
 
     !!! tip
-         Managed authentication is enabled by default when you create a web application using **React**, **Angular**, or **Vue.js** buildpacks. To learn how to set up authentication for your web application with Choreo's managed authentication, see [Secure Web Applications with Managed Authentication](../../authentication-and-authorization/secure-web-applications-with-managed-authentication.md).
-         
+        Managed authentication is enabled by default when you create a web application using **React**, **Angular**, or **Vue.js** buildpacks. To learn how to set up authentication for your web application with Choreo's managed authentication, see [Secure Web Applications with Managed Authentication](../../authentication-and-authorization/secure-web-applications-with-managed-authentication.md).
+
 10. Click **Create**. Choreo initializes the component with the sample implementation and opens the **Overview** page of the component.
 
 You have successfully created a Web Application component from the source code. Now let's build and deploy the web application.
 
 ## Build your web application
 
-To build the web application, follow the steps given below:
-
 1. In the left navigation menu, click **Build**.
 2. In the **Builds** pane, click **Build**. This opens the **Commits** pane, where you can see all the commits related to the component.
 3. Select the latest commit and click **Build**. This triggers the build process and displays the progress in the **Build Logs** pane.
-    
-    You can access the following scans in the **Build Logs** pane: 
 
-    - **The Dockerfile scan**: Choreo performs a scan to check if a non-root user ID is assigned to the Docker container to ensure security. If no non-root user is specified, the build will fail.
-    - **Container (Trivy) vulnerability scan**: This detects vulnerabilities in the final docker image. 
-    - **Container (Trivy) vulnerability scan**: The details of the vulnerabilities open in a separate pane. If this scan detects critical vulnerabilities, the build will fail.
+    You can access the following scans in the **Build Logs** pane:
+
+    - **Dockerfile Scan**: Choreo checks if a non-root user ID is assigned to the Docker container to ensure security. If no non-root user is specified, the build will fail.
+    - **Container (Trivy) Vulnerability Scan**: Detects vulnerabilities in the final Docker image. If critical vulnerabilities are detected, the build will fail.
 
     !!! info
         If you have Choreo environments on a private data plane, you can ignore these vulnerabilities and proceed with the deployment.
 
-
     !!! note
-         The build process can take a while to complete. When the build process is complete, the build will be listed in the **Builds** pane along with its status. 
-
-   Here, you will see the build status as **Success**.
+        The build process may take some time. Once complete, the build status will be listed in the **Builds** pane. Here, you will see the build status as **Success**.
 
 ## Deploy and access your web application
 
 1. In the left navigation menu, click **Deploy**.
-2. In the **Set Up** card, click **Configure and Deploy**. This opens the **Configure & Deploy** pane, where you can add a file mount if necessary. In this guide, you will not add a file mount.
-3. Click **Next**. This takes you to the **Authentication Settings** pane.
-4. Keep the default settings and click **Deploy**. 
+2. In the **Set Up** card, click **Configure and Deploy**. This opens the **Configure & Deploy** pane. In this guide, you do not need to add a file mount.
+3. Click **Next** to proceed to the **Authentication Settings** pane.
+4. Keep the default settings and click **Deploy**.
 
     !!! note
-         - The deployment process can take a few minutes to complete. On successful deployment, you will see the **Deployment Status** as **Active** in the **Development** card.
+        The deployment process may take a few minutes. Once complete, the **Deployment Status** will show as **Active** in the **Development** card.
 
-5. To verify that you have successfully hosted the web application, click the **Web App URL** in the **Development** card. This takes you to the web application.
+5. To verify that the web application is hosted successfully, click the **Web App URL** in the **Development** card. This takes you to the web application.
 
 ## Create a short URL for your web application in production
 
 !!! info
     This feature is only available on the Choreo cloud data plane.
 
-When you promote your component to the Production environment, you have the option to create a personalized short URL for your web application. The URL follows the `https://{your-short-prefix}.choreoapps.dev` structure, where you can select a name of your preference for `{your-short-prefix}`.
+When you promote your component to the Production environment, you can create a personalized short URL for your web application. The URL follows the `https://{your-short-prefix}.choreoapps.dev` structure, where you can select a name of your preference for `{your-short-prefix}`.
 
-To create a short URL for your web application, follow the steps given below:
-
-1. Click **Promote** in the **Development** card and promote your web application to production. 
+1. Click **Promote** in the **Development** card and promote your web application to production.
 2. In the **Production** card, click **Create a short URL**.
 3. Specify a **Short URL prefix** of your choice and click **Save**.
-   
+
     !!! note
-        Short URL names/prefixes are subject to availability, provided on a first-come-first-serve basis. 
+        Short URL names/prefixes are subject to availability, provided on a first-come-first-serve basis.
 
 ## Manage runtime configurations for web applications
 
 For web applications with a backend server, Choreo allows you to mount runtime configurations and secrets as environment variables and/or file mounts for a specific environment. Alternatively, you can also inject them into the client application during server-side rendering or when serving static content.
 
-However, in the case of SPAs that run completely on the browser, Choreo does not support *baking-in* environment variables or other configurations. This is because Choreo follows a multi-environment deployment model, where configuration should be kept separate from the build and injected at runtime. For example, in most React SPA frameworks, the `process.env` stub is available during build time. However, it does not actually read in variables from the runtime. Instead, it is baked into the final JavaScript output during the build process. 
-
-To manage runtime configurations, Choreo recommends the following approach (although this is a React example, the approach is generally applicable to other SPA frameworks as well).
+For SPAs that run completely on the browser, Choreo does not support *baking-in* environment variables or other configurations. Instead, Choreo recommends the following approach (applicable to most SPA frameworks, including React):
 
 !!! note
-    - With SPAs, anything you mount as a runtime config will be available to your users in the browser. 
+    - With SPAs, anything you mount as a runtime config will be available to your users in the browser.
     - **Do not include sensitive secrets that are not browser-safe**.
 
-
-Follow the steps given below to manage runtime configurations for the React application you created above:
-
 1. Go to your forked [Choreo samples repository](https://github.com/wso2/choreo-samples).
-2. Open the public directory.
-3. Create and commit a new file named `config.js` in the public directory of your React application. This file should contain the runtime configuration variables you want to expose to your application, such as API endpoints or feature flags. Let's expose the API URL and a feature flag as follows:
+2. Open the `public` directory.
+3. Create and commit a new file named `config.js` in the `public` directory of your React application. This file should contain the runtime configuration variables you want to expose to your application, such as API endpoints or feature flags. For example:
 
-    ```
+    ```javascript
     window.config = {
-    apiUrl: 'https://api.example.com',
+        apiUrl: 'https://api.example.com',
         featureFlags: {
             enableNewFeature: true,
             enableExperimentalFeature: false,
         },
     };
     ```
-4. In your `index.html` file inside the public directory, add a script tag as follows to include the `config.js` file inside the <body> tag. The `config.js` file will be accessible via JavaScript at runtime.
 
-    ```
+4. In your `index.html` file inside the `public` directory, add a script tag to include the `config.js` file inside the `<body>` tag:
+
+    ```html
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -173,42 +162,37 @@ Follow the steps given below to manage runtime configurations for the React appl
         <script src="%PUBLIC_URL%/config.js"></script>
     </body>
     </html>
-
     ```
-This makes the `window.config` object available to your app at runtime.
 
-1. In your React component, you can access the configuration variables by referencing the `window.config` object as follows:
+5. In your React component, access the configuration variables by referencing the `window.config` object:
 
-    ```
+    ```javascript
     import React from 'react';
 
     function MyComponent() {
-    const apiUrl = window.config.apiUrl;
-    const enableNewFeature = window.config.featureFlags.enableNewFeature;
-    const enableExperimentalFeature = window.config.featureFlags.enableExperimentalFeature;
+        const apiUrl = window.config.apiUrl;
+        const enableNewFeature = window.config.featureFlags.enableNewFeature;
+        const enableExperimentalFeature = window.config.featureFlags.enableExperimentalFeature;
 
-    // ...
+        // ...
     }
     ```
-Now you can deploy your component. 
 
-2. When you deploy your component to Choreo, create a config file mount in the specified path for each environment (where your `index.html` expects the `config.js` file as in this example).
-[https://wso2.com/choreo/docs/devops-and-ci-cd/manage-configurations-and-secrets/#apply-a-file-mount-to-your-container](https://wso2.com/choreo/docs/devops-and-ci-cd/manage-configurations-and-secrets/#apply-a-file-mount-to-your-container).
+6. When you deploy your component to Choreo, create a config file mount in the specified path for each environment (where your `index.html` expects the `config.js` file). For more details, see [Manage Configurations and Secrets](https://wso2.com/choreo/docs/devops-and-ci-cd/manage-configurations-and-secrets/#apply-a-file-mount-to-your-container).
 
 ## Limitations
 
 The following limitations are specific to the Choreo cloud data plane:
 
-   - Request size limit, including headers, cookies, and payloads: 256KB
-   - Response body size limit: 20MB
-   - Only one open port is permitted per web application. While you can have multiple ports open for project-level communication within a data plane, incoming traffic from the internet can only be directed to one port. This differs from the Service type components, which support multiple endpoints.
+- **Request size limit**: 256KB (including headers, cookies, and payloads).
+- **Response body size limit**: 20MB.
+- **Open ports**: Only one open port is permitted per web application. While you can have multiple ports open for project-level communication within a data plane, incoming traffic from the internet can only be directed to one port. This differs from Service-type components, which support multiple endpoints.
 
 ## Troubleshoot a web application
 
-- **I’m seeing a blank page or a 502 error after I deploy my web application**
+- **Blank page or 502 error after deployment**:
+    If you encounter a blank page or a 502 error after deploying your web application, it typically indicates that the wrong directory is being served. To resolve this issue:
+    1. Double-check the build output directory, especially if you are using a Dockerfile-less buildpack.
+    2. Ensure that the specified output directory matches the actual output directory generated during the build process. For example, if you have erroneously entered `public/` as the output directory when it should have been `build/`.
 
-    If you encounter a blank page or a 502 error after deploying your web application, it typically indicates that the wrong directory is being served. To resolve this issue, follow these steps:
-
-     - Double-check the build output directory, especially if you are using a Dockerfile-less buildpack. Ensure that the specified output directory matches the actual output directory generated during the build process. For example, if you have erroneously entered `public/` as the output directory when it should have been `build/`.
-
-    By verifying and correcting the output directory alignment, you should be able to address the issue of encountering a blank page or experiencing a 502 error on deploying your web application.
+By verifying and correcting the output directory alignment, you should be able to address the issue of encountering a blank page or experiencing a 502 error on deploying your web application.
