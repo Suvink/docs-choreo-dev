@@ -97,7 +97,7 @@ This guide walks you through the following steps:
 2. In the left navigation menu, click **Build**.
 3. In the **Builds** pane, click **Build Latest**.
 
-   !!! note
+    !!! note
         The build process may take some time. You can track progress in the **Build Details** pane. Once complete, the build status changes to **Success**.
 
 ## Step 4: Deploy the service
