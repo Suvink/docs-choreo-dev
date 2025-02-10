@@ -1,4 +1,4 @@
-# Develop a service
+# Develop a Service
 
 Choreo allows you to create and deploy applications in your preferred programming language. 
 
@@ -12,15 +12,15 @@ In this guide, you will:
 
 Before you begin:
 
-1. **Create a Choreo Organization**:
+1. If you're new to Choreo, create an organization:
     1. Go to [https://console.choreo.dev/](https://console.choreo.dev/) and sign in using your preferred method.
-    2. Enter a unique organization name (e.g., `Stark Industries`).
+    2. Enter a unique organization name. For example, `Stark Industries`.
     3. Read and accept the privacy policy and terms of use.
     4. Click **Create**.
 
     This creates the organization and opens the **Project Home** page of the default project created for you.
 
-2. **Fork the Repository**: Fork the [Choreo samples repository](https://github.com/wso2/choreo-samples/), which contains the [sample greetings service](https://github.com/wso2/choreo-samples/tree/main/greeting-service-go) implementation in `Go`.
+2. Fork the [Choreo samples repository](https://github.com/wso2/choreo-samples/), which contains the [sample greetings service](https://github.com/wso2/choreo-samples/tree/main/greeting-service-go) implementation in `Go`.
 
 ### Learn the repository file structure
 
@@ -71,7 +71,7 @@ To create a containerized service component, follow these steps:
 
         You can [revoke access](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-authorized-integrations#reviewing-your-authorized-github-apps) at any time. Write access is only used for sending pull requests; Choreo will not push changes directly to your repository.
 
-7. Under **Connect Your Repository**, enter the following information:
+7. Under **Connect Your Repository**, enter the following details:
 
     | **Field**              | **Value**          |
     |------------------------|--------------------|
