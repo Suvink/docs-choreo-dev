@@ -1,4 +1,4 @@
-# Deploy your first service
+# Deploy Your First Service
 
 Choreo is an Internal Developer Platform (IDevP) that makes it easy to deploy, monitor, and manage your cloud-native services. This allows you to focus on innovation and implementation.
 
@@ -14,11 +14,11 @@ For a video tutorial, check out [Deploy Your First Service with Choreo](https://
 
 ## Prerequisites
 
-1. **GitHub Account**: You need a GitHub account with a repository containing your service implementation. To follow this guide, fork the [Choreo sample book list service repository](https://github.com/wso2/choreo-sample-book-list-service/).
+1. GitHub account: You need a GitHub account with a repository containing your service implementation. To follow this guide, fork the [Choreo sample book list service repository](https://github.com/wso2/choreo-sample-book-list-service/).
 
-2. **Choreo Organization**: If you're signing in to the Choreo Console for the first time, create an organization:
+2. Choreo organization: If you're signing in to the Choreo Console for the first time, create an organization:
     1. Go to [https://console.choreo.dev/](https://console.choreo.dev/) and sign in using your Google, GitHub, or Microsoft account.
-    2. Enter a unique organization name (e.g., `Stark Industries`).
+    2. Enter a unique organization name. For example, `Stark Industries`.
     3. Read and accept the privacy policy and terms of use.
     4. Click **Create**.
 
