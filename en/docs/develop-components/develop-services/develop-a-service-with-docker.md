@@ -57,14 +57,13 @@ To create a containerized service component, follow these steps:
     | **Component Name**        | `greetings`        |
     | **Description**           | Send greetings     |
 
-5. Connect to GitHub**:
-   - Go to the **GitHub** tab.
-   - Click **Authorize with GitHub** to connect your GitHub account. If you haven’t connected your GitHub repository to Choreo, enter your GitHub credentials and select the repository you forked in the prerequisites section to install the [Choreo GitHub App](https://github.com/marketplace/choreo-apps).
+5. Go to the **GitHub** tab.
+    - Click **Authorize with GitHub** to connect your GitHub account. If you haven’t connected your GitHub repository to Choreo, enter your GitHub credentials and select the repository you forked in the prerequisites section to install the [Choreo GitHub App](https://github.com/marketplace/choreo-apps).
 
     !!! note
         The **Choreo GitHub App** requires the following permissions:
-        - Read and write access to code and pull requests.
-        - Read access to issues and metadata.
+         - Read and write access to code and pull requests.
+         - Read access to issues and metadata.
         
         You can [revoke access](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-authorized-integrations#reviewing-your-authorized-github-apps) if needed. Write access is only used for sending pull requests; Choreo will not push changes directly to your repository.
 
