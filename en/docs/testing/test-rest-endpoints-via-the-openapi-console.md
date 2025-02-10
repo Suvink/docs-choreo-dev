@@ -1,4 +1,4 @@
-# Test REST Endpoints Using the OpenAPI Console
+# Test REST Endpoints via the OpenAPI Console
 
 Choreo offers an integrated OpenAPI Console to test REST endpoints for the Service components you create and deploy. Since Choreo secures REST APIs with OAuth 2.0 authentication, the OpenAPI Console generates test keys to help you test your APIs.
 
