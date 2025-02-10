@@ -13,9 +13,7 @@ In this guide, you will:
 
 ## Prerequisites
 
-Before starting, complete the following:
-
-1. If you're new to Choreo, create an organization:
+1. If you're signing in to the Choreo Console for the first time, create an organization:
     - Go to [https://console.choreo.dev/](https://console.choreo.dev/) and sign in.
     - Enter a unique organization name. For example, `Stark Industries`.
     - Read and accept the privacy policy and terms of use.
