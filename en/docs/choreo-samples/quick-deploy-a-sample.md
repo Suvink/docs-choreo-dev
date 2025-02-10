@@ -6,8 +6,7 @@ Choreo provides a **Quick Deploy** option for samples, allowing you to deploy a 
 
 Before you start using the samples, complete the following steps:
 
-1. **Sign in to Choreo** and go to your project **Overview** page.
-   - If you're signing in for the first time, follow these steps to create an organization and project:
+- If you're signing in to Choreo for the first time, follow these steps to create an organization and project:
       1. Go to [https://console.choreo.dev/](https://console.choreo.dev/) and sign in using your preferred method.
       2. Enter a unique organization name. For example, `Stark Industries`.
       3. Read and accept the privacy policy and terms of use.
