@@ -1,4 +1,4 @@
-# Deploy a web application that consumes a backend service
+# Deploy a Web Application that Consumes a Backend Service
 
 Choreo is an Internal Developer Platform (IDevP) that simplifies building, deploying, monitoring, and managing cloud-native applications.
 
@@ -26,9 +26,9 @@ This guide walks you through the following steps:
 
 Before you begin:
 
-1. **GitHub Repository**: Fork the [Choreo sample book list app repository](https://github.com/wso2/choreo-sample-book-list-app) to save the service implementation.
+1. Fork the [Choreo sample book list app repository](https://github.com/wso2/choreo-sample-book-list-app) to save the service implementation.
 
-2. **Choreo Organization**: If you're signing in to the Choreo Console for the first time, create an organization:
+2. If you're signing in to the Choreo Console for the first time, create an organization:
     1. Go to [https://console.choreo.dev/](https://console.choreo.dev/) and sign in using your Google, GitHub, or Microsoft account.
     2. Enter a unique organization name (e.g., `Stark Industries`).
     3. Read and accept the privacy policy and terms of use.
