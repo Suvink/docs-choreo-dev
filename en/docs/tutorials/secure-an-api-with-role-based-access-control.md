@@ -1,4 +1,4 @@
-# Secure an API with role-based access control
+# Secure an API with Role-Based Access Control
 
 Role-based access control (RBAC) is a flexible and scalable approach to manage access to API resources. In this approach, each user or group is assigned a specific role that determines the permissions granted to perform operations on an API resource.
 
@@ -15,8 +15,8 @@ An organization needs to implement a user management service to keep track of us
 
 There are two types of users in the organization:
 
-- **Human Resource Manager (HR Manager)**: Can perform all operations (list users, list a user, create users, and delete a user).
-- **Human Resource Officer (HR Officer)**: Can only list existing users and list a specific user.
+- **Human resource manager (HR manager)**: Can perform all operations (list users, list a user, create users, and delete a user).
+- **Human resource officer (HR officer)**: Can only list existing users and list a specific user.
 
 ## Implement role-based access control with Choreo and Asgardeo
 
@@ -24,31 +24,13 @@ Let’s take a look at the steps to implement the scenario described above using
 
 ### Prerequisites
 
-Before you begin:
+If you're new to Choreo, create an organization:
+ 1. Go to [https://console.choreo.dev/](https://console.choreo.dev/) and sign in using your preferred method.
+ 2. Enter a unique organization name (e.g., `Stark Industries`).
+ 3. Read and accept the privacy policy and terms of use.
+ 4. Click **Create**.
 
-1. **Create a Choreo Organization**:
-    1. Go to [https://console.choreo.dev/](https://console.choreo.dev/) and sign in using your preferred method.
-    2. Enter a unique organization name (e.g., `Stark Industries`).
-    3. Read and accept the privacy policy and terms of use.
-    4. Click **Create**.
-
-    This creates the organization and opens the home page of the default project created for you.
-
-!!! info "Enable Asgardeo as the Key Manager"
-    If you created your organization in Choreo before February 21, 2023, and have not enabled Asgardeo as the key manager, follow these steps:
-
-    1. In the Choreo Console, go to the top navigation menu and click **Organization**. This takes you to the organization's home page.
-    2. In the left navigation menu, click **Settings**.
-    3. In the header, click the **Organization** list to open the organization-level settings page.
-    4. Click the **API Management** tab and then click **Enable Asgardeo Key Manager**.
-    5. In the confirmation dialog, click **Yes**.
-
-    !!! tip
-        Enabling Asgardeo as the default key manager has the following effects:
-        - Asgardeo becomes the default key manager and cannot be disabled, changed, or removed.
-        - Existing applications created via the Developer Portal will continue to function, but new applications will use Asgardeo as the key manager.
-        - New grant types (e.g., **Password**, **Authorization Code**, **PKCE**, and **Implicit**) will become available.
-        - The capability to add an external IdP will be disabled. However, you can use [Asgardeo's federation capabilities](https://wso2.com/asgardeo/docs/get-started/asgardeo-use-cases/#identity-federation) for similar functionality.
+This creates the organization and opens the home page of the default project created for you.
 
 ### Step 1: Create an API proxy component and deploy it
 
