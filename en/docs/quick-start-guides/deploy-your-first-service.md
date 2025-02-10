@@ -105,7 +105,7 @@ You have successfully created a Service component using the NodeJS buildpack. No
 2. In the left navigation, click **Build**.
 3. Click **Build Latest**.
 
-   !!! note
+    !!! note
         The build process may take some time. You can track progress in the **Build Details** pane. Once complete, the build status changes to **Success**.
 
 ### Step 3.2: Deploy
