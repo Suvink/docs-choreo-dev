@@ -1,4 +1,4 @@
-# Develop a service with Docker
+# Develop a Service with Docker
 
 Choreo allows you to create and deploy applications in any language. This guide demonstrates how to develop and deploy a containerized service component using a Dockerfile.
 
@@ -13,14 +13,13 @@ If you want to create a service component that exposes a Ballerina service, see 
 
 Before starting, complete the following:
 
-1. **Create an Organization** (if you're new to Choreo):
+1. If you're new to Choreo, create an organization:
     - Go to [https://console.choreo.dev/](https://console.choreo.dev/) and sign in.
-    - Enter a unique organization name (e.g., `Stark Industries`).
+    - Enter a unique organization name. For example, `Stark Industries`.
     - Read and accept the privacy policy and terms of use.
     - Click **Create**. This creates the organization and opens the **Project Home** page.
 
-2. **Fork the Choreo Samples Repository**:
-    - Fork the [Choreo samples repository](https://github.com/wso2/choreo-samples/), which contains the [sample greetings service](https://github.com/wso2/choreo-samples/tree/main/greeting-service-go) implementation with the Dockerfile.
+2. Fork the [Choreo samples repository](https://github.com/wso2/choreo-samples/), which contains the [sample greetings service](https://github.com/wso2/choreo-samples/tree/main/greeting-service-go) implementation with the Dockerfile.
 
 ### Learn the repository file structure
 
@@ -29,7 +28,7 @@ It’s important to understand the purpose of key files in the sample service. T
 !!! note
     The file paths are relative to `<sample-repository-dir>/greeting-service-go`.
 
-| **Filepath**               | **Description**                                                               |
+| **Filepath**               | **Description**                                                              |
 |----------------------------|------------------------------------------------------------------------------|
 | `main.go`                  | The Go-based greeter service code.                                           |
 | `Dockerfile`               | The Dockerfile to build the container image of the application.              |
@@ -46,15 +45,10 @@ In the greeter sample, the `component.yaml` file is located in the `greeting-ser
 
 To create a containerized service component, follow these steps:
 
-1. **Sign in to Choreo Console**:
-   Go to [https://console.choreo.dev/](https://console.choreo.dev/cloud-native-app-developer) and sign in. This opens the **Project Home** page.
-
-2. **Create a New Component**:
-   - If you already have components in your project, click **+ Create**.
-   - Click the **Service** card.
-
-3. **Enter Component Details**:
-   Provide a display name, a unique name, and a description for the service component:
+1. Go to [https://console.choreo.dev/](https://console.choreo.dev/cloud-native-app-developer) and sign in. This opens the **Project Home** page.
+2. If you already have one or more components in your project, click **+ Create**. Otherwise, proceed to the next step.
+3. Click the **Service** card.
+4. Provide a display name, a unique name, and a description for the service component:
 
     !!! info
         The **Component Name** field specifies a unique identifier for the component. This name cannot be changed after creation.
@@ -65,7 +59,7 @@ To create a containerized service component, follow these steps:
     | **Component Name**        | `greetings`        |
     | **Description**           | Send greetings     |
 
-4. **Connect to GitHub**:
+5. Connect to GitHub**:
    - Go to the **GitHub** tab.
    - Click **Authorize with GitHub** to connect your GitHub account. If you haven’t connected your GitHub repository to Choreo, enter your GitHub credentials and select the repository you forked in the prerequisites section to install the [Choreo GitHub App](https://github.com/marketplace/choreo-apps).
 
@@ -76,8 +70,7 @@ To create a containerized service component, follow these steps:
         
         You can [revoke access](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-authorized-integrations#reviewing-your-authorized-github-apps) if needed. Write access is only used for sending pull requests; Choreo will not push changes directly to your repository.
 
-5. **Provide Repository Details**:
-   Enter the following information:
+6. Enter the following repository details:
 
     | **Field**              | **Value**          |
     |------------------------|--------------------|
@@ -85,9 +78,8 @@ To create a containerized service component, follow these steps:
     | **Repository**         | choreo-samples     |
     | **Branch**             | **`main`**         |
 
-6. **Select Buildpack**:
-   - Select **Docker** as the buildpack.
-   - Enter the following details:
+7. Select **Docker** as the buildpack.
+8. Enter the following details:
 
     | **Field**                | **Value**                        |
     |--------------------------|----------------------------------|
@@ -101,8 +93,7 @@ To create a containerized service component, follow these steps:
 
         2. The Dockerfile used in this guide is a multi-stage Dockerfile, which keeps the final image size small and allows building the application with specific versions of tools and libraries.
 
-7. **Create the Component**:
-   Click **Create**. This creates the component and takes you to the **Overview** page.
+9. Click **Create**. This creates the component and takes you to the **Overview** page.
 
 You have successfully created a service from a Dockerfile. Next, you can build and deploy the service.
 
