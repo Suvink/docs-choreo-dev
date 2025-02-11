@@ -17,7 +17,7 @@ To connect to a selected service, follow the step-by-step instructions given bel
 
     To integrate a service into your application, you must first add the connection configuration as follows: 
 
-    1. For single page applications (SPAs), you must add the connection configuration as a file mount. You can mount a file via the **Configurations** pane on the **Deploy** page. You must mount a file (for example, `config.js`) and add the configuration provided in the in-line developer documentation into it. 
+    1. For single page applications (SPAs), you must add the connection configuration as a file mount. You can mount a file via the **Configurations** pane on the **Deploy** page. You must mount a file (for example, `config.js`) and add the configuration provided in the inline developer documentation into it. 
 
         The following is a sample configuration:
 

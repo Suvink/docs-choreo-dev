@@ -70,6 +70,48 @@ To add a custom domain for your organization, follow the steps given below:
           - Certificate chain file guidelines:
              - The chain file, which is essential for some clients to verify the authenticity of a server's SSL/TLS certificate, should contain your domain's SSL/TLS certificate (optional, as this can be provided via the certificate itself) and one or more intermediate certificates in the correct order, leading back to a root certificate. 
              - All certificates in the chain should be X509 certificates in PEM format.
+               <details><summary>For step-by-step instructions on constructing a certificate chain with a root certificate, click here</summary>
+               To construct a certificate chain with a root certificate, you must organize and combine the certificates in the correct sequence. A typical certificate chain consists of the following:
+                 - **Root certificate**: The trusted self-signed certificate issued by the certificate authority (CA).
+                 - **Intermediate certificates** (if any): Certificates issued by the root CA to subordinate CAs.
+                 - **Leaf certificate**: Your end-entity certificate issued by the CA. This is an optional certificate that may be included within the chain or provided separately.<br><br>
+                Follow these steps to construct the certificate chain:
+                    1. Obtain and organize your certificates in the correct order:
+                        - **Leaf certificate**: The public certificate issued by the CA. This is optional and may be included within the chain or provided separately.
+                        - **Intermediate certificates**: Obtain these from the CA, if applicable.
+                        - **Root certificate**: Obtain this from the CA.  If it is self-signed, it serves as the trust anchor.
+                    2. Combine the certificates into a single file in the following order:
+                        - Leaf certificate: This is your public certificate issued by the CA.
+                        - Intermediate certificates if applicable: Include these in the correct hierarchical order.
+                        - Root certificate: Include this at the end of the file.<br><br>
+                        Use a text editor or a command-line tool to concatenate the certificates into one file, ensuring each certificate begins and ends with the proper markers. Also make sure the `BEGIN CERTIFICATE` and `END CERTIFICATE` markers appear on a new line:
+                    ```
+                     -----BEGIN CERTIFICATE-----
+                     <Leaf Certificate Content>
+                     -----END CERTIFICATE-----
+                     -----BEGIN CERTIFICATE-----
+                     <Intermediate Certificate Content>
+                     -----END CERTIFICATE-----
+                     -----BEGIN CERTIFICATE-----
+                     <Root Certificate Content>
+                     -----END CERTIFICATE-----
+                    ```
+                    3. Save the concatenated file. You can save it with a name such as `certificate_chain.pem`.
+                    4. Use the following command to verify that your certificate chain is constructed correctly:
+                    ```
+                    openssl verify -CAfile <root_or_bundle_cert>.pem certificate_chain.pem
+                    ```
+                    Replace `<root_or_bundle_cert>.pem` with the path to your root certificate or a bundle containing both the root and intermediate certificates.
+                    5. Once the certificate chain is verified, upload it via the Choreo Console:
+                        ![Upload certificate chain](../assets/img/administer/configure-domain/upload-certificate-chain.png)
+                        - If the constructed chain includes the leaf certificate, follow these steps:
+                            - Upload the constructed certificate chain in the **TLS Certificate** field.
+                            - Upload the private key file in the **TLS Key File** field.
+                            - Do not upload a certificate chain file, as it is already included in the TLS certificate.
+                        - If the constructed chain does not include the leaf certificate, follow these steps:
+                            - Upload the leaf certificate in the **TLS Certificate** field.
+                            - Upload the private key file in the **TLS Key File** field.
+                            - Upload the constructed certificate chain in the **Certificate Chain File** field.
  
      To proceed with this step in this guide, click **Let's Encrypt**.
 

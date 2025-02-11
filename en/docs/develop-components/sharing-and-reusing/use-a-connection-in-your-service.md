@@ -48,10 +48,20 @@ To integrate another service into your application, click the appropriate tab be
           | ChoreoAPIKey            | CHOREO_<CONNECTION_NAME\>CHOREOAPIKEY                          |
 
 
-          If you'd like to use custom environment variable names instead of the Choreo-defined ones, add the dependency as a service reference under `dependencies` in the same file. For more details, refer to the instructions under the `component.yaml file (v1.0)` tab.
+          If you want to use custom environment variable names instead of the Choreo-defined ones, you must define the environment configurations under the `configuration` section in the same file.
+          The following is a sample snippet: 
 
+          ``` yaml
+          configuration:
+            env:
+              - name: HR_SERVICE_URL
+                valueFrom:
+                  connectionRef:
+                    name: hr-connection
+                    key: ServiceURL
+          ```
 
-          The following table provides details on the configuration keys associated with the connection:
+          The following table provides details on the configuration keys associated with the connection. These keys can be referenced as `env[i].valueFrom.connectionRef.key`.
 
           | Name           |  Type      |  Description                          |Optional       | Sensitive    |
           |----------------|------------|---------------------------------------|---------------|--------------|
@@ -60,6 +70,8 @@ To integrate another service into your application, click the appropriate tab be
           | ConsumerSecret | string     | Consumer secret of the Choreo service | false         | true         |
           | TokenURL       | string     | Token URL of the STS                  | false         | false        |
           | ChoreoAPIKey   | string     | API key of the Choreo service         | false         | true         |
+
+          For more details, see the instructions under the **component.yaml file (v1.1)** tab.
 
     ### Step 2: Read configurations within the application
 
