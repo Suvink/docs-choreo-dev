@@ -80,7 +80,7 @@ To connect to a selected service, follow the step-by-step instructions given bel
 
     <h2> Step 1: Add the connection configuration</h2>
 
-    For single-page applications (SPAs), you must add the connection configuration as a file mount. You can mount a file via the **Configurations** pane on the **Deploy** page. You must mount a file (for example, `config.js`) and add the following configuration into it. 
+    1. For single-page applications (SPAs), you must add the connection configuration as a file mount. You can mount a file via the **Configurations** pane on the **Deploy** page. You must mount a file (for example, `config.js`) and add the configuration provided in the inline developer documentation into it. 
  
 
     The following is a sample configuration:
@@ -93,6 +93,22 @@ To connect to a selected service, follow the step-by-step instructions given bel
              tokenUrl: '<TOKEN_URL>',
          };
     ```
+
+    2.  To ensure accessibility of the `config.js` file via JavaScript at runtime, add a script tag as follows in the `index.html` file to reference the `config.js` file:
+
+        ``` html
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <title>My React App</title>
+        </head>
+        <body>
+            <div id="root"></div>
+            <script src="/public/config.js"></script>
+        </body>
+        </html>
+        ``` 
 
     For other types of web applications, you must add the respective configuration into your application.
 
