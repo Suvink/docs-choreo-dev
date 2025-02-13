@@ -28,7 +28,7 @@ To create a connection to a service or a database, follow the step-by-step instr
     This creates the connection and displays its details for each environment, along with an inline guide on how to use the connection in your component. 
 
     !!! note
-        At the time of creation, the secret values for the lowest environment are visible, allowing users to copy them for local use if needed. However, secret values for higher environments remain hidden for security reasons.
+        During connection creation, secret values for the lowest environment are visible, allowing you to copy them for local use if necessary. Secret values for higher environments remain hidden to ensure security
      
     <h2>Create a connection to an external service</h2>
 
@@ -74,6 +74,6 @@ To create a connection to a service or a database, follow the step-by-step instr
     This creates the connection and displays the database connection details for each environment, along with an inline guide on how to use the connection in your component. 
 
     !!! note
-        At the time of creation, the secret values for the lowest environment are visible, allowing users to copy them for local use if needed. However, secret values for higher environments remain hidden for security reasons.
+        During connection creation, secret values for the lowest environment are visible, allowing you to copy them for local use if necessary. Secret values for higher environments remain hidden to ensure security
     
     For step-by-step instructions on using a database in your component, see [Use a Database Connection in Your Component](./use-a-database-connection-in-your-component.md).
