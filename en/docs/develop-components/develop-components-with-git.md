@@ -65,6 +65,12 @@ For example, when you [work with the Micro Integrator (MI) runtime in Choreo](./
             !!! info "Note"
                 Choreo currently does not support accessing private repositories in other organizations.
 
+#### Automatically Pull Latest Submodule Versions
+Choreo allows you to always pull the latest versions of your Git submodules from their respective repositories. You can enable this feature by toggling Pull Latest Submodules under Build Configurations on the Build page. Currently, this feature is only supported for Micro Integrator (MI) components.
+
+!!! tip
+    Tip: If you are building a previously built commit, it is safe to enable Image Pull Policy to Always. This ensures that the latest changes are correctly propagated to the deployed environment. You can configure this by navigating to the left sidebar → DevOps → Container, then editing the container and setting Image Pull Policy to Always.
+
 ## Authorize Bitbucket with Choreo
 
 Authorizing using a personal access token (PAT) from Bitbucket grants Choreo the following permissions to perform the respective actions on your behalf within the repository.
