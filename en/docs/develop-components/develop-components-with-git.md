@@ -69,10 +69,11 @@ For example, when you [work with the Micro Integrator (MI) runtime in Choreo](./
 Choreo allows you to always pull the latest versions of your Git submodules from their respective repositories. You can enable this feature by toggling Pull Latest Submodules under Build Configurations on the Build page. Currently, this feature is only supported for WSO2 MI buildpack components.
 
 !!! note
-    If you are building a **previously built commit** and don't see the changes reflected, it is recommended to enable **Image Pull Policy to Always**. This ensures that the latest changes are correctly propagated to the deployed environment. To configure this:
+    If you are building a **previously built commit** and don't see the changes reflected, it is recommended to change **Image Pull Policy to Always**. This ensures that the latest changes are correctly propagated to the deployed environment. To configure this:
   - Navigate to the left sidebar → DevOps → Container.
   - Edit the container settings.
   - Set **Image Pull Policy** to **Always**.
+  - Click **Save Changes**.
 
 ## Authorize Bitbucket with Choreo
 
