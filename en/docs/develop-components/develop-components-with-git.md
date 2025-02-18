@@ -65,15 +65,26 @@ For example, when you [work with the Micro Integrator (MI) runtime in Choreo](./
             !!! info "Note"
                 Choreo currently does not support accessing private repositories in other organizations.
 
-#### Automatically pull latest submodule versions
-Choreo allows you to always pull the latest versions of your Git submodules from their respective repositories. You can enable this feature by toggling Pull Latest Submodules under Build Configurations on the Build page. Currently, this feature is only supported for WSO2 MI buildpack components.
+#### Automatically pull latest versions of Git submodules
 
-!!! note
-    If you are building a **previously built commit** and don't see the changes reflected, it is recommended to change **Image Pull Policy to Always**. This ensures that the latest changes are correctly propagated to the deployed environment. To configure this:
-  - Navigate to the left sidebar → DevOps → Container.
-  - Edit the container settings.
-  - Set **Image Pull Policy** to **Always**.
-  - Click **Save Changes**.
+Choreo lets you automatically pull the latest versions of Git submodules from their respective repositories. To enable this feature, follow these steps:
+
+!!! note 
+    Choreo currently supports this feature only for components where the buildpack is **WSO2 MI**.
+
+1. Sign in to the [Choreo Console](https://console.choreo.dev/).
+2. In the **Component Listing** pane, click the component for which you want to pull the latest versions of Git submodules.
+3. In the left navigation menu, click **Build**.
+4. On the **Build** page, click to edit **Build Configurations**.
+5. Turn on the **Pull Latest Submodules** toggle.
+
+    !!! info "Note"
+        If you rebuild a previously built commit and it doesn’t reflect the latest changes, follow these steps to ensure the changes are applied to the deployed environment:
+
+         1. In the Choreo Console left navigation menu, click **DevOps**, then click **Containers**.
+         2. Click **Edit** to update the container settings.
+         3. Select **Always** as the **Image Pull Policy**.
+         4. Click **Save Changes**.
 
 ## Authorize Bitbucket with Choreo
 
