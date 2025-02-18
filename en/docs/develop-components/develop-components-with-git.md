@@ -43,7 +43,7 @@ Choreo provides [Git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodu
 
 For example, when you [work with the Micro Integrator (MI) runtime in Choreo](./work-with-the-micro-integrator-runtime-in-choreo.md), you can use Git submodules to reuse MI templates and sequences across components without duplication.
 
-!!! tip 
+!!! info "Note" 
     If you encounter an error stating that you cannot clone a submodule due to insufficient permissions, follow the instructions below to grant the necessary permissions:
 
       - For a personal account:
@@ -62,7 +62,7 @@ For example, when you [work with the Micro Integrator (MI) runtime in Choreo](./
          4. Click **Configure** corresponding to **choreo.dev**.
          5. Under **Repository Access**, grant access to the necessary repositories.
 
-            !!! info "Note"
+            !!! note
                 Choreo currently does not support accessing private repositories in other organizations.
 
 #### Automatically pull latest versions of Git submodules
