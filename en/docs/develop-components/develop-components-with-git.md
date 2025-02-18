@@ -43,7 +43,7 @@ Choreo provides [Git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodu
 
 For example, when you [work with the Micro Integrator (MI) runtime in Choreo](./work-with-the-micro-integrator-runtime-in-choreo.md), you can use Git submodules to reuse MI templates and sequences across components without duplication.
 
-!!! tip 
+!!! info "Note" 
     If you encounter an error stating that you cannot clone a submodule due to insufficient permissions, follow the instructions below to grant the necessary permissions:
 
       - For a personal account:
@@ -62,8 +62,29 @@ For example, when you [work with the Micro Integrator (MI) runtime in Choreo](./
          4. Click **Configure** corresponding to **choreo.dev**.
          5. Under **Repository Access**, grant access to the necessary repositories.
 
-            !!! info "Note"
+            !!! note
                 Choreo currently does not support accessing private repositories in other organizations.
+
+#### Automatically pull latest versions of Git submodules
+
+Choreo lets you automatically pull the latest versions of Git submodules from their respective repositories. To enable this feature, follow these steps:
+
+!!! note 
+    Choreo currently supports this feature only for components where the buildpack is **WSO2 MI**.
+
+1. Sign in to the [Choreo Console](https://console.choreo.dev/).
+2. In the **Component Listing** pane, click the component for which you want to pull the latest versions of Git submodules.
+3. In the left navigation menu, click **Build**.
+4. On the **Build** page, click to edit **Build Configurations**.
+5. Turn on the **Pull Latest Submodules** toggle.
+
+    !!! info "Note"
+        If you rebuild a previously built commit and it doesn’t reflect the latest changes, follow these steps to ensure the changes are applied to the deployed environment:
+
+         1. In the Choreo Console left navigation menu, click **DevOps**, then click **Containers**.
+         2. Click **Edit** to update the container settings.
+         3. Select **Always** as the **Image Pull Policy**.
+         4. Click **Save Changes**.
 
 ## Authorize Bitbucket with Choreo
 
