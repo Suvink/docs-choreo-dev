@@ -1,6 +1,6 @@
 # Integrate Unit Tests into the Build Pipeline
 
-Choreo supports integrating unit tests into the build pipeline, allowing you to validate code before deployment. This ensures early testing of code changes, reducing the risk of defects in production.
+Choreo allows you to integrate unit tests into the build pipeline, enabling code validation before deployment. This ensures early testing of code changes, reducing the risk of defects in production.
 
 !!! note
         Currently, Choreo supports unit tests only for the `WSO2 MI` buildpack.
@@ -11,18 +11,19 @@ Choreo supports integrating unit tests into the build pipeline, allowing you to 
 
 You can create unit tests in your source code using standard testing libraries. For step-by-step instructions on creating unit tests for WSO2 Micro Integrator projects, see [Creating a Unit Test Suite](https://mi.docs.wso2.com/en/latest/develop/creating-unit-test-suite/).
 
-### Enable unit testing
-1. Navigate to the **Build** page of your component in Choreo.
-2. Enable **Unit Test** to activate it in the build pipeline.
-3. **Save** the changes.
-4. Trigger a new build.
+### Enable unit tests
 
-### View test results
+1. Sign in to the [Choreo Console](https://console.choreo.dev/).
+2. In the **Component Listing** pane, click the component for which you want to enable unit tests.
+3. In the left navigation menu, click **Build**.
+4. On the **Build** page, click to edit **Build Configurations**.
+5. Turn on the **Unit Test** toggle.
+6. Click **Save** to trigger a new build.
 
-If unit testing fails, Choreo allows you to view logs. Click **View Details** of the failed build, then click the failed **Unit Test** step to view logs.
+## View failed unit tests
+
+If a unit test fails during the build, you can view its detailed logs to troubleshoot. Click **View Details** corresponding to the failed build, then expand the failed unit test step to view the logs.
 
 ## Explore a sample
 
-To get started, try out the [WSO2 MI helloworld](https://github.com/wso2/choreo-samples/tree/main/hello-world-mi) sample. 
-
-
+To see how unit tests work when integrated into the build pipeline, try out the [WSO2 MI helloworld](https://github.com/wso2/choreo-samples/tree/main/hello-world-mi) sample. 
