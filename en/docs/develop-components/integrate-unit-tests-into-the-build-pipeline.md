@@ -23,6 +23,6 @@ If unit testing fails, Choreo allows you to view logs. Click **View Details** of
 
 ## Explore a sample
 
-To get started, try out the [WSO2 MI helloworld](https://github.com/wso2/choreo-samples/tree/main/hello-world-java-task) sample. 
+To get started, try out the [WSO2 MI helloworld](https://github.com/wso2/choreo-samples/tree/main/hello-world-mi) sample. 
 
 
