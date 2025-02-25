@@ -7,11 +7,11 @@ Choreo allows you to integrate unit tests into the build pipeline, enabling code
 
 ## How it works
 
-### Write tests
+### Step 1: Write tests
 
 You can create unit tests in your source code using standard testing libraries. For step-by-step instructions on creating unit tests for WSO2 Micro Integrator projects, see [Creating a Unit Test Suite](https://mi.docs.wso2.com/en/latest/develop/creating-unit-test-suite/).
 
-### Enable unit tests
+### Step 2: Enable unit tests
 
 1. Sign in to the [Choreo Console](https://console.choreo.dev/).
 2. In the **Component Listing** pane, click the component for which you want to enable unit tests.
@@ -20,7 +20,7 @@ You can create unit tests in your source code using standard testing libraries. 
 5. Turn on the **Unit Test** toggle.
 6. Click **Save**.
 
-### Trigger a new build
+### Step 3: Trigger a new build
 
 - On the **Build** page, click **Build Latest**.
 
