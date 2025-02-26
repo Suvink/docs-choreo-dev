@@ -118,17 +118,18 @@ To configure and deploy the component, follow the steps given below:
 
 1. In the left navigation menu, click **Deploy**.
 2. On the **Build Area** card, click **Configure &  Deploy**.
-3. In the **Environment Configurations** pane that opens, click **+ Add** and add the `TS_AUTH_KEY` environment variable as a secret. To add the environment variable, you must obtain an authentication key from your Tailscale network.
-    - For details on how to obtain an authentication key from your Tailscale network, see [Auth keys](https://tailscale.com/kb/1085/auth-keys) in the Tailscale documentation.
-!!! note
-    The auth key you generated in the above step is having a expiry date and it must be rotated at some time. So if you need to get rid of rotating auth keys, you may use OAuth client as follows to have a never expiry auth keys. For more information on how this works, please refer to official documentation of tailsacle on [generating long lived auth keys](https://tailscale.com/kb/1215/oauth-clients#generating-long-lived-auth-keys).
+3. In the **Environment Configurations** pane that opens, click **+ Add** and add the `TS_AUTH_KEY` environment variable as a secret. To add the environment variable, you must obtain an authentication key from your Tailscale network. For details on how to obtain an authentication key from your Tailscale network, see [Auth keys](https://tailscale.com/kb/1085/auth-keys) in the Tailscale documentation.
 
-    Use the following steps to get this enabled with Tailscale Proxy component.
+    !!! info "Note"
+        The authentication keys obtained from your Tailscale network have an expiration date and require periodic rotation. To avoid manual rotation, you can generate non-expiring authentication keys using OAuth clients. For details, see [Generating long-lived auth keys](https://tailscale.com/kb/1215/oauth-clients#generating-long-lived-auth-keys) in the Tailscale documentation.
+        
+        Follow these steps if you want to add an OAuth client secret to the Tailscale proxy component instead of the `TS_AUTH_KEY` environment variable as a secret:
 
-    1) Define a tag named `choreo-vpn` in your tailscale ACLs. Refer the [official documentation](https://tailscale.com/kb/1068/tags#define-a-tag) for how to do it.
-    2) Create an [OAuth client](https://tailscale.com/kb/1215/oauth-clients) and grant the following scope into that.
-       Keys -> Auth Keys -> write (Note: select the above tag `choreo-vpn` when granting the scope to the OAuth client).
-    3) Copy the client secret after generating the OAuth client and use it as an environment variable (secret) named `OAUTH_CLIENT_SECRET`.
+         1. Define a tag named `choreo-vpn` in your Tailscale ACLs. For details, see [Define a tag](https://tailscale.com/kb/1068/tags#define-a-tag) in the Tailscale documentation.
+         2. Create an [OAuth client](https://tailscale.com/kb/1215/oauth-clients) with the following scope, ensuring it is assigned to the `choreo-vpn` tag:
+             - Keys → Auth Keys → write
+         3. Generate the OAuth client and copy the client secret.
+         4. Set the client secret as an environment variable named `OAUTH_CLIENT_SECRET`.
 
 4. Click **Next**.
 5. In the **File Mount** pane that opens, click **+ Add**.
