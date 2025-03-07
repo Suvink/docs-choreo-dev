@@ -84,8 +84,10 @@ nav:
       - Endpoint: choreo-concepts/endpoint.md
       - CI/CD: choreo-concepts/ci-cd.md
       - Deployment Tracks: choreo-concepts/deployment-tracks.md
+      - Connections: choreo-concepts/connections.md
       - Data Planes: choreo-concepts/data-planes.md
       - Environments: choreo-concepts/environments.md
+      - Choreo Marketplace: choreo-concepts/choreo-marketplace.md
   - Configure Dataplane:
       - Provision and Configure Private Data Planes in Choreo: configure-dataplane/provision-dataplane-for-private-dataplanes.md
       - Configure a Custom Domain for Your Organization: administer/configure-a-custom-domain-for-your-organization.md
