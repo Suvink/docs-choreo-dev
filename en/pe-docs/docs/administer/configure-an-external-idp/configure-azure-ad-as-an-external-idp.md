@@ -2,6 +2,9 @@
 
 In organizations leveraging Microsoft Azure Active Directory (Azure AD) for identity and access management (IAM), integrating it with Choreo offers powerful API access control. This control hinges on the use of API scopes. That is, it enables the restriction of access to a designated group of users. This document guide you step-by-step to configure Azure AD as your external IdP.
 
+!!! note
+    These identity provider settings are for consuming the components deployed within your organization, not for authenticating developers who signing in to the Choreo Console.
+
 ## Prerequisites
 
 Before you try out this guide, be sure you have the following:
@@ -25,7 +28,7 @@ Follow the steps below to add Azure AD as an IdP in Choreo:
     !!! info
         - In azure, there are two versions of access tokens available. By default, the IDP applications you create use the v1 access token. Therefore, if you intend to use the v1 access token, when providing the `Well-Known URL`, omit the v2.0 path segment from the URL. [Learn more](https://learn.microsoft.com/en-us/azure/active-directory/develop/access-tokens#token-formats)
         For example, convert `https://login.microsoftonline.com/<tenant-id>/v2.0/.well-known/openid-configuration`-> `https://login.microsoftonline.com/<tenant-id>/.well-known/openid-configuration`
-        - If you intend to work with v2.0, then the IDP application's manifest should be changed as explained in the [access tokendocumentation](https://learn.microsoft.com/en-us/azure/active-directory/develop/access-tokens#token-formats). 
+        - If you intend to work with v2.0, then the IDP application's manifest should be changed as explained in the [access token documentation](https://learn.microsoft.com/en-us/azure/active-directory/develop/access-tokens#token-formats). 
         
 9. Leave the **Apply to all environments** checkbox selected. However, if you want to restrict the use of the external IdP to a certain environment, you can select them from the **Environments** list.
 10. Review the endpoints and click **Next**.

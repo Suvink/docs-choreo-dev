@@ -7,7 +7,6 @@ This page walks you through the steps to configure self-sign-up for your Develop
 ## Prerequisites
 
 1. Sign in to the Choreo Console at [https://console.choreo.dev/](https://console.choreo.dev/) using your Google, GitHub, or Microsoft account.
-2. If you are a new user, create an organization with a unique organization name. For example, "Stark Industries".
 
 ## Configure Developer Portal self-sign-up
 
@@ -48,7 +47,7 @@ To configure self-sign-up, follow the steps given below:
 6.  To add user attributes, follow these steps:
 
     !!! info "Note"
-    If you have enabled enterprise login and you want to add the **Groups** attribute during self-sign-up configuration, avoid making it mandatory. This ensures proper access control and prevents unauthorized privileges. If you make the **Groups** attribute mandatory, it allows self-signed-up users to specify a group and assume roles associated with it.
+        If you have enabled enterprise login and you want to add the **Groups** attribute during self-sign-up configuration, avoid making it mandatory. This ensures proper access control and prevents unauthorized privileges. If you make the **Groups** attribute mandatory, it allows self-signed-up users to specify a group and assume roles associated with it.
 
     1. Click the **User Attributes** tab.
     2. To add the email as a mandatory user attribute, select **Email** and click the arrow to expand the section. Then, select the **Requested** and **Mandatory** checkboxes.
