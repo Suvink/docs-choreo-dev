@@ -96,6 +96,7 @@ nav:
           - Set Up Git Provider Authentication for Choreo Deployments: develop-components/develop-components-with-git.md
           - Build Applications with Choreo’s Built-In CI Pipeline: devops-and-ci-cd/build-using-inbuilt-ci-pipeline.md
           - Use Your Own Container Registry with Choreo: devops-and-ci-cd/bring-your-own-container-registry.md
+          - Integrate Unit Tests into the CI Pipeline: develop-components/integrate-unit-tests-into-the-build-pipeline.md
       - Continuous Deployment:
           - Manage Choreo Environments: devops-and-ci-cd/manage-environments.md
           - Deploy Applications in Choreo: devops-and-ci-cd/deploying-an-application.md
