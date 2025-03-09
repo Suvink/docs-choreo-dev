@@ -30,7 +30,7 @@ In addition to these steps, some buildpacks support integrating unit tests into 
 
 Choreo can replicate builds from an identical code version (Git commit). This means that multiple builds initiated from the same Git commit will generate Docker images with the same behavior.
 
-!!! noteIn addition to these steps, some buildpacks support
+!!! note
     In the event of multiple builds from the same code version, Choreo preserves only the most recent version of the Docker image created from the particular code version.
 
 ### Trigger a build
