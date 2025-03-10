@@ -89,7 +89,6 @@ nav:
       - Environments: choreo-concepts/environments.md
       - Choreo Marketplace: choreo-concepts/choreo-marketplace.md
   - Configure Dataplane:
-      - Provision and Configure Private Data Planes in Choreo: configure-dataplane/provision-dataplane-for-private-dataplanes.md
       - Configure a Custom Domain for Your Organization: administer/configure-a-custom-domain-for-your-organization.md
   - DevOps and CI/CD:
       - Continuous Integration:
@@ -97,9 +96,9 @@ nav:
           - Build Applications with Choreo’s Built-In CI Pipeline: devops-and-ci-cd/build-using-inbuilt-ci-pipeline.md
           - Use Your Own Container Registry with Choreo: devops-and-ci-cd/bring-your-own-container-registry.md
       - Continuous Deployment:
-          - Manage Choreo Environments: devops-and-ci-cd/manage-environments.md
+          - Manage Environments: devops-and-ci-cd/manage-environments.md
+          - Manage Continuous Deployment Pipelines: ""
           - Deploy Applications in Choreo: devops-and-ci-cd/deploying-an-application.md
-          - Rollback and Recover Deployments in Choreo: devops-and-ci-cd/rollback-and-recovery.md
       - Manage Configurations and Secrets in Choreo: devops-and-ci-cd/manage-configurations-and-secrets.md
       - Kubernetes Configurations:
           - View Kubernetes Runtime Details in Choreo: devops-and-ci-cd/view-runtime-details.md
