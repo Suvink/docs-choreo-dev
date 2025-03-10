@@ -7,7 +7,7 @@ This section provides an overview of Choreo’s custom domain configuration mode
 
 ## Choreo custom domain configuration model
 
-Choreo allows organization administrators to add custom domains for their organizations. When an administrator adds custom domains to an organization, component developers can submit requests to utilize the custom domains for their respective components. These requests require approval from the organization administrator. Upon approval, the custom domain and the relevant URL customization become available to the component.
+Choreo allows platform engineers to add custom domains for their organizations. When an platform engineer adds custom domains to an organization, component developers can submit requests to utilize the custom domains for their respective components. These requests require approval from platform engineers. Upon approval, the custom domain and the relevant URL customization become available to the component.
 
 ## Configure a custom domain for an organization
 
@@ -16,7 +16,7 @@ Choreo allows organization administrators to add custom domains for their organi
 To add a custom domain for your organization, follow the steps given below:
 
 !!! info "Note"
-        To add a custom domain, you must have organization administrator privileges.
+        To add a custom domain, you must have Choreo Platform Engineer role.
 
 1.  Sign in to the [Choreo Console](https://console.choreo.dev/).
 2.  In the top navigation menu, click the **Organization** list and select your organization.
@@ -128,7 +128,7 @@ If you want to view the entity types that use a particular custom domain, click 
 
 ### Configure a custom URL for a component
 
-When an organization administrator adds custom domains for specific environments, developers can request any available custom domain to configure a custom URL for a component in a specific environment.
+When an platform engineer adds custom domains for specific environments, developers can request any available custom domain to configure a custom URL for a component in a specific environment.
 
 
 ## Approve a custom URL request
@@ -138,7 +138,7 @@ When a developer requests a custom URL, the request will be listed in the organi
 To approve a custom URL mapping, follow the steps given below:
 
 !!! info "Note"
-    To approve custom URL requests, you must have organization administrator privileges.
+    To approve custom URL requests, you must have Choreo Platform Engineer role.
 
 1. Sign in to the [Choreo Console](https://console.choreo.dev/).
 2. In the top navigation menu, click the **Organization** list and select your organization.

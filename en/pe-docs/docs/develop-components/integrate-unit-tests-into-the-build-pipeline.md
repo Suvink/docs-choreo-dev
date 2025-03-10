@@ -1,6 +1,6 @@
-# Integrate Unit Tests into the Build Pipeline
+# Integrate Unit Tests into the Choreo CI Pipeline
 
-Choreo allows you to integrate unit tests into the build pipeline, enabling code validation before deployment. This ensures early testing of code changes, reducing the risk of defects in production.
+Choreo allows you to integrate unit tests into the  CI pipeline, enabling code validation before deployment. This ensures early testing of code changes, reducing the risk of defects in production.
 
 !!! note
         Currently, Choreo supports unit tests only for the `WSO2 MI` buildpack.
