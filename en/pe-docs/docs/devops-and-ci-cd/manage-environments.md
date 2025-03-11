@@ -17,7 +17,7 @@ To create a new environment, follow the steps given below:
 2. In the left navigation menu, click **Infrastructure** and then click **Environments**.
 
     !!!note
-        You can create and delete environments under **Environments** page under your organization, not your project's.
+        Environment creation and deletion are only available in the organization level.
 
 3. On the **Environments** page, click **Create** and specify the following details to create a new environment:
    
