@@ -14,14 +14,18 @@ The environments are listed in the order of deployment and promotion. The initia
 To create a new environment, follow the steps given below:
 
 1. Sign in to the [Choreo Console](https://console.choreo.dev/) and select the **Organization**.
-2. In the left navigation menu, click **Infrastructure** and then click **Environments** (note that this is the **Environments** page under your organization, not your projects).
+2. In the left navigation menu, click **Infrastructure** and then click **Environments**.
+
+    !!!note
+        You can create and delete environments under **Environments** page under your organization, not your project's.
+
 3. On the **Environments** page, click **Create** and specify the following details to create a new environment:
    
     - **Name**: A display name for the new environment.
     - **Data Plane** - The data plane to create the new environment.
 
         !!!tip
-            The **Data Plane** list displays all the private data planes registered under your organization along with Choreo cloud data planes.
+            The **Data Plane** list displays all the private data planes registered under your organization along with **consumed** Choreo cloud data planes.
 
     - **DNS Prefix**: A DNS prefix to identify the exposed APIs in the environment. Here, the base domain depends on the custom domain attached to the API gateways provisioned on the selected data plane.
     - **Mark environment as a Production environment**: Select if you want this environment to be a production environment.
