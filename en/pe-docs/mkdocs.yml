@@ -96,6 +96,7 @@ nav:
           - Set Up Git Provider Authentication for Choreo Deployments: develop-components/develop-components-with-git.md
           - Build Applications with Choreo’s Built-In CI Pipeline: devops-and-ci-cd/configure-choreo-ci-pipeline.md
           - Use Your Own Container Registry with Choreo: develop-components/bring-your-own-image.md
+          - Integrate Unit Tests into the CI Pipeline: develop-components/integrate-unit-tests-into-the-build-pipeline.md
       - Continuous Deployment:
           - Manage Choreo Environments: devops-and-ci-cd/manage-environments.md
           - Deploy Applications in Choreo: devops-and-ci-cd/deploying-an-application.md
@@ -142,7 +143,6 @@ nav:
       - Integrate and Manage Third-Party Services in Choreo: integrate-and-manage-external-services/integrate-and-manage-third-party-services.md
       - Integrate and Manage Generative AI Services in Choreo: integrate-and-manage-external-services/integrate-and-manage-gen-ai-services.md
   - Network Access:
-      - Configure VPNs on Choreo Cloud Data Plane: devops-and-ci-cd/configure-vpns-on-the-choreo-cloud-data-plane.md
       - Control Egress Traffic for Your Choreo Organization: administer/control-egress-traffic-for-your-organization.md
   - Monitoring:
       - Cost Analysis: monitoring/cost-analysis.md
