@@ -143,7 +143,6 @@ nav:
       - Integrate and Manage Third-Party Services in Choreo: integrate-and-manage-external-services/integrate-and-manage-third-party-services.md
       - Integrate and Manage Generative AI Services in Choreo: integrate-and-manage-external-services/integrate-and-manage-gen-ai-services.md
   - Network Access:
-      - Configure VPNs on Choreo Cloud Data Plane: devops-and-ci-cd/configure-vpns-on-the-choreo-cloud-data-plane.md
       - Control Egress Traffic for Your Choreo Organization: administer/control-egress-traffic-for-your-organization.md
   - Monitoring:
       - Cost Analysis: monitoring/cost-analysis.md
