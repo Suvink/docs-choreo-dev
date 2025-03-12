@@ -75,7 +75,6 @@ nav:
   - Home: index.md
   - Introduction:
       - What is Choreo?: what-is-choreo.md
-  - Quick Start Guide: ""
   - Choreo Concepts:
       - Resource Hierarchy: choreo-concepts/resource-hierarchy.md
       - Organization: choreo-concepts/organization.md
@@ -89,17 +88,17 @@ nav:
       - Environments: choreo-concepts/environments.md
       - Choreo Marketplace: choreo-concepts/choreo-marketplace.md
   - Configure Dataplane:
-      - Provision and Configure Private Data Planes in Choreo: configure-dataplane/provision-dataplane-for-private-dataplanes.md
       - Configure a Custom Domain for Your Organization: administer/configure-a-custom-domain-for-your-organization.md
   - DevOps and CI/CD:
       - Continuous Integration:
           - Set Up Git Provider Authentication for Choreo Deployments: develop-components/develop-components-with-git.md
           - Build Applications with Choreo’s Built-In CI Pipeline: devops-and-ci-cd/configure-choreo-ci-pipeline.md
           - Use Your Own Container Registry with Choreo: develop-components/bring-your-own-image.md
+          - Integrate Unit Tests into the CI Pipeline: develop-components/integrate-unit-tests-into-the-build-pipeline.md
       - Continuous Deployment:
-          - Manage Choreo Environments: devops-and-ci-cd/manage-environments.md
+          - Manage Environments: devops-and-ci-cd/manage-environments.md
+          - Manage Continuous Deployment Pipelines: ""
           - Deploy Applications in Choreo: devops-and-ci-cd/deploying-an-application.md
-          - Rollback and Recover Deployments in Choreo: devops-and-ci-cd/rollback-and-recovery.md
       - Manage Configurations and Secrets in Choreo: devops-and-ci-cd/manage-configurations-and-secrets.md
       - Kubernetes Configurations:
           - View Kubernetes Runtime Details in Choreo: devops-and-ci-cd/view-runtime-details.md
@@ -142,7 +141,6 @@ nav:
       - Integrate and Manage Third-Party Services in Choreo: integrate-and-manage-external-services/integrate-and-manage-third-party-services.md
       - Integrate and Manage Generative AI Services in Choreo: integrate-and-manage-external-services/integrate-and-manage-gen-ai-services.md
   - Network Access:
-      - Configure VPNs on Choreo Cloud Data Plane: devops-and-ci-cd/configure-vpns-on-the-choreo-cloud-data-plane.md
       - Control Egress Traffic for Your Choreo Organization: administer/control-egress-traffic-for-your-organization.md
   - Observability:
       - Alerts: 

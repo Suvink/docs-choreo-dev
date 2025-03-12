@@ -67,7 +67,7 @@ The following table outlines the inbound and outbound connections from a private
 <tr>
 <td>Azure Service Bus (CP)</td>
 <td>Outbound</td>
-<td>AMQP</td>
+<td>AMQP  or WS</td>
 </tr>
 <tr>
 <td >APIM/Enforcer</td>
