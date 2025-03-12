@@ -8,12 +8,11 @@ The environments are listed in the order of deployment and promotion. The initia
 
 ### Prerequisites
 
-- To create additional environments, you must have a Choreo subscription or a private data plane.
 - To create a new environment in a private data plane organization, you must have the `ENVIRONMENT-MANAGEMENT` permission. By default, `ENVIRONMENT-MANAGEMENT` permission is granted to Admin and Choreo DevOps roles.
 
 To create a new environment, follow the steps given below:
 
-1. Sign in to the [Choreo Console](https://console.choreo.dev/) and switch to the organization where you want to create a new project. 
+1. Sign in to the [Choreo Console](https://console.choreo.dev/) and switch to the organization where you want to create a new environment. 
 2. In the left navigation menu, click **DevOps** and then click **Environments** (note that this is the **Environments** page under your organization, not your projects).
 3. On the **Environments** page, click **Create** and specify the following details to create a new environment:
    
@@ -28,21 +27,6 @@ To create a new environment, follow the steps given below:
   
         !!!tip
             In Choreo, you can have multiple non-production and production environments. To work in a production environment, you must have privileged permissions to access and deploy to production environments. 
-
-## Change the order of promotion
-
-The order in which environments are listed on the **Environments** page is the same order in which promotion takes place.
-
-To change the order of promotion across environments in an organization, follow the steps given below:
-
-1. Sign in to the [Choreo Console](https://console.choreo.dev/) and switch to the organization for which you want to change the order of promotion.
-2. In the left navigation menu, click **DevOps** and then click **Environments**. 
-3. On the **Environments** page, click and drag environment list items to rearrange the order of listed environments.
-
-    !!! note
-        Although changes to the order of promotion for environments are applied immediately, the change does not affect the components already running in environments. Only subsequent builds and promotions will follow the new order.
-
-To see the changes, go to the **Deploy** page of a component (in any project).
 
 ## Delete an environment
 
