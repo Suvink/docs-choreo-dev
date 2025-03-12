@@ -142,24 +142,23 @@ nav:
       - Integrate and Manage Generative AI Services in Choreo: integrate-and-manage-external-services/integrate-and-manage-gen-ai-services.md
   - Network Access:
       - Control Egress Traffic for Your Choreo Organization: administer/control-egress-traffic-for-your-organization.md
-  - Monitoring:
-      - Cost Analysis: monitoring/cost-analysis.md
-      - Logging:
-          - View Application Logs in Choreo: monitoring-and-insights/view-logs.md
-          - Build Pipeline Logs in Choreo: monitoring/logging/build-pipeline-logs.md
-          - Runtime Logs in Choreo: monitoring/logging/runtime-logs.md
-          - Audit Logs in Choreo: monitoring/logging/audit-logs.md
-      - Application Insights:
-          - Choreo Insights Overview: monitoring-and-insights/insights-overview.md
-          - Generate Custom Reports in Choreo: monitoring-and-insights/generate-custom-reports.md
-          - Integrate Choreo with Moesif for Analytics: monitoring-and-insights/integrate-choreo-with-moesif.md
+  - Observability:
+      - Alerts: 
+          - Configure Alerts: observability/alerts/configure-alerts.md
+      - Runtime Logs: observability/runtime-logs.md
+      - Audit Logs: observability/audit-logs.md
+  - Insights:
+      - Cost Analysis: insights/cost-analysis/cost-analysis.md
+      - Delivery Insights:
+          - Configure Delivery Insights: insights/delivery-insights/configure-delivery-insights.md
+          - View Delivery Insights: insights/delivery-insights/view-delivery-insights.md
+      - Integrate External Insights Platforms:
           - Work with the Choreo Insights API:
-              - Access the Choreo Insights API: monitoring-and-insights/work-with-choreo-insights-api/access-the-choreo-insights-api.md
-              - Choreo Insights API: monitoring-and-insights/work-with-choreo-insights-api/choreo-insights-api.md
-      - Configure Alerts in Choreo: monitoring-and-insights/alerts/configure-alerts.md
-  - Delivery Insights:
-      - Configure DORA Metrics in Choreo: monitoring-and-insights/delivery-insights/configure-dora-metrics.md
-      - View DORA Metrics in Choreo: monitoring-and-insights/delivery-insights/view-dora-metrics.md
+              - Access the Choreo Insights API: insights/work-with-choreo-insights-api/access-the-choreo-insights-api.md
+              - Choreo Insights API: insights/work-with-choreo-insights-api/choreo-insights-api.md
+  - API Management:
+      - API Analytics:
+          - Integrate Choreo with Moesif for Analytics: api-management/integrate-choreo-with-moesif.md
   - Choreo CLI:
       - Choreo CLI Overview: choreo-cli/choreo-cli-overview.md
       - Get Started with the Choreo CLI: choreo-cli/get-started-with-the-choreo-cli.md
