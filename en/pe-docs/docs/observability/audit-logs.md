@@ -24,7 +24,7 @@ In Choreo, organization administrators and platform engineers are allowed to vie
 To view audit logs, follow these steps:
 
 1. Sign in to [Choreo](https://console.choreo.dev/).
-2. In the Choreo Console, go to the top navigation menu and click **Organization**.
+2. In the top navigation menu, click the **Organization** list and select your organization.
    
     !!! tip
          As of now, you can only view organization-level audit logs.
@@ -48,7 +48,7 @@ Follow the steps given below to create a role with audit log access permission a
 
 #### Step 1: Create a role with audit log access permission
 
-1. In the Choreo Console, go to the top navigation menu and click **Organization**.
+1. In the top navigation menu, click the **Organization** list and select your organization.
 2. In the left navigation menu, click **User Management** and then click **Roles**.
 3. On the **Roles** page, click **+ Create Role**.
 4. Enter a name and description for the role.
@@ -60,5 +60,5 @@ Follow the steps given below to create a role with audit log access permission a
 2. On the **Groups** page, click **+ Create Group**.
 3. Enter a name and description for the group and then click **Create**.
 4. Locate and click on the newly created group in the list.
-5. Navigate to the Roles tab, click + Add Role, and choose the role you created in [Step 1](#step-1-create-a-role-with-audit-log-access-permission).
+5. Navigate to the Roles tab, click **+ Add Role**, and choose the role you created in [Step 1](#step-1-create-a-role-with-audit-log-access-permission).
 6. In the Users tab, click **+ Add User** and select the users to assign the role to.

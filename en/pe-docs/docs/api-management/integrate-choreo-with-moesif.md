@@ -50,8 +50,8 @@ If you are an existing user with a registered organization, or you do not have a
 
 Let's configure Choreo to publish events to Moesif.
 
-1. Go to [https://console.choreo.dev/](https://console.choreo.dev/cloud-native-app-developer) and sign in.
-2. In the header, click the **Organization** list. This will open the organization level settings page. 
+1. Sign in to [Choreo](https://console.choreo.dev/).
+2. In the top navigation menu, click the **Organization** list and select your organization.
 3. On the left navigation, click **API Management** and then and click **Moesif Dashboard**.
 4. Select the environment you want to publish data for.
 5. Paste the **Application Id** you copied. 
@@ -60,21 +60,19 @@ Let's configure Choreo to publish events to Moesif.
 Once you successfully add the key, you will see a delete option next to it. Currently, you can only configure one API key. If you need to add a new API key, you need to delete the existing key and add the new one. 
 
 !!! Note
-    Once you configure the Moesif API key on Choreo, **wait for five minutes before you publish any data to the Moesif** API analytics platform. 
+    Once you configure the Moesif API key on Choreo, **wait for five minutes before you publish any data to the Moesif API analytics platform**. 
 
 
 ## Step 3: Invoke an API and observe the data on the Moesif Dashboard 
 
-You have configured Choreo to publish data to Moesif. Let's see how you can view the insights on Moesif.
+1. Invoke your API using a CLI command or a REST client.
 
-!!! tip
-    - If you have not created an API and deployed it on Choreo, you can follow the [create and deploy a REST API](https://wso2.com/choreo/docs/develop-components/develop-services/develop-a-rest-api/) guide to get started.
-
-1. Invoke your API by following the [Test REST Endpoints via the OpenAPI Console](https://wso2.com/choreo/docs/testing/test-rest-endpoints-via-the-openapi-console/) guide. 
+    !!! tip
+        - If you don't have any APIs deployed on Choreo, you can request your developers set up a component or switch to the **Developer View** on the Choreo console and follow the [create and deploy a REST API](https://wso2.com/choreo/docs/develop-components/develop-services/develop-a-rest-api/) guide to get started. 
 
 2. Once you publish data, your Moesif dashboard will receive events. Once Moesif receives events, you will see a notification on Moesif confirming that it received data. 
 
-    ![Data Recieved Moesif Notification](../../assets/img/monitoring-and-insights/data_recieved_moesif_notification.png){.cInlineImage-small}
+    ![Data Recieved Moesif Notification](../../assets/img/monitoring-and-insights/data_recieved_moesif_notification.png)
 
 3. Click **Next** on the notification. This will take you to the final step, where you can opt to add team members. In this guide, let's skip this step. 
 4. Click **Finish**.
