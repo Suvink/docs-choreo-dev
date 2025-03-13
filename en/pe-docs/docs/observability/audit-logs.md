@@ -33,7 +33,7 @@ To view audit logs, follow these steps:
 
     To view audit logs based on a specific time range and other requirements, you can apply the necessary filter criteria.
 
-    ![Audit logs](../../assets/img/monitoring-and-insights/view-logs/audit-logs.png)
+    ![Audit logs](../assets/img/monitoring-and-insights/view-logs/audit-logs.png)
 
 ### Audit log retention
 
