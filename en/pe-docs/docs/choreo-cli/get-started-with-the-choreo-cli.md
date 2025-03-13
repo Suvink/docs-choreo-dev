@@ -2,10 +2,11 @@
 
 This guide walks you through the following sample use case:
 
-- Create a web application
-- Build the web application
-- Deploy the web application in the development environment
-- Promote the web application to the production environment
+- List applications within a project
+- Build an application
+- Deploy the application in the development environment
+- Promote the application to the production environment
+- View Runtime logs
 
 This guide utilized a simple to-do app built with Next.js and two basic environments: Development and Production.
 
@@ -39,6 +40,9 @@ Run the following command to login to Choreo:
 choreo login
 ```
 
+!!! note
+    You can generate a [personal access token (PAT)](./manage-authentication-with-personal-access-tokens.md) and use it instead of interactive login. 
+
 Follow the instructions on the console to open the link in the browser and login to Choreo.
 
 ## Step 2: Create a project 
@@ -54,7 +58,7 @@ choreo create project web-app-project --type=multi-repository
 
 !!! info "Note"
 
-    To perform this action, you should have **Create Component** permission under **COMPONENT-MANAGEMENT** permission group. By default, platform engineer role does not have this permission.
+    To perform this action, you should have **Create Component** permission under **COMPONENT-MANAGEMENT** permission group. By default, platform engineer role does not have this permission. If you are not supposed to have this permission, you can ask a user who has developer role to create one for you. 
 
 In Choreo, a component within your project represents a singular unit of work in a cloud-native application. It can be a microservice, API, web application, or job/task. Each component is associated with a directory path in a Git repository containing the source code for the program.
 
@@ -98,7 +102,7 @@ This triggers a wizard prompting you to provide details for your Git repository 
 To list down the components in the project, you can use the following command:
 
 ``` sh
-choreo choreo list components --project="web-app-project"
+choreo list components --project="web-app-project"
 ```
 
 ## Step 5: View component details
@@ -115,6 +119,12 @@ You must build the components before deploying them to a specific environment. E
 
 ``` sh
 choreo create build "my-web-app" --project="web-app-project"
+```
+
+To view the builds in Progres:
+
+```sh
+choreo list builds  --project="web-app-project" --component="my-web-app"
 ```
 
 ### Step 6.1: View build status
