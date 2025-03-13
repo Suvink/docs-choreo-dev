@@ -10,7 +10,7 @@ Choreo provides a secure and user-friendly approach to accomplish this requireme
    
 2. To obtain access to the `Choreo System` organization, click **Request Access**.
 
-    ![Request access](../../../assets/img/monitoring-and-insights/work-with-choreo-insights-api/request-access.png){.cInlineImage-full}
+    ![Request access](../../assets/img/monitoring-and-insights/work-with-choreo-insights-api/request-access.png){.cInlineImage-full}
 
 ## Create an application and generate keys
 
@@ -33,7 +33,7 @@ To create an application and generate keys, follow the steps below:
     1. In the **Application Keys** pane, click to expand **Advanced Configurations**.
     2. Specify an appropriate value in the **Application access token expiry time** field and click **Update**.
    
-        ![Update token expiry time](../../../assets/img/monitoring-and-insights/work-with-choreo-insights-api/update-token-expirary-time.png){.cInlineImage-threeQuarter}
+        ![Update token expiry time](../../assets/img/monitoring-and-insights/work-with-choreo-insights-api/update-token-expirary-time.png){.cInlineImage-threeQuarter}
 
 6. Execute the following cURL command to generate an access token:
 
@@ -69,4 +69,4 @@ To create an application and generate keys, follow the steps below:
          - When the token expires, you can generate a new token programmatically by making an API call to the token endpoint using the client credentials grant type.
         - If a token theft occurs, you can revoke the token by making an API call to the revoke endpoint.
 
-        ![Endpoints](../../../assets/img/monitoring-and-insights/work-with-choreo-insights-api/endpoints.png){.cInlineImage-threeQuarter}
+        ![Endpoints](../../assets/img/monitoring-and-insights/work-with-choreo-insights-api/endpoints.png){.cInlineImage-threeQuarter}
