@@ -20,6 +20,11 @@ site_description: Choreo Learning Portal
 site_author: WSO2
 site_url: https://wso2.com/choreo/docs
 
+# Perspective dropdown configurations
+show_perspective_dropdown: true
+developer_docs_path: /choreo/docs/developer
+pe_docs_path: /choreo/docs/platform-engineer
+
 # Repository
 repo_name: wso2/docs-choreo-dev
 repo_url: https://github.com/wso2/docs-choreo-dev/
