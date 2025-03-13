@@ -1,5 +1,7 @@
 {% if config.show_perspective_dropdown %}
 <div class="md-dropdown">
+    <!-- Get docs path from config -->
+    {% set pe_path = config.pe_docs_path | d('/choreo/docs/platform-engineer') %}
     <!-- Inline script to set the button text based only on current URL path -->
     <script>
       (function() {
@@ -7,11 +9,14 @@
           var currentPath = window.location.pathname;
           var selectedRole = "Developer"; // Default role
           
+          // Use the PE path from config
+          var pePath = "{{ pe_path }}";
+          
           // If we're on the platform engineer path, select that role
-          if (currentPath.includes("/choreo/docs/platform-engineer")) {
+          if (currentPath.includes(pePath)) {
             selectedRole = "Platform Engineer";
           }
-          
+          // Set the button text based on the current URL path
           document.write('<button class="md-dropdown__button">' + selectedRole + '</button>');
         } catch (e) {
           document.write('<button class="md-dropdown__button">Developer</button>');
