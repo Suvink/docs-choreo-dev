@@ -110,7 +110,7 @@ nav:
           - CI Pipeline logs: 'devops-and-ci-cd/build-logs.md'
       - CD Pipelines:
           - Deploy Applications with Built-In CD Pipeline: devops-and-ci-cd/deploying-an-application.md
-          - Configure CD Pipelines: ''
+          - Manage CD Pipelines: 'devops-and-ci-cd/manage-continuous-deployment-pipelines.md'
       - Infra Pipelines: ''
       - External CI : ''
   - Governance:
