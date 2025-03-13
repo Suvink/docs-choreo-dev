@@ -90,61 +90,59 @@ nav:
   - Infrastructure:
       - Data Planes: 'devops-and-ci-cd/dataplanes.md'
       - Environments:
-            - Manage Environments: devops-and-ci-cd/manage-environments.md
+            - Manage Environments: infrastructure/environments/manage-environments.md
       - Domains:
-            - Configure a Custom Domain for Your Organization: administer/configure-a-custom-domain-for-your-organization.md
+            - Configure a Custom Domain for Your Organization: infrastructure/domains/configure-a-custom-domain-for-your-organization.md
       - Configure VPNs on Cloud Data Plane: ''
       - Credentials:
-            - Set Up Git Provider Authentication: develop-components/develop-components-with-git.md
-            - Use Your Own Container Registry: develop-components/bring-your-own-image.md
+            - Set Up Git Provider Authentication: infrastructure/credentials/develop-components-with-git.md
+            - Use Your Own Container Registry: infrastructure/credentials/bring-your-own-image.md
   - User Management: 
       - Users:
-            - Manage  Members of an Organization: administer/manage-members-of-an-organization.md
-            - Configure Enterprise Login: administer/configure-enterprise-login.md
+            - Manage  Members of an Organization: user-management/users/manage-members-of-an-organization.md
+            - Configure Enterprise Login: user-management/users/configure-enterprise-login.md
       - Groups & Roles:
-            - Control Access in the Choreo Console: administer/control-access-in-the-choreo-console.md
+            - Control Access in the Choreo Console: user-management/groups-and-roles/control-access-in-the-choreo-console.md
   - DevOps:
       - CI Pipelines:
-          - Build Applications with Built-In CI Pipeline: devops-and-ci-cd/configure-choreo-ci-pipeline.md
-          - Integrate Unit Tests into the CI Pipeline: develop-components/integrate-unit-tests-into-the-build-pipeline.md
-          - CI Pipeline logs: 'devops-and-ci-cd/build-logs.md'
+          - Build Applications with Built-In CI Pipeline: devops/ci-pipelines/configure-choreo-ci-pipeline.md
+          - Integrate Unit Tests into the CI Pipeline: devops/ci-pipelines/integrate-unit-tests-into-the-build-pipeline.md
+          - CI Pipeline logs: 'devops/ci-pipelines/build-logs.md'
       - CD Pipelines:
-          - Deploy Applications with Built-In CD Pipeline: devops-and-ci-cd/deploying-an-application.md
+          - Deploy Applications with Built-In CD Pipeline: devops/cd-pipelines/deploying-an-application.md
           - Configure CD Pipelines: ''
-      - Infra Pipelines: ''
-      - External CI : ''
   - Governance:
       - Workflows:
-          - Configure Approvals for Choreo Workflows: administer/configure-approvals-for-choreo-workflows.md
+          - Configure Approvals for Choreo Workflows: governance/workflows/configure-approvals-for-choreo-workflows.md
       - Egress Control:
-          - Control Egress Traffic for Your Choreo Organization: administer/control-egress-traffic-for-your-organization.md
+          - Control Egress Traffic for Your Choreo Organization: governance/egress-control/control-egress-traffic-for-your-organization.md
       - Approvals:
-          - Review Workflow Approval Requests: administer/review-workflow-approval-requests.md
+          - Review Workflow Approval Requests: governance/approvals/review-workflow-approval-requests.md
   - DB & Services:
       - Database & Vector Databases:
-          - Overview: manage-databases-and-caches/choreo-managed-databases-and-caches.md
-          - PostgreSQL: manage-databases-and-caches/choreo-managed-postgresql-databases.md
-          - MySQL: manage-databases-and-caches/choreo-managed-mysql-databases.md
-          - Choreo-Managed Cache: manage-databases-and-caches/choreo-managed-caches.md
-          - Add Choreo-Managed Databases and Caches to the Marketplace: manage-databases-and-caches/add-choreo-managed-databases-and-caches-to-the-marketplace.md
-      - Third-Party Services: integrate-and-manage-external-services/integrate-and-manage-third-party-services.md
+          - Overview: db-and-services/databases/choreo-managed-databases-and-caches.md
+          - PostgreSQL: db-and-services/databases/choreo-managed-postgresql-databases.md
+          - MySQL: db-and-services/databases/choreo-managed-mysql-databases.md
+          - Choreo-Managed Cache: db-and-services/databases/choreo-managed-caches.md
+          - Add Choreo-Managed Databases and Caches to the Marketplace: db-and-services/databases/add-choreo-managed-databases-and-caches-to-the-marketplace.md
+      - Third-Party Services: db-and-services/external-services/integrate-and-manage-third-party-services.md
       - Message Brokers:
-          - Overview: manage-message-brokers/choreo-managed-message-brokers.md
-          - Create Choreo-Managed Kafka Services: manage-message-brokers/create-choreo-managed-kafka-services.md
-          - Configure a Kafka Service: manage-message-brokers/configure-a-kafka-service.md
-          - Monitor a Kafka Service: manage-message-brokers/monitor-a-kafka-service.md
-      - Gen AI Services: integrate-and-manage-external-services/integrate-and-manage-gen-ai-services.md
+          - Overview: db-and-services/message-brokers/choreo-managed-message-brokers.md
+          - Create Choreo-Managed Kafka Services: db-and-services/message-brokers/create-choreo-managed-kafka-services.md
+          - Configure a Kafka Service: db-and-services/message-brokers/configure-a-kafka-service.md
+          - Monitor a Kafka Service: db-and-services/message-brokers/monitor-a-kafka-service.md
+      - Gen AI Services: db-and-services/external-services/integrate-and-manage-gen-ai-services.md
   - K8s Operations:
       - Runtime:
-          - View Kubernetes Runtime Details: devops-and-ci-cd/view-runtime-details.md
+          - View Kubernetes Runtime Details: k8s-operations/runtime/view-runtime-details.md
       - Containers:
-          - Configure Kubernetes Container Resources, Commands, and Arguments: devops-and-ci-cd/configure-container-resources-commands-and-arguments.md
-      - K8s Configurations and Secrets: devops-and-ci-cd/manage-configurations-and-secrets.md
-      - Health Checks: devops-and-ci-cd/set-up-health-checks.md
+          - Configure Kubernetes Container Resources, Commands, and Arguments: k8s-operations/containers/configure-container-resources-commands-and-arguments.md
+      - K8s Configurations and Secrets: k8s-operations/manage-configurations-and-secrets.md
+      - Health Checks: k8s-operations/set-up-health-checks.md
       - Scaling:
-            - Autoscale Component Replicas: devops-and-ci-cd/autoscale/autoscale-component-replicas.md
-            - Autoscale Components with Scale-to-Zero: devops-and-ci-cd/autoscale/autoscale-components-with-scale-to-zero.md
-      - Storage: devops-and-ci-cd/configure-storage.md
+            - Autoscale Component Replicas: k8s-operations/scaling/autoscale-component-replicas.md
+            - Autoscale Components with Scale-to-Zero: k8s-operations/scaling/autoscale-components-with-scale-to-zero.md
+      - Storage: k8s-operations/storage/configure-storage.md
   - Insights:
       - Delivery Insights:
           - Configure Delivery Insights: insights/delivery-insights/configure-delivery-insights.md
@@ -161,14 +159,14 @@ nav:
       - Audit Logs: observability/audit-logs.md
   - API Management:
       - Developer Portal:
-          - Customize the Choreo Developer Portal: administer/customize-the-developer-portal.md
-          - Configure Self-Sign-Up for Choreo Developer Portal: administer/configure-self-sign-up.md
+          - Customize the Choreo Developer Portal: api-management/developer-portal/customize-the-developer-portal.md
+          - Configure Self-Sign-Up for Choreo Developer Portal: api-management/developer-portal/configure-self-sign-up.md
       - API Analytics:
-          - Integrate Choreo with Moesif for Analytics: api-management/integrate-choreo-with-moesif.md   
+          - Integrate Choreo with Moesif for Analytics: api-management/api-analytics/integrate-choreo-with-moesif.md   
       - Consumer IDPs:
-          - Set Up a User Store with Choreo’s Built-In Identity Provider: administer/configure-a-user-store-with-built-in-idp.md
-          - Set Up Asgardeo as an External IdP for Choreo APIs: administer/configure-an-external-idp/configure-asgardeo-as-an-external-idp.md
-          - Set Up Azure AD as an External IdP for Choreo APIs: administer/configure-an-external-idp/configure-azure-ad-as-an-external-idp.md
+          - Set Up a User Store with Choreo’s Built-In Identity Provider: api-management/consumer-idps/configure-a-user-store-with-built-in-idp.md
+          - Set Up Asgardeo as an External IdP for Choreo APIs: api-management/consumer-idps/configure-asgardeo-as-an-external-idp.md
+          - Set Up Azure AD as an External IdP for Choreo APIs: api-management/consumer-idps/configure-azure-ad-as-an-external-idp.md
   - Choreo CLI:
       - Choreo CLI Overview: choreo-cli/choreo-cli-overview.md
       - Get Started with the Choreo CLI: choreo-cli/get-started-with-the-choreo-cli.md
