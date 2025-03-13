@@ -96,11 +96,11 @@ nav:
       - Configure VPNs on Cloud Data Plane: ''
       - Credentials:
             - Set Up Git Provider Authentication: develop-components/develop-components-with-git.md
-            - Use Your Own Container Registry with Choreo: develop-components/bring-your-own-image.md
+            - Use Your Own Container Registry: develop-components/bring-your-own-image.md
   - User Management: 
       - Users:
             - Manage  Members of an Organization: administer/manage-members-of-an-organization.md
-            - Configure Enterprise Login for Choreo: administer/configure-enterprise-login.md
+            - Configure Enterprise Login: administer/configure-enterprise-login.md
       - Groups & Roles:
             - Control Access in the Choreo Console: administer/control-access-in-the-choreo-console.md
   - DevOps:
@@ -136,7 +136,7 @@ nav:
       - Gen AI Services: integrate-and-manage-external-services/integrate-and-manage-gen-ai-services.md
   - K8s Operations:
       - Runtime:
-          - View Kubernetes Runtime Details in Choreo: devops-and-ci-cd/view-runtime-details.md
+          - View Kubernetes Runtime Details: devops-and-ci-cd/view-runtime-details.md
       - Containers:
           - Configure Kubernetes Container Resources, Commands, and Arguments: devops-and-ci-cd/configure-container-resources-commands-and-arguments.md
       - K8s Configurations and Secrets: devops-and-ci-cd/manage-configurations-and-secrets.md

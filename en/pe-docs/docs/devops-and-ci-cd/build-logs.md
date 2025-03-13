@@ -1,6 +1,6 @@
-# Build Pipeline Logs in Choreo
+# CI Pipeline Logs
 
-The build pipeline logs in Choreo offer detailed insights into the build process of your components. These logs are divided into three main sections:
+The CI pipeline logs in Choreo offer detailed insights into the build process of your components. These logs are divided into three main sections:
 
 1. **Initialization**
 
