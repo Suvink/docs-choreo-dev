@@ -20,5 +20,3 @@ If you wish to set up a private data plane, you can reach out to the Choreo team
 ## Self Service Data Plane Management
 
 Choreo is currently developing self-service data plane management capabilities for private data planes. This feature will enable you to create, manage, and monitor private data planes independently. Keep an eye out for updates on this upcoming functionality.
-
-
