@@ -26,7 +26,7 @@ Choreo auto-generates build pipelines that may slightly differ depending on the 
 
 With Auto Build on Commit, you can configure the build pipeline to be triggered once a new commit is available in the repository's selected branch without any user intervention.
 
-In addition to these steps, some buildpacks support integrating unit tests into the build pipeline. For more details, see [Integrate Unit Tests into the Choreo CI Pipeline](../develop-components/integrate-unit-tests-into-the-build-pipeline.md).
+In addition to these steps, some buildpacks support integrating unit tests into the build pipeline. For more details, see [Integrate Unit Tests into the Choreo CI Pipeline](../devops/ci-pipelines/integrate-unit-tests-into-the-build-pipeline.md).
 
 ## Continuos Deployment
 
@@ -52,8 +52,6 @@ In the deploy phase, Choreo uses a setup area to merge the Docker image with its
 Once Choreo deploys a component with configurations, the configurations become immutable. Any subsequent change results in a new deployment.
 
 ### Promote a component to a higher environment
-
-Choreo builds a container once per GitHub commit and then promotes it to subsequent higher environments.
 
 You can go to the **CD Pipelines** page of a component and promote it manually across environments.
 
