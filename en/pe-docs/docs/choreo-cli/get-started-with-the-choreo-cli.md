@@ -41,7 +41,7 @@ choreo login
 ```
 
 !!! note
-    You can generate a [personal access token (PAT)](./manage-authentication-with-personal-access-tokens.md) and use it instead of interactive login. 
+    You can generate a [Personal Access Token (PAT)](./manage-authentication-with-personal-access-tokens.md) and use it instead of interactive login. 
 
 Follow the instructions on the console to open the link in the browser and login to Choreo.
 
