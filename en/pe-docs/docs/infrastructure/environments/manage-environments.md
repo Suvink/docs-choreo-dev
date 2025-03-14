@@ -39,17 +39,9 @@ To delete an environment, follow the steps given below:
 !!! warning
     Environment deletion is a permanent, non-reversible operation.
 
-<<<<<<< HEAD:en/pe-docs/docs/devops-and-ci-cd/manage-environments.md
 1. Sign in to [Choreo](https://console.choreo.dev/).
 2. In the Choreo Console, go to the top navigation menu and click **Organization**. Then select your organization.
 3. In the left navigation menu, click **Infrastructure** and then click **Environments**. 
 4. In the **Environments** list, click the delete icon corresponding to the environment you want to delete. This displays a confirmation dialog with details on the impact of deletion.
 5. Review the details, then type the environment name to confirm the deletion.
 6. Click **Delete**.
-=======
-1. Sign in to the [Choreo Console](https://console.choreo.dev/) and switch to your organization using top navigation menu.
-2. In the left navigation menu, click **Infrastructure** and then click **Environments**.
-3. In the **Environments** list, click the delete icon corresponding to the environment you want to delete. This displays a confirmation dialog with details on the impact of deletion.
-4. Review the details, then type the environment name to confirm the deletion.
-5. Click **Delete**.
->>>>>>> 95ebbbc22578be9dbfe7c841268b179e9db7f1b2:en/pe-docs/docs/infrastructure/environments/manage-environments.md
