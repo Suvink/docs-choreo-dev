@@ -60,7 +60,7 @@ jobs:
         run: |
           rm -rf developer  # Clear existing directory if needed
           mkdir -p developer
-          cp -r en/developer-docs/site/developer developer/
+          cp -r en/developer-docs/site/developer/* developer/
           git add developer/
           git commit -m "Deploy to developer directory"
           git push origin gh-pages-v2 --force
@@ -70,7 +70,7 @@ jobs:
         run: |
           rm -rf platform-engineer  # Clear existing directory if needed
           mkdir -p platform-engineer
-          cp -r en/pe-docs/site/platform-engineer platform-engineer/
+          cp -r en/pe-docs/site/platform-engineer/* platform-engineer/
           git add platform-engineer/
           git commit -m "Deploy to platform-engineer directory"
           git push origin gh-pages-v2
