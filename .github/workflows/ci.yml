@@ -56,25 +56,26 @@ jobs:
           else
             git switch --orphan gh-pages-v2
           fi
-      - name: Deploy to gh-pages-v2 branch developer subdirectory
+      - name: Create gh-pages-v2 branch developer subdirectory
         run: |
           rm -rf developer # Remove as it is not required
           rm -rf choreo/docs/developer  # Clear existing directory if needed
           mkdir -p choreo/docs/developer
-          cp -r en/developer-docs/site/developer/* choreo/docs/developer/
-          git add choreo/docs/developer/
-          git commit -m "Deploy to developer directory"
-          git push origin gh-pages-v2 --force
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    
-      - name: Deploy to gh-pages-v2 branch platform-engineer subdirectory
+          cp -r en/developer-docs/site/developer/* choreo/docs/developer/ 
+      - name: Create gh-pages-v2 branch platform-engineer subdirectory
         run: |
           rm -rf platform-engineer # Remove as it is not required
           rm -rf choreo/docs/platform-engineer  # Clear existing directory if needed
           mkdir -p choreo/docs/platform-engineer
           cp -r en/pe-docs/site/platform-engineer/* choreo/docs/platform-engineer/
+      - name: Push Changes to gh-pages-v2
+        run: |
+          git add choreo/docs/developer/
+          git add developer # Remove as it is not required
+          git commit -m "Update developer directory"
           git add choreo/docs/platform-engineer/
+          git add platform-engineer
           git commit -m "Deploy to platform-engineer directory"
-          git push origin gh-pages-v2
+          git push origin gh-pages-v2 --force
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}             
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}                 
