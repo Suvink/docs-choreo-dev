@@ -116,7 +116,9 @@ nav:
           - CI Pipeline logs: 'devops/ci-pipelines/build-logs.md'
       - CD Pipelines:
           - Deploy Applications with Built-In CD Pipeline: devops/cd-pipelines/deploying-an-application.md
-          - Configure CD Pipelines: ''
+          - Manage CD Pipelines: 'devops/cd-pipelines/manage-continuous-deployment-pipelines.md'
+      - Infra Pipelines: ''
+      - External CI : ''
   - Governance:
       - Workflows:
           - Configure Approvals for Choreo Workflows: governance/workflows/configure-approvals-for-choreo-workflows.md
