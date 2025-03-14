@@ -115,8 +115,8 @@ nav:
           - Integrate Unit Tests into the CI Pipeline: devops/ci-pipelines/integrate-unit-tests-into-the-build-pipeline.md
           - CI Pipeline logs: 'devops/ci-pipelines/build-logs.md'
       - CD Pipelines:
-          - Deploy Applications with Built-In CD Pipeline: devops-and-ci-cd/deploying-an-application.md
-          - Manage CD Pipelines: 'devops-and-ci-cd/manage-continuous-deployment-pipelines.md'
+          - Deploy Applications with Built-In CD Pipeline: devops/cd-pipelines/deploying-an-application.md
+          - Manage CD Pipelines: 'devops/cd-pipelines/manage-continuous-deployment-pipelines.md'
       - Infra Pipelines: ''
       - External CI : ''
   - Governance:
