@@ -2,7 +2,7 @@
 
 This guide walks you through the following sample use case:
 
-- List applications within a project
+- View applications within a project
 - Build an application
 - Deploy the application in the development environment
 - Promote the application to the production environment
