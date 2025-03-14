@@ -48,9 +48,6 @@ jobs:
         run: mkdocs build --config-file en/developer-docs/mkdocs.yml
       - name: Build site platform-engineer
         run: mkdocs build --config-file en/pe-docs/mkdocs.yml 
-      - name: Move site platform-engineer to tempDir
-        run: |
-          cp -r en/pe-docs/site/platform-engineer /tmp/platform-engineer    
       - name: Deploy to gh-pages-pe branch developer subdirectory
         run: |
           git fetch origin gh-pages-pe || git checkout --orphan gh-pages-pe
