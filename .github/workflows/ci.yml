@@ -3,8 +3,6 @@ on:
   push:
     branches:
       - PE
-    paths:
-      - "en/pe-docs/**"
 permissions:
   contents: write
 jobs:
@@ -46,6 +44,32 @@ jobs:
           pip install mkdocs-glightbox==0.3.4
           pip install mkdocs-include-markdown-plugin==1.0.0
           pip install mkdocs-open-in-new-tab==1.0.3
-      - run: mkdocs gh-deploy --config-file en/pe-docs/mkdocs.yml --remote-branch gh-pages-dev --force
+      - name: Build site developer
+        run: mkdocs build --config-file en/developer-docs/mkdocs.yml
+      - name: Build site platform-engineer
+        run: mkdocs build --config-file en/pe-docs/mkdocs.yml 
+      - name: Move site platform-engineer to tempDir
+        run: |
+          cp -r en/pe-docs/site/platform-engineer /tmp/platform-engineer    
+      - name: Deploy to gh-pages-pe branch developer subdirectory
+        run: |
+          git fetch origin gh-pages-pe || git checkout --orphan gh-pages-pe
+          git checkout gh-pages-pe
+          rm -rf developer  # Clear existing directory if needed
+          mkdir -p developer
+          cp -r en/developer-docs/site/developer developer/
+          git add developer/
+          git commit -m "Deploy to product1 directory"
+          git push origin gh-pages-pe --force
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    
+      - name: Deploy to gh-pages-pe branch platform-engineer subdirectory
+        run: |
+          rm -rf platform-engineer  # Clear existing directory if needed
+          mkdir -p platform-engineer
+          cp -r en/pe-docs/site/platform-engineer platform-engineer/
+          git add platform-engineer/
+          git commit -m "Deploy to platform-engineer directory"
+          git push origin gh-pages-pe
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}             
