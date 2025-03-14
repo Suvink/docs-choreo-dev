@@ -48,25 +48,31 @@ jobs:
         run: mkdocs build --config-file en/developer-docs/mkdocs.yml
       - name: Build site platform-engineer
         run: mkdocs build --config-file en/pe-docs/mkdocs.yml 
-      - name: Deploy to gh-pages-pe branch developer subdirectory
+      - name: Create/fetch gh-pages-v2
         run: |
-          git fetch origin gh-pages-pe || git checkout --orphan gh-pages-pe
-          git checkout gh-pages-pe
+          if git ls-remote --heads origin gh-pages-v2 | grep -q gh-pages-v2; then
+            git fetch origin gh-pages-v2
+            git checkout gh-pages-v2
+          else
+            git switch --orphan gh-pages-v2
+          fi
+      - name: Deploy to gh-pages-v2 branch developer subdirectory
+        run: |
           rm -rf developer  # Clear existing directory if needed
           mkdir -p developer
           cp -r en/developer-docs/site/developer developer/
           git add developer/
-          git commit -m "Deploy to product1 directory"
-          git push origin gh-pages-pe --force
+          git commit -m "Deploy to developer directory"
+          git push origin gh-pages-v2 --force
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    
-      - name: Deploy to gh-pages-pe branch platform-engineer subdirectory
+      - name: Deploy to gh-pages-v2 branch platform-engineer subdirectory
         run: |
           rm -rf platform-engineer  # Clear existing directory if needed
           mkdir -p platform-engineer
           cp -r en/pe-docs/site/platform-engineer platform-engineer/
           git add platform-engineer/
           git commit -m "Deploy to platform-engineer directory"
-          git push origin gh-pages-pe
+          git push origin gh-pages-v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}             
