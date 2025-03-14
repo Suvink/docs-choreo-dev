@@ -58,20 +58,22 @@ jobs:
           fi
       - name: Deploy to gh-pages-v2 branch developer subdirectory
         run: |
-          rm -rf developer  # Clear existing directory if needed
-          mkdir -p developer
-          cp -r en/developer-docs/site/developer/* developer/
-          git add developer/
+          rm -rf developer # Remove as it is not required
+          rm -rf choreo/docs/developer  # Clear existing directory if needed
+          mkdir -p choreo/docs/developer
+          cp -r en/developer-docs/site/developer/* choreo/docs/developer/
+          git add choreo/docs/developer/
           git commit -m "Deploy to developer directory"
           git push origin gh-pages-v2 --force
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    
       - name: Deploy to gh-pages-v2 branch platform-engineer subdirectory
         run: |
-          rm -rf platform-engineer  # Clear existing directory if needed
-          mkdir -p platform-engineer
-          cp -r en/pe-docs/site/platform-engineer/* platform-engineer/
-          git add platform-engineer/
+          rm -rf platform-engineer # Remove as it is not required
+          rm -rf choreo/docs/platform-engineer  # Clear existing directory if needed
+          mkdir -p choreo/docs/platform-engineer
+          cp -r en/pe-docs/site/platform-engineer/* choreo/docs/platform-engineer/
+          git add choreo/docs/platform-engineer/
           git commit -m "Deploy to platform-engineer directory"
           git push origin gh-pages-v2
         env:
