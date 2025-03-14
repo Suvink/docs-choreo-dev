@@ -64,7 +64,7 @@ To resolve the issue, follow the guidelines given below:
 
 - ### After securing a web application with managed authentication,  I’m not able to add users who can sign in to the application.
 
-      For step-by-step instructions on how to manage users with Choreo's built-in identity provider (IdP), see [Configure a User Store with the Built-In IdP](../administer/configure-a-user-store-with-built-in-idp.md).
+      For step-by-step instructions on how to manage users with Choreo's built-in identity provider (IdP), see [Configure a User Store with the Built-In IdP](../api-management/consumer-idps/configure-a-user-store-with-built-in-idp.md).
       
       For details on setting up other OpenID Connect (OIDC) supported IdPs, see [Manage OAuth Keys](../authentication-and-authorization/secure-web-applications-with-managed-authentication/#step-3-manage-oauth-keys).
 
