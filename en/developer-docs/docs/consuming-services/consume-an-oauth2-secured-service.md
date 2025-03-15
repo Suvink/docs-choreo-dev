@@ -1,4 +1,4 @@
-# Consume a OAuth2 Secured Service
+# Consume an OAuth2 Secured Service
 
 {% include "discovering-an-api-devportal.md" %}
 

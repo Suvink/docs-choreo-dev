@@ -191,8 +191,8 @@ nav:
       - Test Components with Test Runner: testing/test-components-with-test-runner.md
   - Consuming Services:
       - Consume a Service: 
-          - Consume a service secured with API key: consuming-services/consuming-a-service-apikey.md
-          - Consume a service secured with OAuth2: consuming-services/consuming-a-sevice-oauth2.md
+          - Consume a service secured with API key: consuming-services/consume-an-api-key-secured-service.md
+          - Consume a service secured with OAuth2: consuming-services/consume-an-oauth2-secured-service.md
       - Manage Application: consuming-services/manage-application.md
       - Share Applications: consuming-services/share-applications.md
       - Manage Subscription: consuming-services/manage-subscription.md
