@@ -1,4 +1,4 @@
-# Alert Overview
+# Alerts Overview
 
 This section explains how you can configure alerts for your Choreo components. Setting up alerts allows you to proactively monitor your components ecosystem and take corrective measures when necessary.
 
