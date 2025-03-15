@@ -23,8 +23,8 @@ site_dir: site/developer
 
 # Perspective dropdown configurations
 show_perspective_dropdown: true
-developer_docs_path: /choreo/docs/developer
-pe_docs_path: /choreo/docs/platform-engineer
+developer_docs_path: /choreo/docs/developer/
+pe_docs_path: /choreo/docs/platform-engineer/
 
 # Repository
 repo_name: wso2/docs-choreo-dev
