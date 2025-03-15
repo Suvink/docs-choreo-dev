@@ -94,7 +94,7 @@ nav:
       - Endpoint: choreo-concepts/endpoint.md
       - Connections: choreo-concepts/connections.md
   - Infrastructure:
-      - Data Planes: 'infrastructure/dataplanes/dataplanes.md'
+      - Data Planes: 'infrastructure/dataplanes/data-planes.md'
       - Environments:
             - Manage Environments: infrastructure/environments/manage-environments.md
       - Domains:
