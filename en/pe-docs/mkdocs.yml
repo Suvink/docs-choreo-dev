@@ -96,8 +96,8 @@ nav:
             - Configure a Custom Domain for Your Organization: infrastructure/domains/configure-a-custom-domain-for-your-organization.md
       - Configure VPNs on Cloud Data Plane: 'infrastructure/configure-vpns-on-the-choreo-cloud-data-plane.md'
       - Credentials:
-            - Set Up Git Provider Authentication: infrastructure/credentials/develop-components-with-git.md
-            - Use Your Own Container Registry: infrastructure/credentials/bring-your-own-image.md
+            - Set Up Git Provider Authentication: infrastructure/credentials/set-up-git-provider-authentication-for-choreo-deployments.md
+            - Use Your Own Container Registry: infrastructure/credentials/use-your-own-container-registry.md
   - User Management: 
       - Users:
             - Manage  Members of an Organization: user-management/users/manage-members-of-an-organization.md
@@ -106,11 +106,11 @@ nav:
             - Control Access in the Choreo Console: user-management/groups-and-roles/control-access-in-the-choreo-console.md
   - DevOps:
       - CI Pipelines:
-          - Build Applications with Built-In CI Pipeline: devops/ci-pipelines/configure-choreo-ci-pipeline.md
+          - Configure CI Pipeline: devops/ci-pipelines/configure-ci-pipeline.md
           - Integrate Unit Tests into the CI Pipeline: devops/ci-pipelines/integrate-unit-tests-into-the-build-pipeline.md
-          - CI Pipeline logs: 'devops/ci-pipelines/build-logs.md'
+          - CI Pipeline logs: 'devops/ci-pipelines/ci-pipeline-logs.md'
       - CD Pipelines:
-          - Deploy Applications with Built-In CD Pipeline: devops/cd-pipelines/deploying-an-application.md
+          - Deploy Applications using Choreo CD Pipeline: devops/cd-pipelines/deploying-application-using-choreo-cd-pipeline.md
           - Manage CD Pipelines: 'devops/cd-pipelines/manage-continuous-deployment-pipelines.md'
       - Manage Configuration Groups: devops/manage-configuration-groups.md
   - Governance:

@@ -113,7 +113,9 @@ nav:
           - Expose a Ballerina GraphQL Endpoint via a Service: develop-components/develop-services/expose-a-ballerina-graphql-endpoint-via-a-service.md
           - Expose a Prism-Based Mock Server Using an OpenAPI Specification: develop-components/develop-services/expose-a-prism-based-mock-server-using-an-openapi-specification.md
           - Expose a WebSocket Endpoint via a Service: develop-components/develop-services/expose-a-websocket-endpoint-via-a-service.md
-      - Develop an API Proxy: develop-components/develop-an-api-proxy.md
+      - Develop an API Proxy:
+          - Develop an API Proxy from Scratch : develop-components/develop-proxy/develop-an-api-proxy-from-scratch.md 
+          - Develop an API Proxy from Git Repository Source : develop-components/develop-proxy/develop-an-api-proxy-from-a-github-repository-source.md
       - Develop Web Applications:
           - Build and Deploy a Single-Page Web Application: develop-components/develop-web-applications/build-and-deploy-a-single-page-web-application.md
           - Develop Web Applications Locally with Choreo’s Managed Authentication: develop-components/develop-web-applications/develop-web-applications-locally-with-managed-authentication.md
@@ -398,7 +400,7 @@ plugins:
         "testing/test-apis-with-choreo-testgpt.md": "https://wso2.com/choreo/docs/testing/test-apis-with-choreo-apichat/"
         "develop-integrations/develop-an-event-triggered-integration.md": "https://wso2.com/choreo/docs/develop-components/develop-integrations/develop-an-event-handler/"
         "develop-integrations/develop-a-scheduled-integration.md": "https://wso2.com/choreo/docs/develop-components/develop-integrations/develop-a-scheduled-task/"
-        "develop-components/develop-a-rest-api-proxy.md": "https://wso2.com/choreo/docs/develop-components/develop-an-api-proxy/"
+        "develop-components/develop-a-rest-api-proxy.md": "https://wso2.com/choreo/docs/develop-components/develop-proxy/"
         "devops-and-ci-cd/builds-and-deployments.md": "https://wso2.com/choreo/docs/choreo-concepts/ci-cd/"
         "troubleshoot/faq.md": "https://wso2.com/choreo/docs/references/faq/"
         "develop-components/develop-services/develop-a-rest-api.md": "https://wso2.com/choreo/docs/develop-components/develop-services/develop-a-service/"

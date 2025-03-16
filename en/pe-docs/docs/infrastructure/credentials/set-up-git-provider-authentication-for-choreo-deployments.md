@@ -30,38 +30,6 @@ Authorizing Choreo as a GitHub application grants Choreo the following permissio
 |Pull Request | Y   | Y    | Create a pull request if you start with a Choreo sample               |
 |Webhooks     | Y   | Y    | Trigger automatic deployment and configuration generation             |
 
-### Add Git submodules to a project
-
-Choreo provides [Git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) support when you connect your GitHub repository to Choreo. This allows you to manage and include external repositories effectively within Choreo build pipelines. Key benefits of this capability include:
-
-  - **Code sharing without duplication**: Use submodules to maintain shared libraries across multiple projects, ensuring a single source of truth.
-  - **Efficient third-party library management**: Manage third-party libraries as submodules to update them independently and track changes easily, avoiding direct code integration.
-
-For example, when you [work with the Micro Integrator (MI) runtime in Choreo](./work-with-the-micro-integrator-runtime-in-choreo.md), you can use Git submodules to reuse MI templates and sequences across components without duplication.
-
-!!! info "Note" 
-    If you encounter an error stating that you cannot clone a submodule due to insufficient permissions, follow the instructions below to grant the necessary permissions:
-
-      - For a personal account:
-
-         1. Sign in to your personal GitHub account.
-         2. In the upper-right corner, click your profile picture, and then click **Settings**.
-         3. In the left navigation menu, go to the **Integrations** section and click **Applications**.
-         4. Under the **Installed GitHub Apps** tab, click **Configure** corresponding to **choreo.dev**.
-         5. Under **Repository Access**, grant access to the necessary repositories.
-
-      - For an organization account:
-
-         1. Sign in to your organization's GitHub account.
-         2. In the upper-right corner, click your profile picture, and then click **Settings**.
-         3. In the left navigation menu, go to the **Third-Party Access** section and click **GitHub Apps**.
-         4. Click **Configure** corresponding to **choreo.dev**.
-         5. Under **Repository Access**, grant access to the necessary repositories.
-
-            !!! note
-                Choreo currently does not support accessing private repositories in other organizations.
-
-<!-- TODO: (VirajSalaka) Decide if auto pull latest sub-module configuration is required -->
 
 ## Authorize Bitbucket with Choreo
 

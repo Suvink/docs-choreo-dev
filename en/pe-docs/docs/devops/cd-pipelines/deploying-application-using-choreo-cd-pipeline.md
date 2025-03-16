@@ -1,4 +1,4 @@
-# Deploy Applications with Built-In CD Pipeline
+# Deploy Applications using Choreo CD Pipeline
 
 Using Choreo, you can easily deploy applications written in different language frameworks (such as Java, Go, NodeJS, Python, etc.) on shared or private data planes.
 
