@@ -1,4 +1,4 @@
-# Use Your Own Container Registry with Choreo
+# Use Your Own Container Registry
 
 Choreo allows you to deploy and manage prebuilt container images from external container registries as Choreo components. This enables you to deploy and effectively manage your container images within the Choreo environment.
 
