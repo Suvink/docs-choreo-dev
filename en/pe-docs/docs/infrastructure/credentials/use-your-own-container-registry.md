@@ -141,7 +141,6 @@ Follow the guidelines below based on your container registry:
 
           Create a personal access token (PAT) and use it in place of the password. You cannot use your own GitHub password. You must provide a [PAT token](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry#authenticating-with-a-personal-access-token-classicn).
 
-  <!-- TODO: (VirajSalaka) We need deployment related specifics to be added to Deploy -->
 
 ## Auto-deploy images in Choreo with an external CI/build pipeline
 

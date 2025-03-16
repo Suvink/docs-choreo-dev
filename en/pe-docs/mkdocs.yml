@@ -106,7 +106,7 @@ nav:
             - Control Access in the Choreo Console: user-management/groups-and-roles/control-access-in-the-choreo-console.md
   - DevOps:
       - CI Pipelines:
-          - Configure Choreo CI Pipeline: devops/ci-pipelines/configure-choreo-ci-pipeline.md
+          - Configure CI Pipeline: devops/ci-pipelines/configure-ci-pipeline.md
           - Integrate Unit Tests into the CI Pipeline: devops/ci-pipelines/integrate-unit-tests-into-the-build-pipeline.md
           - CI Pipeline logs: 'devops/ci-pipelines/ci-pipeline-logs.md'
       - CD Pipelines:
