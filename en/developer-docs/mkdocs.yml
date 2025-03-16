@@ -21,11 +21,6 @@ site_author: WSO2
 site_url: https://wso2.com/choreo/docs
 site_dir: site/developer
 
-# Perspective dropdown configurations
-show_perspective_dropdown: true
-developer_docs_path: /developer
-pe_docs_path: /platform-engineer
-
 # Repository
 repo_name: wso2/docs-choreo-dev
 repo_url: https://github.com/wso2/docs-choreo-dev/
@@ -118,7 +113,9 @@ nav:
           - Expose a Ballerina GraphQL Endpoint via a Service: develop-components/develop-services/expose-a-ballerina-graphql-endpoint-via-a-service.md
           - Expose a Prism-Based Mock Server Using an OpenAPI Specification: develop-components/develop-services/expose-a-prism-based-mock-server-using-an-openapi-specification.md
           - Expose a WebSocket Endpoint via a Service: develop-components/develop-services/expose-a-websocket-endpoint-via-a-service.md
-      - Develop an API Proxy: develop-components/develop-an-api-proxy.md
+      - Develop an API Proxy:
+          - Develop an API Proxy from Scratch : develop-components/develop-proxy/develop-an-api-proxy-from-scratch.md 
+          - Develop an API Proxy from Git Repository Source : develop-components/develop-proxy/develop-an-api-proxy-from-a-github-repository-source.md
       - Develop Web Applications:
           - Build and Deploy a Single-Page Web Application: develop-components/develop-web-applications/build-and-deploy-a-single-page-web-application.md
           - Develop Web Applications Locally with Choreo’s Managed Authentication: develop-components/develop-web-applications/develop-web-applications-locally-with-managed-authentication.md
@@ -180,6 +177,7 @@ nav:
           - Autoscale Components with Scale-to-Zero: devops-and-ci-cd/autoscale/autoscale-components-with-scale-to-zero.md
       - Configure Storage: devops-and-ci-cd/configure-storage.md
       - Manage Environments: devops-and-ci-cd/manage-environments.md
+      - Manage Configuration Groups: devops-and-ci-cd/manage-configuration-groups.md
       - Manage Continuous Deployment Pipelines: devops-and-ci-cd/manage-continuous-deployment-pipelines.md
       - Configure VPNs on the Choreo Cloud Data Plane: devops-and-ci-cd/configure-vpns-on-the-choreo-cloud-data-plane.md
   - Testing:
@@ -212,13 +210,14 @@ nav:
       - Rename API Display Name: api-management/rename-api-display-name.md
   - Monitoring and Insights:
       - Observability Overview: monitoring-and-insights/observability-overview.md
+      - Alert Overview: monitoring-and-insights/alerts-overview.md
       - Delivery Insights:
           - Configure DORA Metrics: monitoring-and-insights/delivery-insights/configure-dora-metrics.md
           - View DORA Metrics: monitoring-and-insights/delivery-insights/view-dora-metrics.md
       - Usage Insights:
           - Insights Overview: monitoring-and-insights/insights-overview.md
-          - Configure Alerts: monitoring-and-insights/alerts/configure-alerts.md
           - Generate Custom Reports: monitoring-and-insights/generate-custom-reports.md
+      - Cost Insights: monitoring-and-insights/cost-optimization.md
       - View Logs: monitoring-and-insights/view-logs.md
       - Work with the Choreo Insights API:
           - Access the Choreo Insights API: monitoring-and-insights/work-with-choreo-insights-api/access-the-choreo-insights-api.md
@@ -401,7 +400,7 @@ plugins:
         "testing/test-apis-with-choreo-testgpt.md": "https://wso2.com/choreo/docs/testing/test-apis-with-choreo-apichat/"
         "develop-integrations/develop-an-event-triggered-integration.md": "https://wso2.com/choreo/docs/develop-components/develop-integrations/develop-an-event-handler/"
         "develop-integrations/develop-a-scheduled-integration.md": "https://wso2.com/choreo/docs/develop-components/develop-integrations/develop-a-scheduled-task/"
-        "develop-components/develop-a-rest-api-proxy.md": "https://wso2.com/choreo/docs/develop-components/develop-an-api-proxy/"
+        "develop-components/develop-a-rest-api-proxy.md": "https://wso2.com/choreo/docs/develop-components/develop-proxy/"
         "devops-and-ci-cd/builds-and-deployments.md": "https://wso2.com/choreo/docs/choreo-concepts/ci-cd/"
         "troubleshoot/faq.md": "https://wso2.com/choreo/docs/references/faq/"
         "develop-components/develop-services/develop-a-rest-api.md": "https://wso2.com/choreo/docs/develop-components/develop-services/develop-a-service/"
@@ -452,6 +451,10 @@ extra:
       link: https://github.com/wso2
   version:
     provider: mike
+  # Perspective dropdown configurations
+  show_perspective_dropdown: true
+  developer_docs_path: /choreo/docs/developer/
+  pe_docs_path: /choreo/docs/platform-engineer/
 #site_version: 1.0.0
 #base_path: http://localhost:8000
 

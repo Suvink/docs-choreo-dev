@@ -1,4 +1,4 @@
-# Configure a CI Pipeline
+# Configure CI Pipeline
 
 Choreo has built in CI pipeline so that the developers and platform engineers do not need to worry about creating docker images and saving in a container registry on their own. The developers could visit the build page from their component view and then build the component so that it would be ready for the deployment. As a platform engineer you may need to enforce configurations on this build pipeline. Each component would have its own build page, and you configure them separately.
 
@@ -21,7 +21,7 @@ Alternatively, you can pick a specific commit and trigger a build too. Click on 
 Another option you have is to build from a tag. Click on the down arrow next to **Show Commits** button. Then from the dropdown menu, select **Show Tags**. Click on **Show Tags** button.Finally, select the tag you want to pick and Click **Build**.
 
 !!! note
-        Admin and Choreo DevOps users can trigger builds using specific tags from the connected Git repository. However, this action bypasses the standard branch-based deployment process and should only be used for critical, time-sensitive scenarios, as it can disrupt deployment track integrity.
+        Users can trigger builds using specific tags from the connected Git repository. However, this action bypasses the standard branch-based deployment process and should only be used for critical, time-sensitive scenarios, as it can disrupt deployment track integrity.
 
 To configure build pipeline, click **Build Configurations**. The configurations would be specific to the type of component. For certain components, you can configure build time environment variables too. 
 <!-- TODO: (VirajSalaka) Find out the component types which has environment variables has support -->

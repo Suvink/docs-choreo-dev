@@ -21,11 +21,6 @@ site_author: WSO2
 site_url: https://wso2.com/choreo/docs
 site_dir: site/platform-engineer
 
-# Perspective dropdown configurations
-show_perspective_dropdown: true
-developer_docs_path: /developer
-pe_docs_path: /platform-engineer
-
 # Repository
 repo_name: wso2/docs-choreo-dev
 repo_url: https://github.com/wso2/docs-choreo-dev/
@@ -94,15 +89,15 @@ nav:
       - Endpoint: choreo-concepts/endpoint.md
       - Connections: choreo-concepts/connections.md
   - Infrastructure:
-      - Data Planes: ''
+      - Data Planes: 'infrastructure/dataplanes/data-planes.md'
       - Environments:
             - Manage Environments: infrastructure/environments/manage-environments.md
       - Domains:
             - Configure a Custom Domain for Your Organization: infrastructure/domains/configure-a-custom-domain-for-your-organization.md
       - Configure VPNs on Cloud Data Plane: 'infrastructure/configure-vpns-on-the-choreo-cloud-data-plane.md'
       - Credentials:
-            - Set Up Git Provider Authentication: infrastructure/credentials/develop-components-with-git.md
-            - Use Your Own Container Registry: infrastructure/credentials/bring-your-own-image.md
+            - Set Up Git Provider Authentication: infrastructure/credentials/set-up-git-provider-authentication-for-choreo-deployments.md
+            - Use Your Own Container Registry: infrastructure/credentials/use-your-own-container-registry.md
   - User Management: 
       - Users:
             - Manage  Members of an Organization: user-management/users/manage-members-of-an-organization.md
@@ -111,14 +106,13 @@ nav:
             - Control Access in the Choreo Console: user-management/groups-and-roles/control-access-in-the-choreo-console.md
   - DevOps:
       - CI Pipelines:
-          - Build Applications with Built-In CI Pipeline: devops/ci-pipelines/configure-choreo-ci-pipeline.md
+          - Configure CI Pipeline: devops/ci-pipelines/configure-ci-pipeline.md
           - Integrate Unit Tests into the CI Pipeline: devops/ci-pipelines/integrate-unit-tests-into-the-build-pipeline.md
-          - CI Pipeline logs: 'devops/ci-pipelines/build-logs.md'
+          - CI Pipeline logs: 'devops/ci-pipelines/ci-pipeline-logs.md'
       - CD Pipelines:
-          - Deploy Applications with Built-In CD Pipeline: devops/cd-pipelines/deploying-an-application.md
+          - Deploy Applications using Choreo CD Pipeline: devops/cd-pipelines/deploying-application-using-choreo-cd-pipeline.md
           - Manage CD Pipelines: 'devops/cd-pipelines/manage-continuous-deployment-pipelines.md'
-      - Infra Pipelines: ''
-      - External CI : ''
+      - Manage Configuration Groups: devops/manage-configuration-groups.md
   - Governance:
       - Workflows:
           - Configure Approvals for Choreo Workflows: governance/workflows/configure-approvals-for-choreo-workflows.md
@@ -159,7 +153,7 @@ nav:
           - Work with the Choreo Insights API:
               - Access the Choreo Insights API: insights/work-with-choreo-insights-api/access-the-choreo-insights-api.md
               - Choreo Insights API: insights/work-with-choreo-insights-api/choreo-insights-api.md
-      - Cost Analysis: insights/cost-analysis/cost-analysis.md
+      - Cost Insights: insights/cost-optimization.md
   - Observability:
       - Alerts: 
           - Configure Alerts: observability/alerts/configure-alerts.md
@@ -168,7 +162,6 @@ nav:
   - API Management:
       - Developer Portal:
           - Customize the Choreo Developer Portal: api-management/developer-portal/customize-the-developer-portal.md
-          - Configure Self-Sign-Up for Choreo Developer Portal: api-management/developer-portal/configure-self-sign-up.md
       - API Analytics:
           - Integrate Choreo with Moesif for Analytics: api-management/api-analytics/integrate-choreo-with-moesif.md   
       - Consumer IDPs:
@@ -250,6 +243,10 @@ extra:
       link: https://github.com/wso2
   version:
     provider: mike
+  # Perspective dropdown configurations
+  show_perspective_dropdown: true
+  developer_docs_path: /choreo/docs/developer/
+  pe_docs_path: /choreo/docs/platform-engineer/
 #site_version: 1.0.0
 #base_path: http://localhost:8000
 
