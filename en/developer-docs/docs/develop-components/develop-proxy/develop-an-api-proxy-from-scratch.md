@@ -76,7 +76,7 @@ Now you are ready to test the API proxy.
 
 ## Step 4: Test the API proxy
 
-Choreo allows you to test your API proxy using either the [integrated OpenAPI Console](../../testing/test-rest-endpoints-via-the-openapi-console.md) or [cURL](../testing/test-apis-with-curl.md). In this guide, you will use the OpenAPI Console.
+Choreo allows you to test your API proxy using either the [integrated OpenAPI Console](../../testing/test-rest-endpoints-via-the-openapi-console.md) or [cURL](../../testing/test-apis-with-curl.md). In this guide, you will use the OpenAPI Console.
 
 !!! tip
     Choreo enables OAuth 2.0 to secure APIs by default. Therefore, you need an access token to invoke an API.
