@@ -16,11 +16,10 @@ Choreo enables two DORA metrics by default; deployment frequency and lead time f
 
 To configure the CIO dashboard by enabling the other two metrics, follow the steps below:
 
-1. Sign in to Choreo using your Google, GitHub, or Microsoft account.
-2. On the left navigation menu, click **Delivery Insights**.
-3. Click on the **DORA Metrics** tab.
-4. Scroll to the bottom of the dashboard and click **Configure**.
-5. Select your incident management system. Currently, Choreo only supports GitHub. 
+1. Sign in to Choreo using your Google, GitHub, or Microsoft account. 
+2. On the left navigation menu, click **Insights** and then click **Delivery**.
+3. Scroll to the bottom of the dashboard and click **Configure**. 
+4. Select your incident management system. Currently, Choreo only supports GitHub. 
 
 ## Configuring GitHub as the incident management system
 
