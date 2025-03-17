@@ -174,7 +174,7 @@ Click the respective tab to view the structure for your current configuration fi
     
     | Configuration                 | Required     | Description                                                                       |
     |-------------------------------|--------------|-----------------------------------------------------------------------------------|
-    | **env**                       | Optional     | An array of environment variableconfigurations.                                          |
+    | **env**                       | Optional     | An array of environment variable configurations.                                          |
     | **name**                      | Required     | A unique name for the environment variable, starting with a letter or an underscore, and containing only letters, numbers, or underscores. |
     | **valueFrom**                 | Required     | The source of the environment variable value.                                     |
     | **connectionRef**             | Required     | Connection reference value source definition.                                     |
@@ -190,7 +190,7 @@ Click the respective tab to view the structure for your current configuration fi
 
     | Configuration                 | Required     | Description                                                                       |
     |-------------------------------|--------------|-----------------------------------------------------------------------------------|
-    | **env**                       | Optional     | An array of environment variableconfigurations.                                          |
+    | **env**                       | Optional     | An array of environment variable configurations.                                          |
     | **name**                      | Required     | A unique name for the environment variable, starting with a letter or an underscore, and containing only letters, numbers, or underscores. |
     | **file**                      | Optional     | An array of file configurations.                                                  |
     | **mountPath**                 | Required     | Path that file to be mounted in the container                                     |
@@ -311,7 +311,7 @@ Click the respective tab to view the structure for your current configuration fi
     
     | Configuration                 | Required     | Description                                                                       |
     |-------------------------------|--------------|-----------------------------------------------------------------------------------|
-    | **env**                       | Optional     | An array of environment variableconfigurations.                                          |
+    | **env**                       | Optional     | An array of environment variable configurations.                                          |
     | **name**                      | Required     | A unique name for the environment variable, starting with a letter or an underscore, and containing only letters, numbers, or underscores. |
     | **valueFrom**                 | Required     | The source of the environment variable value.                                     |
     | **connectionRef**             | Required     | Connection reference value source definition.                                     |
