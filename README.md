@@ -68,6 +68,7 @@ cd en/pe-docs
 ```shell
 mkdocs serve --dirtyreload
 ```
+Note: `--dirtyreload` flag is used to enable live reloading of the documentation site when changes are made to the source files. If you don't want to enable live reloading, you can remove this flag.
 Choreo docs will be available locally on [http://localhost:8000/](http://localhost:8000/)
 
 ### Proof Reading Documentation
