@@ -5,7 +5,7 @@
 
 - [ ] Change is only applicable for Developer view
 - [ ] Change is only applicable for Platform Engineer view
-- [x] Change should be available in both Developer and Platform Engineer views
+- [x] Change is applicable for both Developer and Platform Engineer views
 
 ## Related issues
 > List related issues here
