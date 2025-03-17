@@ -24,7 +24,7 @@ site_dir: site/developer
 # Repository
 repo_name: wso2/docs-choreo-dev
 repo_url: https://github.com/wso2/docs-choreo-dev/
-edit_uri: https://github.com/wso2/docs-choreo-dev/edit/dev/en/docs/
+edit_uri: https://github.com/wso2/docs-choreo-dev/edit/PE/en/developer-docs/docs
 dev_addr: localhost:8000
 
 # Copyright
