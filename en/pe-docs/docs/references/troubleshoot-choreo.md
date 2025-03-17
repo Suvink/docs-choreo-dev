@@ -66,7 +66,7 @@ To resolve the issue, follow the guidelines given below:
    
       For step-by-step instructions on how to manage users with Choreo's built-in identity provider (IdP), see [Configure a User Store with the Built-In IdP](../api-management/consumer-idps/configure-a-user-store-with-built-in-idp.md).
 
-      If you have set up OpenID Connect (OIDC) supported identity providers (IdPs) for managed authentication, please navigate to the respective IdP's page to configure the users associated with it.
+      If you have set up OpenID Connect (OIDC) supported identity providers (IdPs) for managed authentication, refer to the respective IdP's documentation on how to configure the users associated with it.
 
 ## Troubleshoot Tailscale proxy issues
 
