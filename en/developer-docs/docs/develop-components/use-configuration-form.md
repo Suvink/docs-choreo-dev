@@ -10,10 +10,10 @@ Refer to the following examples for more details.
 
 | Configuration                 |    Type      | Required     | Description                                                                       |
 |-------------------------------|--------------|--------------|-----------------------------------------------------------------------------------|
-| **env**                       | [[Object]](#define-environment-variables) | Optional     | An array of environment variable configurations.                                  |
-| **file**                      | [[Object]](#define-file-keys) | Optional     | An array of file configurations.                                                  |
+| **env**                       | [[Object]](#environment-variables) | Optional     | An array of environment variable configurations.                                  |
+| **file**                      | [[Object]](#file-mount) | Optional     | An array of file configurations.                                                  |
 
-## Define environment variables
+## Environment Variables
 
 | Configuration                 |    Type      | Required     | Description                                                                       |
 |-------------------------------|--------------|--------------|-----------------------------------------------------------------------------------|
@@ -43,7 +43,7 @@ configurations:
 !!! notes
     Only string, boolean, number, and secret are allowed as environment variable types.
 
-## Define File keys
+## File Mount
 
 | Configuration                 |    Type      | Required     | Description                                                                       |
 |-------------------------------|--------------|--------------|-----------------------------------------------------------------------------------|
@@ -169,4 +169,4 @@ configurations:
     - `properties` is required if the type is `object` and define sub-object keys under it.
     - `items` is required if the type is `array` and define array properties under it.
 
-Once user clicks the `Configure and Deploy` button, defined configurtions shown and user can inject values through the form.
+Once user clicks the `Configure and Deploy` button, defined configurtions are shown and user can inject values through the form.
