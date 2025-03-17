@@ -64,10 +64,9 @@ To resolve the issue, follow the guidelines given below:
 
 - ### After securing a web application with managed authentication,  I’m not able to add users who can sign in to the application.
    
-      For details on setting up  OpenID Connect (OIDC) supported IdPs, see
+      For step-by-step instructions on how to manage users with Choreo's built-in identity provider (IdP), see [Configure a User Store with the Built-In IdP](../api-management/consumer-idps/configure-a-user-store-with-built-in-idp.md).
 
-       - [Configure Asgardeo as an External Identity Provider (IdP)](../api-management/consumer-idps/configure-asgardeo-as-an-external-idp.md).
-       - [Configure Azure Active Directory (Azure AD) as an External Identity Provider (IdP)](../api-management/consumer-idps/configure-azure-ad-as-an-external-idp.md)
+      If you have set up OpenID Connect (OIDC) supported identity providers (IdPs) for managed authentication, please navigate to the respective IdP's page to configure the users associated with it.
 
 ## Troubleshoot Tailscale proxy issues
 
