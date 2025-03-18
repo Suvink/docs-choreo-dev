@@ -10,8 +10,8 @@ Refer to the following examples for more details.
 
 | Configuration                 |    Type      | Required     | Description                                                                       |
 |-------------------------------|--------------|--------------|-----------------------------------------------------------------------------------|
-| **env**                       | [[Object]](#environment-variables) | Optional     | An array of environment variable configurations.                                  |
-| **file**                      | [[Object]](#file-mount) | Optional     | An array of file configurations.                                                  |
+| **env**                       | [Object[ ]](#environment-variables) | Optional     | An array of environment variable configurations.                                  |
+| **file**                      | [Object[ ]](#file-mount) | Optional     | An array of file configurations.                                                  |
 
 ## Environment Variables
 
@@ -50,7 +50,7 @@ configurations:
 | **mountPath**                 | String       | Required     | Path that file to be mounted in the container                                     |
 | **name**                      | String       | Required     | A unique name for the environment variable, starting with a letter or an underscore, and containing only letters, numbers, or underscores. |
 | **type**                      | String       | Required     | File extension type. Supported types are yaml, json, and toml, and type is required |
-| **values**                    | [[Object]](#values-object)        | Required     | Required under file section. File key-values definition                           |
+| **values**                    | [Object[ ]](#values-object)        | Required     | Required under file section. File key-values definition                           |
 
 ```yaml
 configurations:
@@ -161,7 +161,7 @@ configurations:
 | Configuration                 |    Type      | Required     | Description                                                                       |
 |-------------------------------|--------------|--------------|-----------------------------------------------------------------------------------|
 | **type**                      | String       | Optional     | The type of value. Supported types are string, number, boolean, secret, object,   |
-| **properties**                | [[Object]](#properties-object)        | Optional     | Required if type is an object. Definition for defining the sub-properties of the object                      |
+| **properties**                | [Object[ ]](#properties-object)        | Optional     | Required if type is an object. Definition for defining the sub-properties of the object                      |
 
 
 !!! notes
