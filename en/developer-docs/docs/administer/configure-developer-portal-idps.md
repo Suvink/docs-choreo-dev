@@ -8,11 +8,10 @@ You can manage which Identity Providers (IdPs) are available for consumers to au
 Follow these steps to configure Identity Providers:
 
 1. Sign in to [Choreo](https://console.choreo.dev/).
-2. In the Choreo Console, go to the top navigation menu and click **Organization**. Then select your organization.
 
-2. Select your organization from the **Organization** dropdown in the Choreo Console header.
+2. In the Choreo Console, go to the top navigation menu and click **Organization**. Then select your organization. 
 
-3. From the left navigation menu, select **API Management** > **Developer Portal**.
+3. In the left navigation menu, click **Settings**. Under the **API Management** tab, go to **Developer Portal**.
 
 4. In the **Identity Providers** section, specify which identity providers should be used for both the **Sandbox** and **Production** environments of the Developer Portal.
 
