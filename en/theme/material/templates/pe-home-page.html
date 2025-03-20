@@ -185,6 +185,13 @@
    background-image: url('assets/img/home/background.svg') !important;
    background-position-y: -24rem;
 }
+
+@media screen and (min-width: 1220px) {
+  .md-main__inner {
+    display: none;
+  }
+}
+
 </style>
 </header>
 {% endblock %}
@@ -198,7 +205,11 @@
 {% block palette%}
 {% endblock %}
 <main class="md-main" data-md-component="main">
-
+  <div class="md-main__inner md-grid"> 
+    {% block site_nav %}
+    {{super()}}
+    {% endblock %}
+  </div>
   <div class="md-container-home data-md-component="container">
   <div style="height: 5rem;"></div>
   <div class="row md_home_link_container_row">
