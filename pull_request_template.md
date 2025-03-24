@@ -7,5 +7,10 @@
 - [ ] Change is only applicable for Platform Engineer view
 - [x] Change is applicable for both Developer and Platform Engineer views
 
+## Testing
+
+- [ ] Change is tested in Developer view
+- [ ] Change is tested in Platform Engineer view
+
 ## Related issues
 > List related issues here
