@@ -394,7 +394,7 @@ color: #a8a39f;
 
 @media screen and (max-width: 960px) {
     .md-header__source .row {
-        display: block;
+        display: flex;
         width: auto !important;
     }
 
