@@ -24,7 +24,7 @@ site_dir: site/platform-engineer
 # Repository
 repo_name: wso2/docs-choreo-dev
 repo_url: https://github.com/wso2/docs-choreo-dev/
-edit_uri: https://github.com/wso2/docs-choreo-dev/edit/PE/en/pe-docs/docs
+edit_uri: ""
 dev_addr: localhost:8000
 
 # Copyright
