@@ -33,15 +33,17 @@ When creating a new group to invite members, be sure to assign a role to the gro
 
 Choreo roles are defined as follows:
 
-- **API Publisher**: An API publisher can discover, create, publish, delete, test, and manage an API.
-- **API Subscriber**: An API subscriber is a developer in a particular organization. An API subscriber can subscribe to an application, manage subscriptions, manage applications, generate API keys, and manage API keys.
-- **Admin**: An administrator is responsible for all administration tasks, including user management, customizing the Developer Portal, managing projects, enabling analytics, managing domains, etc.
-- **Billing Admin**: Is responsible for billing administration that includes viewing tiers, creating and viewing organizations, managing invoices, viewing and creating subscriptions, and viewing and creating payment methods.
-- **Choreo DevOps**: A Choreo DevOps user is a user with access to the Choreo DevOps portal, enabling them to actively manage, ensure dependable deployment, and monitor components.
-- **Choreo Platform Engineer**: A Choreo Platform Engineer is a user who performs tasks focusing on infrastructure, governance, service mesh, and monitoring.
-- **Developer** : A user who can develop, deploy, and manage cloud native applications at scale.  
-- **External API subscriber**: External API subscribers are API consumers who have access only to the API Developer Portal. They can join an organization with the sole purpose of consuming APIs.
-- **Environment Manager (Deprecated)**: Manages deployment environments.
+- **Admin**: Performs all administrative tasks including user management, Developer Portal customization, project management, analytics configuration, and domain management.  
+- **API Publisher**: Discovers, creates, publishes, deletes, tests, and manages APIs.  
+- **API Subscriber**: Subscribes to APIs, manages subscriptions and applications, and generates and manages API keys.  
+- **Billing Admin**: Handles billing administration including viewing tiers, managing organizations and invoices, and managing subscriptions and payment methods.  
+- **Choreo DevOps**:   Manages deployment, monitoring, and reliability of components in Choreo.    
+- **Choreo Platform Engineer**: Performs infrastructure, governance, service mesh, and monitoring tasks.  
+- **Developer**: Develops, deploys, and manages cloud-native applications at scale.  
+- **External API Subscriber**: Consumes APIs with Developer Portal access and can join an organization exclusively for API usage.  
+- **Environment Manager (Deprecated):** Previously responsible for managing deployment environments.  
+
+_Note: The **Choreo DevOps** role has been replaced with the **Choreo Platform Engineer** role. However, organizations that previously had Choreo DevOps role will continue to see and use both roles with their existing functionality._
 
 ## Organization ID
 
