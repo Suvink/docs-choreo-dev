@@ -31,7 +31,7 @@ To register a GenAI service, follow these steps:
 2. Follow one of these steps depending on your requirements:
     - To register a GenAI service at the organization level, go to the Choreo Console header and select your organization from the **Organization** list. 
     - To register a GenAI service at the project level, go to the Choreo Console header and select your project from the **Project** list. 
-3. In the left navigation menu, click **Dependencies** and then click **GenAI Services**.
+3. In the left navigation menu, click **Resources** and then click **GenAI Services**.
 4. Click **+ Register**.
 5. Select a service provider.
 6. Click **Next**.
@@ -72,7 +72,7 @@ When you create a GenAI service, it gets listed in the **GenAI Services** list.
 To view or update a GenAI service, follow these steps.
 
 1. Sign in to the [Choreo Console](https://console.choreo.dev/).
-2. In the left navigation menu, click **Dependencies** and then click **GenAI Services**. This lists all the GenAI services you have created.
+2. In the left navigation menu, click **Resources** and then click **GenAI Services**. This lists all the GenAI services you have created.
 3. Click on a service to view or update its details.
     - **General Details**: Displays service metadata. For example, the service name, overview, labels, etc. 
     - **Service Definition**: Displays the service definition. To update the definition, click **Upload** and select the new definition file.
@@ -82,13 +82,13 @@ To view or update a GenAI service, follow these steps.
 !!! info
     To add a GenAI service to the Internal Marketplace, you must provide all the required configurations.
 
-1. In the Choreo Console left navigation menu, click **Dependencies** and then click **GenAI Services**.
+1. In the Choreo Console left navigation menu, click **Resources** and then click **GenAI Services**.
 2. Click on the service you want to add to the Internal Marketplace.
 3. Click **Add to Marketplace**.
 
 ### Remove a GenAI service from the Internal Marketplace
 
-1. In the Choreo Console left navigation menu, click **Dependencies** and then click **GenAI Services**.
+1. In the Choreo Console left navigation menu, click **Resources** and then click **GenAI Services**.
 2. Click on the service you want to remove from the Internal Marketplace.
 3. Click **Remove from Marketplace**.
 

@@ -10,7 +10,7 @@ To create a Kafka topic, follow these steps:
 
 1. Sign in to the Choreo Console at [https://console.choreo.dev/](https://console.choreo.dev).
 2. In the header, click the **Organization** list. This opens the organization home page.
-3. In the left navigation menu, click **Dependencies** and then click **Message Brokers**.
+3. In the left navigation menu, click **Resources** and then click **Message Brokers**.
 4. In the **Message Brokers** list, click the Kafka service for which you want to create a topic.
 5. Click the **Topics** tab.
 6. Click **+ Create**.
@@ -49,7 +49,7 @@ To manage users for a Choreo-managed Kafka service, follow these steps:
 
 1. Sign in to the Choreo Console at [https://console.choreo.dev/](https://console.choreo.dev).
 2. In the header, click the **Organization** list. This opens the organization home page.
-3. In the left navigation menu, click **Dependencies** and then click **Message Brokers**.
+3. In the left navigation menu, click **Resources** and then click **Message Brokers**.
 4. In the **Message Brokers** list, click the Kafka service for which you want to manage users.
 5. Click the **Users** tab.
 6. Click **+ Add User**, specify a username, and then click **Add**.
@@ -68,7 +68,7 @@ To add an ACL entry, follow these steps:
 
 1. Sign in to the Choreo Console at [https://console.choreo.dev/](https://console.choreo.dev).
 2. In the header, click the **Organization** list. This opens the organization home page.
-3. In the left navigation menu, click **Dependencies** and then click **Message Brokers**.
+3. In the left navigation menu, click **Resources** and then click **Message Brokers**.
 4. In the **Message Brokers** list, click the Kafka service for which you want to add an ACL entry.
 5. Click the **Access Control List** tab.
 6. Click **+ Add Entry**, select a username, topic, and permission.

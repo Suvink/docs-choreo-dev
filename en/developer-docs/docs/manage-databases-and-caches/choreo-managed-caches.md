@@ -10,7 +10,7 @@ Follow the steps below to create a Choreo-Managed Cache:
 
 1. Sign in to the Choreo Console at [https://console.choreo.dev/](https://console.choreo.dev).
 2. In the header, click the **Organization** list. This opens the organization home page.
-3. In the left navigation menu, click **Dependencies** and then click **Databases**.
+3. In the left navigation menu, click **Resources** and then click **Databases**.
 4. Click **+ Create** and select **Choreo-Managed Cache** as the data store type. Provide a display name for this server and follow the instructions.
 5. Select a preferred cloud provider (AWS, Azure, GCP, or Digital Ocean).
     - The cloud provider provisions the compute and storage infrastructure for your data store.
