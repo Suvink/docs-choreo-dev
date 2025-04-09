@@ -1,10 +1,10 @@
 # Develop a MCP Server
 
-Choreo allows you to create and deploy mcp server applications in your preferred programming language. 
+Choreo allows you to create and deploy MCP Server applications in Python and Node.js. 
 
 In this guide, you will:
 
-- Deploy stdio based [github-mcp-server](https://github.com/github/github-mcp-server) in Choreo  over SSE (Server-Sent Events) using a `NodeJs` buildpack. 
+- Deploy a stdio-based [github-mcp-server](https://github.com/github/github-mcp-server) in Choreo  over SSE (Server-Sent Events) using a `NodeJs` buildpack. 
 
 ## Prerequisites
 
@@ -16,7 +16,7 @@ In this guide, you will:
 
     This creates the organization and opens the **Project Home** page of the default project created for you.
 
-2. Create a GitHub Personal Access Token (PAT) for your account.
+2. Create a [GitHub Personal Access Token (PAT)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token) for your account.
 
 ## Step 1: Create a MCP Server component
 
@@ -30,22 +30,22 @@ To create a mcp server component, follow these steps:
 
     | **Field**              | **Value**          |
     |------------------------|--------------------|
-    | **Provider Package**       | @modelcontextprotocol/server-github |
+    | **Server Package**       | @modelcontextprotocol/server-github |
     | **Run Command**  | npx -y @modelcontextprotocol/server-github    |
 
 6. Select **NodeJs** as the buildpack.
-8. Provide component display name, name and description:
+7. Provide component display name, name and description:
 
     !!! info
         The **Component Name** field must be unique and cannot be changed after creation.
 
     | **Field**                 | **Value**          |
     |---------------------------|--------------------|
-    | **Component Display Name**| GitHub Mcp Server         |
+    | **Component Display Name**| GitHub MCP Server         |
     | **Component Name**        | github-mcp-server         |
     | **Description**           | Mcp server for GitHub     |
 
-9. Click **Create**. This creates the component and lists it under **Component Listing** on the project home page.
+8. Click **Create**. This creates the component and lists it under **Component Listing** on the project home page.
 
 You have successfully created the server. The initial build has been triggered. Please wait until it completes.
 If you need to rebuild the component later, follow the steps below.
@@ -59,20 +59,25 @@ If you need to rebuild the component later, follow the steps below.
     !!! note
         The build process may take some time. You can track progress in the **Build Details** pane. Once complete, the build status changes to **Success**.
 
-Now that you have build the component, it's time to deploy the mcp server.
+Now that you have built the component, it's time to deploy the mcp server.
 
 ## Step 3: Deploy
 
 1. In the left navigation menu, click **Deploy**.
 2. On the **Set Up** card, click **Configure & Deploy**.
-3. In the **Environment Configurations** pane, Click **Add a Configuration** and Add **GITHUB_PERSONAL_ACCESS_TOKEN** as name and paste the PAT created in Prerequisites step. Then tick **Mark as a Secret** and save the configuration by clicking **Next** button.
-4. In the **File Mount** pane, click **Next** to skip the configuration.
+3. In the **Environment Configurations** pane, click **Add a Configuration** and add following environment variables in the table. Then tick **Mark as a Secret** and save the configuration by clicking **Next** button.
+
+    | **Name**                 | **Value**          |
+    |---------------------------|--------------------|
+    | **GITHUB_PERSONAL_ACCESS_TOKEN**| YOUR GITHUB PAT         |
+
+4. In the **File Mount** pane, click **Next** to skip this step.
 5. Review the **Endpoint Details** and click **Deploy**.
 
     !!! note
         Deploying the service component may take some time. Once deployed, the **Development** environment card indicates the **Deployment Status** as **Active**.
 
-Once you have successfully deployed the service, you can test your server. You can view invoke URL details from **Test** tab in left navigation menu.
+Once you have successfully deployed the service, you can test your server. You can view the invoke URL details from the  s**Test** tab in left navigation menu.
 
 !!! info
     The path for SSE subscription is **/sse**, and the path for messages is **/messages**.
