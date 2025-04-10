@@ -26,15 +26,23 @@ To follow this guide, you need to satisfy the following prerequisites:
 
 ## Step 1: Assign scopes to an API in Choreo
 
-You can provide fine-grained access control to your API resources with scopes. Follow the steps below to assign a scope to the resources in the API:
+You can provide fine-grained access control to your API resources with Permissions (scopes). Follow the steps below to assign a Permission (scope) to the resources in the API:
+
+!!! note
+    Defining permissions for Services other than Ballerina and API Proxy is supported via the OpenAPI Definition.
+
+    - Define your permissions under the `components.securitySchemes` and `security` sections in your OpenAPI document.
+    - Assign the appropriate permissions to each operation using the `security` property at the resource level.
+    - Commit the OpenAPI document to the repo.
 
 1. In the **Component Listing** pane, click on the component you want to attach scopes to.
-2. In the left navigation menu, click **Manage** and then **Permissions**.
-3. Click **+ Add Permission (Scope)**. 
-4. In the **Permission List** pane, enter the permission value and click **+ Add New**.
-5. Click the copy icon in front of the added scope to copy the fully qualified name of the scope. Save this value for future reference. 
-6. To attach a scope to a resource, click the **Select Permissions** list under the respective resource, and select the scopes you wish to attach.
-7. Click **Save and Deploy**.
+2. In the left navigation menu, click **Deploy** and then **Configure & Deploy** in the **Set Up** area. (For Proxy apis, click **Configure & Deploy** in the **Build Area** and skip the Step 3 below)
+3. Click **Next** to goto the **Endpoint Details** step. Expand the required endpoint if not already expanded. 
+4. In the **Operation Level** security section, click on **Manage Permissions** button. 
+5. In the **Manage Permissions** pane, enter the permission value and click **Add New**.
+6. Click the copy icon in front of the added scope to copy the fully qualified name of the scope. Save this value for future reference. 
+7. To attach a scope to a resource, click the **Select Permissions** list under the respective resource, and select the scopes you wish to attach.
+8. Click **Deploy**.
 8. In the left navigation menu, click **Manage** and then **Lifecycle**.
 9. Click **Publish** and continue to publish your API to the Choreo Developer Portal. 
 
