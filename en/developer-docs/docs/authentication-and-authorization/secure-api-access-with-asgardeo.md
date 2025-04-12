@@ -33,7 +33,7 @@ You can provide fine-grained access control to your API resources with scopes. F
 
 1. In the **Component Listing** pane, click on the component you want to attach scopes to.
 2. In the left navigation menu, click **Deploy** and then **Configure & Deploy** in the **Set Up** area. (For Proxy apis, click **Configure & Deploy** in the **Build Area** and skip the Step 3 below)
-3. Click **Next** to goto the **Endpoint Details** step. Expand the required endpoint if not already expanded. 
+3. Click **Next** to go to the **Endpoint Details** step. Expand the required endpoint if not already expanded. 
 4. In the **Operation Level** security section, click on **Manage Permissions** button. 
 5. In the **Manage Permissions** pane, enter the permission value and click **Add New**.
 6. Click the copy icon in front of the added scope to copy the fully qualified name of the scope. Save this value for future reference. 

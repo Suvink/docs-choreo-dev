@@ -85,7 +85,7 @@ Choreo allows you to test your API proxy using either the [integrated OpenAPI Co
     - To disable security for the entire API or a specific resource:
         1. In the left navigation menu, click **Deploy**.
         2. Go to the **Build Area** card and click **Configure & Deploy**.
-        3. In the **Cofigure & Deploy** pane:
+        3. In the **Configure & Deploy** pane:
             - To disable security for the entire API, clear the **OAuth2** checkbox.
             - To disable security for a specific resource, turn off the **Security** toggle in the relevant resource.
         4. Click **Deploy**.
