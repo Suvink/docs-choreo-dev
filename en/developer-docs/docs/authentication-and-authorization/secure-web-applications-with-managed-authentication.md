@@ -113,7 +113,7 @@ For example, if the API URL is `https://2d9ec1f6-2f04-4127-974f-0a3b20e97af5-dev
 !!! info
      To copy the exact service URL of a Connection, you can follow the steps given below:
       1. In the Choreo Console, go to the appropriate web application component.
-      2. In the left navigation menu, click **Connections** under **Dependencies**.
+      2. In the left navigation menu, click **Connections**.
       3. Click on the required Connection and copy the service URL.
 
 If you enable Choreo's managed authentication, you don't have to manually add any logic to attach an access token to the API call because Choreo APIs accept the cookies set by Choreo's managed authentication. You can directly invoke the API as follows:

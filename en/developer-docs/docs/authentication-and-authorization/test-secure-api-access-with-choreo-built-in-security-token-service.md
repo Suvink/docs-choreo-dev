@@ -79,7 +79,7 @@ To create a connection to the web application, follow the steps given below:
 
 1. In the Choreo Console, go to the top navigation menu, click the **Project** list, and select the project where you created the web application.
 2. On the project home page, click the web application listed under **Component Listing**.
-3. In the left navigation menu, click **Dependencies** and then click **Connections**.
+3. In the left navigation menu, click **Connections**.
 4. Create a connection to the API you deployed in [Step 1](#step-1-assign-permissions-to-an-api-in-choreo). 
    
 Now you can proceed to deploy the web application.

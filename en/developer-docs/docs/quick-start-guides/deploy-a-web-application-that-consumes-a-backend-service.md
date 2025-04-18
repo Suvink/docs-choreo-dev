@@ -198,7 +198,7 @@ Now that the `Reading List Service` is deployed and available in the Choreo Mark
 
 A connection allows you to integrate the service with other services or external resources. For more information, refer to the [Connection](../choreo-concepts/connections.md) documentation.
 
-1. In the left navigation menu, click **Dependencies** and then click **Connections**.
+1. In the left navigation menu, click **Connections**.
 2. Click **+ Create**.
 3. In the **Select a Service** pane, click `Reading List Service`.
 4. Specify the following:

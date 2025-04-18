@@ -15,7 +15,7 @@ To import credentials for a database, follow these steps:
 
 1. Sign in to the [Choreo Console](https://console.choreo.dev/).
 2. Go to the Choreo Console header and select your organization from the **Organization** list.
-3. In the left navigation menu, click **Dependencies** and then click **Databases**.
+3. In the left navigation menu, click **Resources** and then click **Databases**.
 4. Click on a required database to view its details.
 5. Click the **Databases** tab.
 6. Click to expand the database for which you want to import credentials, then click **Import Credentials**.
