@@ -15,8 +15,8 @@
 # under the License.
 
 # Project information
-site_name: ""
-site_description: Choreo Learning Portal
+site_name: "Choreo Documentation | AI-Native Internal Developer Platform"
+site_description: Choreo Explore Choreo documentation to build, deploy, and manage cloud-native apps effortlessly. Whether you're a platform engineer or app developer, Choreo simplifies infrastructure automation and streamlines delivery with an AI-native internal developer platform.
 site_author: WSO2
 site_url: https://wso2.com/choreo/docs
 site_dir: site/developer
@@ -127,6 +127,7 @@ nav:
           - Develop an Event Handler: develop-components/develop-integrations/develop-an-event-handler.md
           - Develop a Scheduled Task: develop-components/develop-integrations/develop-a-scheduled-task.md
           - Develop a Manual Task: develop-components/develop-integrations/develop-a-manual-task.md
+      - Develop a MCP Server: develop-components/develop-mcp-servers/develop-a-mcp-server.md
       - Work with the Micro Integrator Runtime:
           - Get Started with the Micro Integrator Runtime: develop-components/work-with-the-micro-integrator-runtime-in-choreo.md
           - Manage the Micro Integrator Runtime Version in Your Integration Project: develop-components/manage-the-micro-integrator-runtime-version-in-your-integration-project.md

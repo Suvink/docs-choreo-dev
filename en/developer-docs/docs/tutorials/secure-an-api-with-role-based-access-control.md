@@ -53,14 +53,14 @@ This creates the organization and opens the home page of the default project cre
 
 ### Step 2: Apply permissions to resources and publish the API
 
-1. On the **Deploy** page, go to the **Build Area** card and click **Security Settings**.
-2. In the **Security Settings** pane, go to the **Permissions List** section and click **+ Add Permission(Scope)**.
+1. On the **Deploy** page, go to the **Build Area** card and click **Configure & Deploy**.
+2. In the **Configure & Deploy** pane, go to the **Operation Level Security** section and click **Manage Permissions**.
 3. Add the following permission values:
     - `get_user_list`
     - `get_user`
     - `create_user`
     - `delete_user`
-4. In the **Permissions** section, assign permissions to resources as follows:
+4. In the **Operation Level Security** section, assign permissions to resources as follows:
 
     | **Resource**             | **Permission** |
     |--------------------------|----------------|
@@ -69,10 +69,7 @@ This creates the organization and opens the home page of the default project cre
     | **POST /users**          | `create_user`  |
     | **DELETE /users/{userID}**| `delete_user`  |
 
-5. Click **Apply**.
-6. Redeploy the API to apply the latest permissions:
-    1. Go to the **Build Area** card and click **Configure & Deploy**.
-    2. Select **External** as the access mode and click **Deploy**.
+5. Click **Deploy**.
 7. Promote the API to production:
     1. In the left navigation menu, click **Deploy**.
     2. Go to the **Development** card and click **Promote**.

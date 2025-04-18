@@ -30,16 +30,12 @@ You can provide fine-grained access control to your API resources with permissio
 2. In the Choreo Console top navigation menu, click the **Project** list and select the project that contains your component.
 3. In the **Component Listing** pane, click on the component for which you want to attach permissions.
 4. In the left navigation menu, click **Deploy**.
-5. On the **Deploy** page, go to the **Set Up** card and click **Endpoint Configurations**. This opens the **Endpoint Configurations** pane.
-6. Go to the **Permissions List** section and click **+ Add Permission(Scope)**.
-7. In the **Permissions List** section, enter a permission value and click **+ Add New**.
+5. On the **Deploy** page, go to the **Set Up** card and click **Configure and Deploy**. Click Next and go to the **Endpoint Details** step.
+6. Go to the **Operation Level Security** section and click **+ Manage Permissions**.
+7. In the **Manage Permissions** section, enter a permission value and click **+ Add New**.
 8. Click the copy icon in front of the added permission to copy the fully qualified name of it. Save this value for future reference.
 9. To attach permissions to a resource, click the **Select Permissions** list under the respective resource and select the permissions you want to attach.
-10. Click **Apply**.
-11. To apply the latest permissions to the deployed component, you must redeploy it. Follow the steps below to redeploy:
-    1. Go to the **Set Up** card and click **Configure & Deploy**.
-    2. In the **Configurations** pane that opens, click **Next**. This opens the **Endpoint Details** pane.
-    3. Click **Deploy**.
+10. To apply the permissions to the deployed component, click on **Deploy** button:
 
 12. To publish your API to the Choreo Developer Portal, follow the steps given below:
     1.  In the left navigation menu, click **Manage** and then click **Lifecycle**.
