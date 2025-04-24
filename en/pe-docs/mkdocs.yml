@@ -164,6 +164,8 @@ nav:
   - API Management:
       - Developer Portal:
           - Customize the Choreo Developer Portal: api-management/developer-portal/customize-the-developer-portal.md
+          - Configure Identity Providers for Developer Portal: api-management/developer-portal/configure-identity-providers-for-developer-portal.md
+          - Configure Exposed Environments to Developer Portal: api-management/developer-portal/configure-exposed-environments-to-developer-portal.md
       - API Analytics:
           - Integrate Choreo with Moesif for Analytics: api-management/api-analytics/integrate-choreo-with-moesif.md   
       - Consumer IDPs:

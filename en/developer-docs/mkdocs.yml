@@ -244,6 +244,8 @@ nav:
       - Developer Portal:
           - Customize the Developer Portal: administer/customize-the-developer-portal.md
           - Configure Self-Sign-Up: administer/configure-self-sign-up.md
+          - Configure Identity Providers for Developer Portal: administer/configure-identity-providers-for-developer-portal.md
+          - Configure Exposed Environments to Developer Portal: administer/configure-exposed-environments-to-developer-portal.md
       - Manage Members of an Organization: administer/manage-members-of-an-organization.md
       - Control Egress Traffic for Your Organization: administer/control-egress-traffic-for-your-organization.md
   - References:
