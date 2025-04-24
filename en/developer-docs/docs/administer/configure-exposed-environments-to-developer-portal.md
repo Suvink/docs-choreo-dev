@@ -1,11 +1,11 @@
 # Configure Exposed Environments to Developer Portal
 
-The Choreo Developer Portal allows external developers to discover and consume APIs published by your organization. You can control APIs from which environments are visible and accessible through the Developer Portal.
+The Choreo Developer Portal enables external developers to discover and consume APIs published by your organization. Through the Choreo Console, you can manage which API environments are visible and accessible in the Developer Portal.
 
-Follow these steps to manage which environments are visible in the Developer Portal:
+Follow these steps to configure which environments are visible in the Developer Portal:
 
 !!! Note -
-    For organizations created after **24th of April 2025**, only the **Production** environment is exposed in the Developer Portal by default. Organizations created before this date have all environments visible in the Developer Portal.
+    Organizations created after **April 24th, 2025**, will have the **Production** environment exposed by default. Organizations created before this date will continue to allow all environments visible in the Developer Portal.
 
 1. Sign in to [Choreo](https://console.choreo.dev/).
 

@@ -1,9 +1,9 @@
 # Configure Identity Providers for Developer Portal
 
-You can manage which Identity Providers (IdPs) are available for consumers to authenticate and generate API keys in the Developer Portal.
+You can configure the Identity Providers (IdPs) available for consumers to authenticate and generate API keys in the Developer Portal from the Choreo Console.
 
 !!! Note -
-    For organizations created after **24th of April 2025**, the Choreo Built-in Identity Provider is configured by default. Organizations created before this date allow all configured identity providers to be used in the Developer Portal. 
+    Organizations created after **April 24th, 2025**, will have the **Choreo Built-in Identity Provider** configured by default. Organizations created before this date will continue to allow all configured identity providers to be used in the Developer Portal.
 
 Follow these steps to configure Identity Providers:
 
