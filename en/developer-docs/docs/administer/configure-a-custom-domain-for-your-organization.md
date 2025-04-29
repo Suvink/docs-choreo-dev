@@ -6,7 +6,7 @@ This section provides an overview of Choreo’s custom domain configuration mode
 
 ## Choreo custom domain configuration model
 
-Choreo allows organization administrators to add custom domains for their organizations. When an administrator adds custom domains to an organization, component developers can submit requests to utilize the custom domains for their respective components. These requests require approval from the organization administrator. Upon approval, the custom domain and the relevant URL customization become available to the component.
+Choreo allows organization administrators to add custom domains for their organizations. When an administrator adds custom domains to an organization, component developers can utilize the custom domains for their respective components. 
 
 ## Configure a custom domain for an organization
 
@@ -123,7 +123,7 @@ You can see the added custom domain listed in the **Active Domains** tab under t
     
  ![Active domains](../assets/img/administer/configure-domain/active-domains.png)
 
-The custom domain you added will be available to the entity types in the specified environment. You can request the custom domain when configuring a custom URL for a component.
+The custom domain you added will be available to the entity types in the specified environment. You can use the custom domain when configuring a custom URL for a component.
 
 !!! info "Note"
      If you add a custom domain for the **Developer Portal** type, the customization is applied immediately, and you can access the organization’s Developer Portal via the added domain.
@@ -132,14 +132,14 @@ If you want to view the entity types that use a particular custom domain, click 
  
 ## Configure a custom URL for a component
 
-When an organization administrator adds custom domains for specific environments, developers can request any available custom domain to configure a custom URL for a component in a specific environment.
+When an organization administrator adds custom domains for specific environments, developers can use any available custom domain to configure a custom URL for a component in a specific environment.
 
-### Request a custom URL for a component
+### Add a custom URL to a component
 
-To request a custom URL for your component, follow the steps given below:
+To add a custom URL for your component, follow the steps given below:
 
 !!! info "Note"
-     Before you request a custom domain for a specific environment, ensure that the component is deployed to that environment.
+     Before you add a custom domain for a specific environment, ensure that the component is deployed to that environment.
 
 1. Sign in to the [Choreo Console](https://console.choreo.dev/).
 2. In the **Component Listing** pane, click on the component for which you want to customize the URL.
@@ -148,41 +148,24 @@ To request a custom URL for your component, follow the steps given below:
     
     ![Active deployments](../assets/img/administer/configure-domain/active-deployments.png)
 
-5. To configure a custom URL for a component in a specific environment, click the **Edit URL Mapping** icon under the **Action** column corresponding to the respective environment. This opens the **URL Settings** dialog, where you can specify values to request for a custom URL.
+5. To configure a custom URL for a component in a specific environment, click the **Edit URL Mapping** icon under the **Action** column corresponding to the respective environment. This opens the **URL Settings** dialog, where you can specify values to add to a custom URL.
     
     ![URL settings](../assets/img/administer/configure-domain/url-settings.png)
 
 6. In the **URL Settings** dialog, select a domain to configure a custom URL.
 
     !!! tip
-          - The **Domain** drop-down lists the available domains for the component. You can  request for any listed domain.
-          - If you want to request a custom URL for an API, you must specify an appropriate context path in the **Path** field. The **Path** field displays the default context path for the API. You can edit the path depending on your preference. 
+          - The **Domain** drop-down lists the available domains for the component. You can  add any listed domain.
+          - If you want to add a custom URL for an API, you must specify an appropriate context path in the **Path** field. The **Path** field displays the default context path for the API. You can edit the path depending on your preference. 
 
-7. Click **Configure**. This creates the custom URL mapping, which you can see under the **URL Settings** tab.  The custom URL request will be in the **Pending** status until an organization administrator approves the request.
+7. Click **Deploy**. This creates the custom URL mapping, which you can see under the **URL Settings** tab.  The custom URL will be in the **Approved** state.
     
-    ![Pending custom URL request](../assets/img/administer/configure-domain/pending-custom-url-request.png)
-
-### Approve a custom URL request
-
-When a developer requests a custom URL, the request will be listed in the organization-level settings page under the **URL Settings** tab.
-
-To approve a custom URL mapping, follow the steps given below:
+    ![Approved custom URL](../assets/img/administer/configure-domain/approved-custom-url.png)
 
 !!! info "Note"
-     To approve custom URL requests, you must have organization administrator privileges.
+     By default, any user with the `Manage Custom Domains` permission can deploy custom URL mappings. For better governance, you can configure an approval process for URL mappings using [Choreo Workflows](./ configure-approvals-for-choreo-workflows.md).
 
-1. Sign in to the [Choreo Console](https://console.choreo.dev/).
-2. In the Choreo Console header, click the **Organization** list.
-3. In the left navigation menu, click **Settings**. This opens the organization-level settings page.
-4. Click the **URL Settings** tab and then click the **Pending URL Requests** tab. You will see all the pending URL mapping requests sent by developers.
-    
-    ![Pending URL requests](../assets/img/administer/configure-domain/pending-url-requests.png)
-
-
-5. Go to the custom URL you want to approve and click the corresponding **Approve URL Mapping** icon under the **Action** column.
-6. Review the details and click **Approve**.
-   
-   Once approved, the invoke URL of the component gets replaced with the configured custom URL.
+   Once deployed, both the custom URL and the default URL can be used to access the component. 
     
    ![Custom URL](../assets/img/administer/configure-domain/custom-url.png)
 

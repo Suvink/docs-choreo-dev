@@ -2,11 +2,13 @@
 
 Choreo allows you to configure approval processes for specific workflows within the platform. An approval process for a workflow ensures that critical or sensitive changes are properly managed and controlled.
 
-Choreo currently allows you to configure approvals for environment promotion and API subscription workflows.
+Choreo currently allows you to configure approvals for environment promotion, API subscription and URL Customization workflows.
 
 Configuring approvals for environment promotion allows authorized users to control components being promoted to a critical/production environment. 
 
 Configuring approvals for the API subscription workflow allows you to create subscription plans that require approval before being activated. This feature allows you to control access to APIs by requiring administrative review and authorization of subscriptions before they become active.
+
+Configuring approvals for URL customization workflows allows you to control custom URL mappings by requiring review and approval before the customization is applied.
 
 ## Permissions to review and respond to approval requests
 
@@ -28,6 +30,15 @@ Click the respective tab for details on permissions depending on the workflow fo
           - Approve API subscriptions: Grants access to review and approve API subscription workflow requests.
       - **PROJECT-MANAGEMENT**: 
           Grants access to view and approve workflow requests. This is the same permission used to update or delete projects.
+
+=== "URL customization"
+
+     To review and respond to URL customization approval requests, a user must have the following permissions. Administrators must ensure that users designated to review and respond to approval requests have these permissions:
+
+      - **WORKFLOW-MANAGEMENT**:
+          - Approve custom URL mapping requests: Grants access to review and approve custom URL mapping requests.
+      - **URL-MANAGEMENT**: 
+          Manage Custom Domains: Grants access to manage custom domains for the organization.
 
 ## Set up an approval process for a workflow
 
@@ -61,3 +72,7 @@ Once you enable the approval process for a workflow, see the following details o
 === "API subscription"
 
      Once you configure an approval process for API subscription, administrators can select the **Approval required** checkbox to create or update subscription plans to require approval. For details, see [Create API Subscription Plans](../administer/create-api-subscription-plans.md). API consumers using these plans must request approval to proceed. For details, see step 7 in [Subscribe to an API with a Subscription Plan](../api-management/manage-api-traffic/subscribe-to-an-api-with-a-subscription-plan.md). An authorized approver must then [review and approve the request](./review-workflow-approval-requests.md) before the subscription is granted.
+
+=== "URL customization"
+
+     Once you configure an approval process for URL customization, developers must submit a request for approval when configuring a custom URL for a component. Instead of being automatically deployed, the URL mapping will go into a pending state. An authorized approver must then [review and approve the request](./review-workflow-approval-requests.md) before the custom URL is activated. 
