@@ -163,7 +163,7 @@ To add a custom URL for your component, follow the steps given below:
     ![Approved custom URL](../assets/img/administer/configure-domain/approved-custom-url.png)
 
 !!! info "Note"
-     By default, any user with the `Manage Custom Domains` permission can deploy custom URL mappings. For better governance, you can configure an approval process for URL mappings using [Choreo Workflows](./ configure-approvals-for-choreo-workflows.md).
+     By default, any user with the `Manage Custom Domains` permission can deploy custom URL mappings. For better governance, you can configure an approval process for URL mappings using [Choreo Workflows](./configure-approvals-for-choreo-workflows.md).
 
    Once deployed, both the custom URL and the default URL can be used to access the component. 
     
