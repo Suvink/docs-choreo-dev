@@ -2,7 +2,7 @@
 
 Choreo allows you to configure approval processes for specific workflows within the platform. An approval process for a workflow ensures that critical or sensitive changes are properly managed and controlled.
 
-Choreo currently allows you to configure approvals for environment promotion, API subscription and URL Customization workflows.
+Choreo currently allows you to configure approvals for environment promotion, API subscription and URL customization workflows.
 
 Configuring approvals for environment promotion allows authorized users to control components being promoted to a critical/production environment. 
 
@@ -73,4 +73,4 @@ Once you enable the approval process for a workflow, see the following details o
 
 === "URL customization"
 
-     Once you configure an approval process for URL customization, developers must submit a request for approval when configuring a custom URL for a component. Instead of being automatically deployed, the URL mapping will go into a pending state. An authorized approver must then [review and approve the request](../approvals/review-workflow-approval-requests.md) before the custom URL is activated. 
+     Once you configure an approval process for URL customization, developers must submit a request for approval to configure a custom URL for a component. Instead of being automatically deployed, the URL mapping will go into a pending state. An authorized approver must then [review and approve the request](../approvals/review-workflow-approval-requests.md) before the custom URL is activated for the respective component. 

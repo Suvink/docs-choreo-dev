@@ -6,7 +6,7 @@ This section provides an overview of Choreo’s custom domain configuration mode
 
 ## Choreo custom domain configuration model
 
-Choreo allows organization administrators to add custom domains for their organizations. When an administrator adds custom domains to an organization, component developers can utilize the custom domains for their respective components. 
+Choreo allows organization administrators to add custom domains for their organizations. When an administrator adds custom domains to an organization, developers can utilize the custom domains for their respective components. 
 
 ## Configure a custom domain for an organization
 
