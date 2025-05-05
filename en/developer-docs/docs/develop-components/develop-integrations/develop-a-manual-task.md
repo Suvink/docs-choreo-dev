@@ -143,7 +143,7 @@ In this guide, you will:
 
             !!! info
                 When working on NodeJS projects:
-                - The **Run with Arguments** feature is not supported when either a `Run Command` is defined or a `Procfile` exists in the project.
+                - The **Run with Arguments** feature is not supported if a `Run Command` is defined or a `Procfile` is present in the project..
                 - The project root must contain the `package.json` file with the `main` attribute defined.
 
         === "WSO2 MI"
