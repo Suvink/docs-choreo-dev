@@ -32,18 +32,18 @@ Follow the guidelines below based on your language:
     |---------------- |--------------------|
     | Service| [Reading Books List Service](https://github.com/wso2/choreo-samples/tree/main/reading-books-list-service-python)|
     | Manual Task | [Hello World Task](https://github.com/wso2/choreo-samples/tree/main/hello-world-python-task)|
+
+    For more examples, see [Choreo samples](https://github.com/wso2/choreo-samples).
     
     !!! info 
         In **Python** projects, it is mandatory to provide a `Run Command` when creating a component.
 
-    Here are some example run commands for an application:
+    Here are some example run commands for an application:<br>
     e.g.,
 
-    `python main.py` <br>
-    `gunicorn --bind :8080 --workers 1 --threads 8 --timeout 0 main:app` <br>
-    `flask run --host=0.0.0.0`
-
-    For more examples, see [Choreo samples](https://github.com/wso2/choreo-samples).
+    - python main.py
+    - gunicorn --bind :8080 --workers 1 --threads 8 --timeout 0 main:app
+    - flask run --host=0.0.0.0
 
 === "Ballerina"
 
@@ -181,6 +181,6 @@ You can configure the run command required to start the component using the **Bu
 
 e.g., <br>
 
-`java -jar target/sample.jar`<br>
-`node app.js`<br>
-`php -S 0.0.0.0:8000 index.php`
+- java -jar target/sample.jar
+- node app.js
+- php -S 0.0.0.0:8000 index.php
