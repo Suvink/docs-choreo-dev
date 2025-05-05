@@ -134,7 +134,7 @@ In this guide, you will:
 
             !!! info
                 When working on Java projects:
-                - The **Run with Arguments** capability is not supported if `Procfile` is available in the project.
+                - The **Run with Arguments** capability is not supported if `Run Command` or `Procfile` is available in the project.
                 - The `Main` class should be defined in the `manifest` file.
                 - If Maven files such as `mvn.cmd` exist in the project without the `.mvn` directory, the build will fail. To ensure a successful build, either commit the `.mvn` directory along with any Maven files or exclude Maven files if you choose not to commit the `.mvn` directory.
 
@@ -143,7 +143,7 @@ In this guide, you will:
 
             !!! info
                 When working on NodeJS projects:
-                - The **Run with Arguments** capability is not supported if `Procfile` is available in the project.
+                - The **Run with Arguments** capability is not supported if `Run Command` or `Procfile` is available in the project.
                 - The project root must contain the `package.json` file with the `main` attribute defined.
 
         === "WSO2 MI"

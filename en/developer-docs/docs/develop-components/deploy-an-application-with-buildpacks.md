@@ -32,24 +32,16 @@ Follow the guidelines below based on your language:
     |---------------- |--------------------|
     | Service| [Reading Books List Service](https://github.com/wso2/choreo-samples/tree/main/reading-books-list-service-python)|
     | Manual Task | [Hello World Task](https://github.com/wso2/choreo-samples/tree/main/hello-world-python-task)|
-
-    ### Procfile
-    A `Procfile` is a configuration file used to declare the commands that are run by your application's containers. 
     
     !!! info 
-        In **Python** projects, it is mandatory to have a `Procfile` with the `web` process type in the project root directory.
+        In **Python** projects, it is mandatory to provide a `Run Command` when creating a component.
 
-    Here's an example `Procfile` for an application:
-
-    ```
-    web: <command to start your application>
-    ```
-
+    Here are some example run commands for an application:
     e.g.,
 
-    `web: python main.py` <br>
-    `web: gunicorn --bind :8080 --workers 1 --threads 8 --timeout 0 main:app` <br>
-    `web: flask run --host=0.0.0.0`
+    `python main.py` <br>
+    `gunicorn --bind :8080 --workers 1 --threads 8 --timeout 0 main:app` <br>
+    `flask run --host=0.0.0.0`
 
     For more examples, see [Choreo samples](https://github.com/wso2/choreo-samples).
 
@@ -110,22 +102,6 @@ Follow the guidelines below based on your language:
 
            - The `Main` class should be defined in the manifest file.
            - If Maven files such as `mvn.cmd` exist in the project without the `.mvn` directory, the build will fail. To ensure a successful build, you must either commit the `.mvn` directory along with any Maven files or not include any Maven files in the project if you choose not to commit the `.mvn` directory.
-    
-    #### Procfile 
-
-    A `Procfile` is a configuration file used to declare the commands that are run by your application's containers. 
-    If you want to customize the default entry point of the container, you can include a `Procfile` with the `web` process type in the project root directory. 
-    In **Java** projects, it is optional to include a `Procfile`.
-
-    Here's an example `Procfile` for an application:
-
-    ```
-    web: <command to start your application>
-    ```
-
-    e.g.,
-
-    `web: java -jar target/sample.jar` <br>
 
     For more examples, see [Choreo samples](https://github.com/wso2/choreo-samples).
 
@@ -138,22 +114,6 @@ Follow the guidelines below based on your language:
     |---------------- |--------------------|
     | Service| [Reading Books List Service](https://github.com/wso2/choreo-samples/tree/main/reading-books-list-service-nodejs)|
     | Manual Task | [Hello World Task](https://github.com/wso2/choreo-samples/tree/main/hello-world-nodejs-task)|
-
-    #### Procfile 
-
-    A `Procfile` is a configuration file used to declare the commands that are run by your application's containers. 
-    If you want to customize the default entry point of the container, you can include a `Procfile` with the `web` process type in the project root directory. 
-    In **NodeJS** projects, it is optional to include a `Procfile`.
-
-    Here's an example `Procfile` for an application:
-
-    ```
-    web: <command to start your application>
-    ```
-
-    e.g.,
-
-    `web: node app.js` <br>
 
     For more examples, see [Choreo samples](https://github.com/wso2/choreo-samples).
 
@@ -168,22 +128,6 @@ Follow the guidelines below based on your language:
     | Manual Task | [Hello World Task](https://github.com/wso2/choreo-samples/tree/main/hello-world-php-task)|
     | Web Application | [Hello World Web Application](https://github.com/wso2/choreo-samples/tree/main/hello-world-php-webapp)|
 
-    #### Procfile 
-
-    A `Procfile` is a configuration file used to declare the commands that are run by your application's containers. 
-    If you want to customize the default entry point of the container, you can include a `Procfile` with the `web` process type in the project root directory. 
-    In **PHP** projects, it is optional to include a `Procfile`.
-
-    Here's an example `Procfile` for an application:
-
-    ```
-    web: <command to start your application>
-    ```
-
-    e.g.,
-
-    `web:php -S 0.0.0.0:8000 index.php` <br>
-
     For more examples, see [Choreo samples](https://github.com/wso2/choreo-samples).
 
 === "Ruby"
@@ -196,23 +140,6 @@ Follow the guidelines below based on your language:
     | Service | [Hello World Service](https://github.com/wso2/choreo-samples/tree/main/hello-world-ruby-service)|
     | Manual Task | [Hello World Task](https://github.com/wso2/choreo-samples/tree/main/hello-world-ruby-task)|
     | Web Application | [Hello World Web Application](https://github.com/wso2/choreo-samples/tree/main/hello-world-ruby-webapp)|
-
-    #### Procfile 
-
-    A `Procfile` is a configuration file used to declare the commands that are run by your application's containers. 
-    If you want to customize the default entry point of the container, you can include a `Procfile` with the `web` process type in the project root directory. 
-    In **Ruby** projects, it is optional to include a `Procfile`.
-
-    Here's an example `Procfile` for an application:
-
-    ```
-    web: <command to start your application>
-    ```
-
-    e.g.,
-
-    `web: ruby app.rb` <br>
-    `web:bundle exec ruby app.rb -p 8080` <br>
 
     For more examples, see [Choreo samples](https://github.com/wso2/choreo-samples).
 
@@ -232,23 +159,8 @@ Follow the guidelines below based on your language:
         - 8, 11, 17, 18 (OpenJDK Runtime Environment Temurin)
 
     !!! info
-         You can use this buildpack only with web applications. For other component types, use the **Java** buildpack. Additionally, if the generated artifact is a `WAR` file, it is necessary to include a **Procfile**.
-
-    #### Procfile 
-
-    A `Procfile` is a configuration file used to declare the commands that are run by your application's containers. 
-    If you want to customize the default entry point of the container, you can include a `Procfile` with the `web` process type in the project root directory. 
-    In **Java** projects, it is optional to include a `Procfile`.
-
-    Here's an example `Procfile` for an application:
-
-    ```
-    web: <command to start your application>
-    ```
-
-    e.g.,
-
-    `web: java -jar target/sample.war` <br>
+         You can use this buildpack only with web applications. For other component types, use the **Java** buildpack. Additionally, if the generated artifact is a `WAR` file, you must include the run command in the **Build Configurations** editor on the component's **Build** page. <br> e.g.,
+            `java -jar target/sample.war` <br>
 
 ### Configure build-time environment variables
 
@@ -262,3 +174,13 @@ During the build process, the build-time environment variables and their values 
 For example, if you want to override the Maven command of the **Java** buildpack, you can use `GOOGLE_MAVEN_BUILD_ARGS` as the environment key and `clean install` as the value. 
 
 For more examples, see [Google Cloud's buildpacks documentation](https://cloud.google.com/docs/buildpacks/service-specific-configs).
+
+### Customize the Default Run Command
+
+You can configure the run command required to start the component using the **Build Configurations** editor on the component's **Build** page. This will override the default run command provided by the buildpack. Rebuilding the component is required after modifying the run command.<br>
+
+e.g., <br>
+
+`java -jar target/sample.jar`<br>
+`node app.js`<br>
+`php -S 0.0.0.0:8000 index.php`
