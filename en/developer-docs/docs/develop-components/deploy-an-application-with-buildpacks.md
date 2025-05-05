@@ -177,7 +177,7 @@ For more examples, see [Google Cloud's buildpacks documentation](https://cloud.g
 
 ### Customize the Default Run Command
 
-You can configure the run command required to start the component using the **Build Configurations** editor on the component's **Build** page. This will override the default run command provided by the buildpack. Rebuilding the component is required after modifying the run command.<br>
+You can configure the run command required to start the component via the **Build Configurations** editor on the component's **Build** page. This overrides the default run command provided by the buildpack. After configuring the run command, you must rebuild the component for the changes to take effect.<br>
 
 e.g., <br>
 
