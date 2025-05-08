@@ -109,3 +109,19 @@ To change the default pipeline of a project, follow the steps given below:
 
     !!! info "Note"
         The **default** continuous deployment pipeline is configured separately at both the organization and project levels. When a project is created, it inherits the organization's **default** pipeline. The project's **default** pipeline then defines the default promotion order for its components on the Deploy page.
+
+## Use multiple continuous deployment pipelines within a component
+
+### Prerequisites
+
+- To use multiple continuous deployment pipelines on a component's deploy page, the component's project must have more than one continuous deployment pipeline assigned.
+
+To use multiple continuous deployment pipelines in a component, follow the steps given below:
+
+1. Sign in to [Choreo](https://console.choreo.dev/).
+2. In the Choreo Console top navigation menu, select the Organization, then the Project and finally the Component where you want to use multiple continuous deployment pipelines.
+3. In the left navigation menu, click **DevOps** and then click **CD Pipelines**.
+6. At the top of the page, click on the dropdown next to the Deployment Track/Version dropdown and choose the continuous deployment pipeline you want to use to deploy the component.
+
+    !!! info "Note"
+        The user will be able to view all continuous deployment pipelines assigned to the project and select one to deploy the component. Existing permissions will continue to control deployment and promotion access for specific environments.
