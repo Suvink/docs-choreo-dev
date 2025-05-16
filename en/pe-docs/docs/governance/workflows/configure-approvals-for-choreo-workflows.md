@@ -38,7 +38,7 @@ Click the respective tab for details on permissions depending on the workflow fo
       - **WORKFLOW-MANAGEMENT**:
           - Approve custom URL mapping requests: Grants access to review and approve custom URL mapping requests.
       - **URL-MANAGEMENT**: 
-          Manage Custom Domains: Grants access to manage custom domains for the organization.
+          - Manage Custom Domains: Grants access to manage custom domains for the organization.
 
 ## Set up an approval process for a workflow
 
