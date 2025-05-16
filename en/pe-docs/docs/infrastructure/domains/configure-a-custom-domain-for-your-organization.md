@@ -7,7 +7,7 @@ This section provides an overview of Choreo’s custom domain configuration mode
 
 ## Choreo custom domain configuration model
 
-Choreo allows platform engineers to add custom domains for their organizations. When an platform engineer adds custom domains to an organization, component developers can submit requests to utilize the custom domains for their respective components. These requests require approval from platform engineers. Upon approval, the custom domain and the relevant URL customization become available to the component.
+Choreo allows platform engineers to add custom domains for their organizations. When an platform engineer adds custom domains to an organization, component developers can utilize the custom domains for their respective components.
 
 ## Configure a custom domain for an organization
 
@@ -117,7 +117,7 @@ You can see the added custom domain listed in the **Active Domains** tab under t
 
 ![Active domains](../../assets/img/administer/configure-domain/active-domains.png)
 
-The custom domain you added will be available to the entity types in the specified environment. You can request the custom domain when configuring a custom URL for a component.
+The custom domain you added will be available to the entity types in the specified environment. You can use the custom domain when configuring a custom URL for a component.
 
 !!! info "Note"
         If you add a custom domain for the **Developer Portal** type, the customization is applied immediately, and you can access the organization’s Developer Portal via the added domain.
@@ -126,29 +126,6 @@ If you want to view the entity types that use a particular custom domain, click 
 
 ## Configure a custom URL for a component
 
-When an platform engineer adds custom domains for specific environments, developers can request any available custom domain to configure a custom URL for a component in a specific environment.
+When a platform engineer adds custom domains for specific environments, developers can use any available custom domain to configure a custom URL for a component in a specific environment.
 
-
-## Approve a custom URL request
-
-When a developer requests a custom URL, the request will be listed in the organization-level **Domains** page under the **Pending URL Requests** tab.
-
-To approve a custom URL mapping, follow the steps given below:
-
-!!! info "Note"
-     To approve custom URL requests, you must have **Approve URL Mappings** permission under **URL Management** permission group.
-
-
-1. Sign in to the [Choreo Console](https://console.choreo.dev/).
-2. In the top navigation menu, click the **Organization** list and select your organization.
-3. In the left navigation menu, click **Infrastructure** and then click **Domains**.
-4. Click the **Pending URL Requests** tab. You will see all the pending URL mapping requests sent by developers.
-   ![Pending URL requests](../../assets/img/administer/configure-domain/pending-url-requests.png)
-5. Go to the custom URL you want to approve and click the corresponding **Approve URL Mapping** icon under the **Action** column.
-6. Review the details and click **Approve**.
-
-   Once approved, the invoke URL of the component gets replaced with the configured custom URL.
-
-   ![Custom URL](../../assets/img/administer/configure-domain/custom-url.png)
-
-   Now you have successfully utilized the configured custom domain to set up a custom URL for a component.
+For better governance, you can configure an approval process for URL mappings using [Choreo Workflows](../governance/workflows.configure-approvals-for-choreo-workflows.md).
