@@ -63,6 +63,7 @@ In Choreo, a component within your project represents a singular unit of work in
           - Webhook
           - Scheduled Task
           - Manual Task
+          - API Proxy
 
 1. Fork the repository [https://github.com/wso2/choreo-sample-todo-list-app](https://github.com/wso2/choreo-sample-todo-list-app). This contains a sample web application that you can use for this guide. 
 
