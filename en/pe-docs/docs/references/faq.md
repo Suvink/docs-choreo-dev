@@ -12,7 +12,7 @@ An organization is a logical grouping of users and their resources. It may repre
 A project is a logical grouping of related components to help you organize your work. Each project provides runtime isolation through namespaces when you deploy components.
 
 ### Q: What is a component in Choreo?
-A component is a workload designed to run on Choreo. Examples of components include integrations, APIs, microservices, manual/scheduled jobs, web apps, and triggers.
+A component is a workload designed to run on Choreo. Examples of components include integrations, APIs, microservices, manual/scheduled jobs, web apps, triggers and API proxies.
 
 ### Q: What is the difference between an internal and external API?
 In Choreo, you can publish an API as an internal or an external API. A user or an application can access an external API publicly over the internet, whereas an internal API is only accessible through other components within the same organization. 
@@ -164,11 +164,13 @@ curl -o- https://cli.choreo.dev/install.sh | bash
 
 ### Q: What are the supported component types in the CLI?
 The Choreo CLI currently supports the following component types:
+
 - Service
 - Web Application
 - Webhook
 - Scheduled Task
 - Manual Task
+- API Proxy
 
 ### Q: How do I get help with a specific command in the CLI?
 You can get help with a specific command by running the following command:
